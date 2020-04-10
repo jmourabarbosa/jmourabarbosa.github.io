@@ -2,14 +2,15 @@
 title: "Paper Title Number 2"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
+excerpt: '
+date: 2015
+venue: 'Journal of Neurophysiology'
 paperurl: 
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+citation: 'Almeida, Barbosa, Compte "Neural circuit basis of visuo-spatial working memory precision: a computational and behavioral study"'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+[Download paper here](https://jmourabarbosa.github.io/files/almeida.pdf)
+
+code (soon)
+
