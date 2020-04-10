@@ -12,4 +12,4 @@ redirect_from:
 [(download updated version)](https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0)
 
 
-<embed src="https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0" type="application/pdf" />
+<embed src="../files/JBarbosa.pdf" type="application/pdf" />
