@@ -9,12 +9,13 @@ redirect_from:
 ---
 Short CV
 ======
-**BSc** Computer Science, *Universidade do Minho* + *Universiteit van Amsterdam*
+**BSc** Computer Science, :pt: *Universidade do Minho* + *Universiteit van Amsterdam*
 
-**MSc** Bioinformatics, *Università Di Bologna*
+**MSc** Bioinformatics, :it: *Università Di Bologna*
 
-**PhD** Albert Compte lab, *Universidad de Barcelona*
-**postdoc** (soon) Srdjan Ostojic lab, *Ecole Normale Superieure*
+**PhD** Albert Compte lab, :es: *Universidad de Barcelona*
+
+**postdoc** (soon) Srdjan Ostojic lab, :fr: *Ecole Normale Superieure*
 
 Meaningless bio
 ======
