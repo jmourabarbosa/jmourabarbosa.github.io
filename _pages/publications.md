@@ -8,27 +8,31 @@ author_profile: true
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
 
-**Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.**
+1. **Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.**
 
 Joao Barbosa*, Heike Stein*, Albert Compte et al.
 Nature Neuroscience (in press)
 
-**Working Memories Are Maintained in a Stable Code.**
+2. **Working Memories Are Maintained in a Stable Code.**
+
 Joao Barbosa.
 Journal of Neuroscience (2017)
 
-**Neural circuit basis of visuo-spatial working memory precision.**
+3. **Neural circuit basis of visuo-spatial working memory precision.**
+
 Rita Almeida, Joao Barbosa, Albert Compte.
 Journal of Neurophysiology (2015)
 
 Pre-prints
 =====
 
-**Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.**
+1. **Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.**
+
 Heike Stein*, Joao Barbosa*, Albert Compte et al
 Build-up of serial dependence in color working memory. bioRxiv (2019)
 
-**Feature-binding in working memory through neuronal synchronization.**
+2. **Feature-binding in working memory through neuronal synchronization.**
+
 Joao Barbosa, Albert Compte. CCN (2019)
 
 
