@@ -9,13 +9,13 @@ redirect_from:
 ---
 Short CV
 ======
-**BSc** Computer Science, *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" />  & *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
+**BSc** Computer Science: *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" /> , *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
 
-**MSc** Bioinformatics, *Università Di Bologna* <img src="../images/it.png" width="18" height="18" /> 
+**MSc** Bioinformatics: *Università Di Bologna* <img src="../images/it.png" width="18" height="18" /> 
 
-**PhD** [Albert Compte lab](https://braincircuitsbehavior.org/people), *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
+**PhD** [Albert Compte lab](https://braincircuitsbehavior.org/people): *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
 
-**Postdoc** (soon) [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
+**Postdoc** (soon) [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic): *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
 
 Meaningless bio
 ======
