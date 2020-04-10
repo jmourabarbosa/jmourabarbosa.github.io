@@ -9,4 +9,4 @@ redirect_from:
 
 {% include base_path %}
 
-<embed src="https://sumanbogati.github.io/sample.pdf" type="application/pdf" />
+<embed src="https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0" type="application/pdf" />
