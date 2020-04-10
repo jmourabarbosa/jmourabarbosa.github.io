@@ -9,4 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
+[(download updated version)](https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0)
+
+
 <embed src="https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0" type="application/pdf" />
