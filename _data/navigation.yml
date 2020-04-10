@@ -3,14 +3,14 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Online Talks"
-    url: /talks/  
+  - title: "Talks"
+    url: /talks/    
+
+  - title: "Photography"
+    url: /photography/
         
   - title: "News"
     url: /year-archive/
-    
-   - title: "Street Photography"
-    url: /photography/
     
   - title: "CV"
     url: /cv/
