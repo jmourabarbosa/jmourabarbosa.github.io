@@ -21,8 +21,6 @@ Pre-prints
 
 2. **Build-up of serial dependence in color working memory.** Joao Barbosa, Albert Compte. bioRxiv (2019)
 
-3. **Feature-binding in working memory through neuronal synchronization.**
-
-Joao Barbosa, Albert Compte. CCN (2019)
+3. **Feature-binding in working memory through neuronal synchronization.** Joao Barbosa, Albert Compte. CCN (2019)
 
 
