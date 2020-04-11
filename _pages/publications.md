@@ -18,7 +18,7 @@ code [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/in
 
 [*Neural circuit basis of visuo-spatial working memory precision.*](../files/almeida.pdf)  
 Rita Almeida, **Joao Barbosa**, Albert Compte. **Journal of Neurophysiology (2015)**  
-[comment]: data [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/soon)
+<> data [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/soon)
 
 
 Pre-prints
