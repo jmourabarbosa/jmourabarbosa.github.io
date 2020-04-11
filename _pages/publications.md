@@ -32,6 +32,4 @@ Heike Stein <img src="../images/co.png" width="13" />, **Joao Barbosa** <img src
 **Joao Barbosa** & Albert Compte. 
 
 
-Google Scholar
-=====
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
