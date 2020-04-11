@@ -4,7 +4,6 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-<sup>Also at </sup><u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"><img src="../images/scholar.png" width="20" /></a>.</u> 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/bro.png" width="35" /> <sup> equal contributions</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -12,6 +11,8 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
+
+<sup>Also at </sup><u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"><img src="../images/scholar.png" width="20" /></a>.</u> 
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
