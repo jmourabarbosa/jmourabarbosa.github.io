@@ -4,6 +4,10 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+
+
+You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
+
 <img src="../images/co.png" width="20" /> equal contributions  
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
@@ -31,5 +35,3 @@ Heike Stein <img src="../images/co.png" width="13" />, **Joao Barbosa** <img src
 [Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
 
-
-You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
