@@ -5,9 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/bro.png" width="35" /> <sup> equal contributions</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/py.svg" width="18" /> <sup> code </sup>
@@ -39,4 +36,7 @@ Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img sr
 
 [Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
+
+You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
+
 
