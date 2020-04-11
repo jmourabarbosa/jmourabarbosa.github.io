@@ -7,7 +7,7 @@ author_profile: true
 
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
-<img src="../images/bro.png" width="25" /> equal contributions, 
+<img src="../images/bro.png" width="30" /> equal contributions, 
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
  **Joao Barbosa** <img src="../images/bro.png" width="13" />, Heike Stein <img src="../images/bro.png" width="13" />, Albert Compte et al.  
