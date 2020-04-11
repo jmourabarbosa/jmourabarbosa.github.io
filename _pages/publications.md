@@ -31,6 +31,7 @@ Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img sr
 
 [Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
 **Joao Barbosa** & Albert Compte.
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
 [Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
