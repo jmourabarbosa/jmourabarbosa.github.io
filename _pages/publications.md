@@ -37,6 +37,6 @@ Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img sr
 [Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
 
-You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
+You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">Scholar profile</a>.</u> <img src="../images/scholar.png" width="35" />
 
 
