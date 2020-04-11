@@ -4,6 +4,7 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+* equal contributions  
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
 **Joao Barbosa***, Heike Stein*, Albert Compte et al. *Nature Neuroscience (in press)*   
@@ -20,11 +21,14 @@ data [<img src="../images/data.png" width="18" height="18" />](https://github.co
 Pre-prints
 =====
 
-**Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.** Heike Stein*, Joao Barbosa*, Albert Compte et al
+[Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.](https://www.biorxiv.org/content/10.1101/830471v1)  
+** Heike Stein*, **Joao Barbosa***, Albert Compte et al
 
-**Build-up of serial dependence in color working memory.** Joao Barbosa, Albert Compte. bioRxiv (2019)
+[Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
+**Joao Barbosa** & Albert Compte.
 
-**Feature-binding in working memory through neuronal synchronization.** Joao Barbosa, Albert Compte. CCN (2019)
+[Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)
+**Joao Barbosa** & Albert Compte. 
 
 
 
