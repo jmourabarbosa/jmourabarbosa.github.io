@@ -10,7 +10,7 @@ You can also find my articles on <u><a href="https://scholar.google.es/citations
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1) 
 **Joao Barbosa***, Heike Stein*, Albert Compte et al. *Nature Neuroscience (in press)* 
 
-code [<img src="../images/py.png" width="25" height="25" />](https://github.com/comptelab/interplayPFC)
+code [<img src="../images/py.png" width="25" height="20" />](https://github.com/comptelab/interplayPFC)
 data [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
 [*Working Memories Are Maintained in a Stable Code.*](../files/Barbosa2017.pdf)  
