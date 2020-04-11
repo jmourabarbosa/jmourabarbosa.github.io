@@ -7,7 +7,7 @@ author_profile: true
 
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
-<img src="../images/bro.png" width="35" /> (equal contributions)
+<img src="../images/bro.png" width="35" /> equal contributions
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
@@ -26,7 +26,7 @@ Pre-prints
 =====
 
 [Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.](https://www.biorxiv.org/content/10.1101/830471v1)  
-Heike Stein <img src="../images/co.png" width="18" />, **Joao Barbosa** <img src="../images/co.png" width="18" />, Albert Compte et al
+Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al
 
 [Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
 **Joao Barbosa** & Albert Compte.
