@@ -1,12 +1,3 @@
----
-permalink: /
-title: ""
-excerpt: ""
-author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
----
 Short CV
 ======
 **BSc** Computer Science: *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" /> , *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
