@@ -15,8 +15,6 @@ code [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/in
 
 [*Neural circuit basis of visuo-spatial working memory precision.*](../files/almeida.pdf)  
 Rita Almeida, **Joao Barbosa**, Albert Compte. **Journal of Neurophysiology (2015)**  
-data [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/soon)
-
 
 Pre-prints
 =====
@@ -27,9 +25,10 @@ Pre-prints
 [Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
 **Joao Barbosa** & Albert Compte.
 
-[Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)
+[Feature-binding in working memory through neuronal synchronization.](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
 
 
-
+Google Scholar
+=====
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
