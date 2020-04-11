@@ -7,9 +7,9 @@ author_profile: true
 
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
-<space><space><space><img src="../images/bro.png" width="35" /> <sup> equal contributions  </sup><space><space><space>
-<p><img src="../images/py.svg" width="18" /> <sup> code </sup></p><space><space><space>
-<p><img src="../images/data.png" width="18" height="18" />  <sup>data</sup><space><space><space>
+<space><space><space><img src="../images/bro.png" width="35" /> <sup> equal contributions</sup><space><space><space>
+<img src="../images/py.svg" width="18" /> <sup> code </sup><space><space><space>
+<img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
