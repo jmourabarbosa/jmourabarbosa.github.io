@@ -8,7 +8,7 @@ author_profile: true
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
 <img src="../images/bro.png" width="35" />  equal contributions  
-<img src="../images/py.svg" width="18" />         code  
+<img src="../images/py.svg" width="18" /> <t>code  
 <img src="../images/data.png" width="18" height="18" />  data   
 
 
