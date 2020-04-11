@@ -13,7 +13,7 @@ You can also find my articles on <u><a href="https://scholar.google.es/citations
 [*Working Memories Are Maintained in a Stable Code.*](../files/Barbosa2017.pdf)  **Joao Barbosa**. *Journal of Neuroscience (2017)*
 
 
-*Neural circuit basis of visuo-spatial working memory precision.*  Rita Almeida, **Joao Barbosa**, Albert Compte. **Journal of Neurophysiology (2015)** [data](https://github.com/comptelab/soon)
+[*Neural circuit basis of visuo-spatial working memory precision.*](../files/almeida.pdf)  Rita Almeida, **Joao Barbosa**, Albert Compte. **Journal of Neurophysiology (2015)** [data](https://github.com/comptelab/soon)
 
 Pre-prints
 =====
