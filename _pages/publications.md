@@ -23,7 +23,7 @@ Pre-prints
 =====
 
 [Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.](https://www.biorxiv.org/content/10.1101/830471v1)  
-* Heike Stein, **Joao Barbosa***, Albert Compte et al
+Heike Stein<img src="../images/co.png" width="13" />, **Joao Barbosa**<img src="../images/co.png" width="13" />, Albert Compte et al
 
 [Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
 **Joao Barbosa** & Albert Compte.
