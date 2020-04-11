@@ -7,8 +7,11 @@ author_profile: true
 
 You can also find my articles on <u><a href="https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/bro.png" width="35" /> <sup> equal contributions</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="../images/py.svg" width="18" /> <sup> code </sup><space><space><space>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../images/bro.png" width="35" /> <sup> equal contributions</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../images/py.svg" width="18" /> <sup> code </sup>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
 
