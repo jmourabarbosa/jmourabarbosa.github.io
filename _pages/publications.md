@@ -7,7 +7,7 @@ author_profile: true
 <img src="../images/co.png" width="20" /> equal contributions  
 
 [Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.](https://www.biorxiv.org/content/10.1101/763938v1)  
-<img src="../images/co.png" width="13" /> **Joao Barbosa**, <img src="../images/co.png" width="13" /> Heike Stein*, Albert Compte et al.  
+ **Joao Barbosa** <img src="../images/co.png" width="13" />, Heike Stein <img src="../images/co.png" width="13" />, Albert Compte et al.  
 *Nature Neuroscience (in press)*   
 code [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC), data [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
