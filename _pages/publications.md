@@ -26,7 +26,7 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 Pre-prints
 =====
 
-[Disrupted serial dependence suggests deficits in synaptic potentiation in anti-NMDAR encephalitis and schizophrenia.](https://www.biorxiv.org/content/10.1101/830471v1)  
+[Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia](https://www.biorxiv.org/content/10.1101/830471v1)  
 Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al
 
 [Build-up of serial dependence in color working memory.](https://www.biorxiv.org/content/10.1101/503185v3)  
