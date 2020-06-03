@@ -21,11 +21,11 @@ author_profile: true
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
 [*Working Memories Are Maintained in a Stable Code.*](../files/Barbosa2017.pdf)  
-**Joao Barbosa**.
+**Joao Barbosa**.  
 *Journal of Neuroscience (2017)*
 
 [*Neural circuit basis of visuo-spatial working memory precision.*](../files/almeida.pdf)  
-Rita Almeida, **Joao Barbosa**, Albert Compte.
+Rita Almeida, **Joao Barbosa**, Albert Compte.  
 *Journal of Neurophysiology (2015)*  
 
 Pre-prints
