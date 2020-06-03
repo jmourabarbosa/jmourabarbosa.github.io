@@ -10,6 +10,11 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
+[*Build-up of serial dependence in color working memory.*](https://www.biorxiv.org/content/10.1101/503185v3)  
+**Joao Barbosa** & Albert Compte.
+*Scientific Reports (in press)* 
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
+
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.*](https://www.biorxiv.org/content/10.1101/763938v1)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (in press)*   
@@ -29,13 +34,8 @@ Pre-prints
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
 Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al
 
-[*Build-up of serial dependence in color working memory.*](https://www.biorxiv.org/content/10.1101/503185v3)  
-**Joao Barbosa** & Albert Compte.
-[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
-
 [*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
-
 
 
 Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
