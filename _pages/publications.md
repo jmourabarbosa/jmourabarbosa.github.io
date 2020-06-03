@@ -12,7 +12,7 @@ author_profile: true
 
 [*Build-up of serial dependence in color working memory.*](https://www.biorxiv.org/content/10.1101/503185v3)  
 **Joao Barbosa** & Albert Compte.
-*Scientific Reports (in press)* 
+*Scientific Reports (in press)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.*](https://www.biorxiv.org/content/10.1101/763938v1)  
