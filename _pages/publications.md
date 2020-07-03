@@ -10,14 +10,14 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
-[*Build-up of serial dependence in color working memory.*](https://www.biorxiv.org/content/10.1101/503185v3)  
+[*Build-up of serial dependence in color working memory.*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
-[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.*](https://www.biorxiv.org/content/10.1101/763938v1)  
+[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.*](https://www.nature.com/articles/s41593-020-0644-4)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
-*Nature Neuroscience (in press)*  
+*Nature Neuroscience (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
 [*Working Memories Are Maintained in a Stable Code.*](../files/Barbosa2017.pdf)  
