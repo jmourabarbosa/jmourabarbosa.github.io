@@ -10,6 +10,12 @@ author_profile: true
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
+
+[*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
+Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al
+*Nature Communications (accepted)*  
+
+
 [*Build-up of serial dependence in color working memory.*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
@@ -30,9 +36,6 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 
 Pre-prints
 =====
-
-[*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
-Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al
 
 [*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
