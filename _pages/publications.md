@@ -15,21 +15,21 @@ author_profile: true
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Communications (accepted)*  
 
-[*Build-up of serial dependence in color working memory.*](https://www.nature.com/articles/s41598-020-67861-2)  
+[*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
-[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory.*](https://www.nature.com/articles/s41593-020-0644-4)  
+[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](https://www.nature.com/articles/s41593-020-0644-4)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
-[*Working Memories Are Maintained in a Stable Code.*](../files/Barbosa2017.pdf)  
+[*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
 **Joao Barbosa**.  
 *Journal of Neuroscience (2017)*
 
-[*Neural circuit basis of visuo-spatial working memory precision.*](../files/almeida.pdf)  
+[*Neural circuit basis of visuo-spatial working memory precision*](../files/almeida.pdf)  
 Rita Almeida, **Joao Barbosa**, Albert Compte.  
 *Journal of Neurophysiology (2015)*  
 
@@ -38,6 +38,5 @@ Pre-prints
 
 [*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
-
 
 Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
