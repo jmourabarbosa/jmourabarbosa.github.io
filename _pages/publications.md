@@ -40,3 +40,7 @@ Pre-prints
 **Joao Barbosa** & Albert Compte. 
 
 Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
+
+PhD Thesis
+=====
+[*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)
