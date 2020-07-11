@@ -4,6 +4,8 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
+Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
+
 <img src="../images/bro.png" width="35" /> <sup> equal contributions</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/py.svg" width="18" /> <sup> code </sup>
@@ -38,8 +40,6 @@ Pre-prints
 
 [*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte. 
-
-Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
 
 PhD Thesis
 =====
