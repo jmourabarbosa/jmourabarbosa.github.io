@@ -38,10 +38,11 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 Pre-prints
 =====
 
-[*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
+[*Feature-binding in working memory through neuronal synchronization*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte.    
 *Conference on Cognitive Computational Neuroscience (2019)*
 
 PhD Thesis
 =====
 [*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)
+*Universitat de Barcelona (2019)*
