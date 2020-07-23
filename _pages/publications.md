@@ -44,5 +44,5 @@ Pre-prints
 
 PhD Thesis
 =====
-[*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)
+[*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)   
 *Universitat de Barcelona (2019)*
