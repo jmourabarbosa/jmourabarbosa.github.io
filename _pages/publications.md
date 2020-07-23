@@ -39,7 +39,7 @@ Pre-prints
 =====
 
 [*Feature-binding in working memory through neuronal synchronization.*](https://bit.ly/32FicoJ)  
-**Joao Barbosa** & Albert Compte. 
+**Joao Barbosa** & Albert Compte.    
 *Conference on Cognitive Computational Neuroscience (2019)*
 
 PhD Thesis
