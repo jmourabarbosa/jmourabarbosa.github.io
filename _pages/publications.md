@@ -13,7 +13,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
 
-# Original Research
+Original Research
 
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
