@@ -9,13 +9,13 @@ redirect_from:
 ---
 Short CV
 ======
-**2006-2009** BSc in Computer Science. *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" /> , *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
+**2006-2009**. BSc in Computer Science, *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" /> , *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
 
-**2009-2011** MSc in Bioinformatics. *Università Di Bologna* <img src="../images/it.png" width="18" height="18" /> 
+**2009-2011**. MSc in Bioinformatics, *Università Di Bologna* <img src="../images/it.png" width="18" height="18" /> 
 
-**2013-2019** PhD in Computational Neuroscience. [Albert Compte lab](https://braincircuitsbehavior.org/people): *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
+**2013-2019**. PhD in Computational Neuroscience, [Albert Compte lab](https://braincircuitsbehavior.org/people), *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
 
-**2020-  ** Postdoc [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic): *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
+**2020-  **. Postdoc. [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
 
 Meaningless bio
 ======
