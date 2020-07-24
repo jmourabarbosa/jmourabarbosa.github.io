@@ -15,7 +15,7 @@ Short CV
 
 **(2013-2019)** PhD in Computational Neuroscience. [Albert Compte lab](https://braincircuitsbehavior.org/people): *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
 
-**(2020-)** Postdoc [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic): *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
+**(2020-  )** Postdoc [Srdjan Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic): *Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
 
 Meaningless bio
 ======
