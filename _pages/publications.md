@@ -13,9 +13,6 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
 
-Original Research
-
-
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Communications (accepted)*  
@@ -30,17 +27,14 @@ Original Research
 *Nature Neuroscience (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 
+[*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
+**Joao Barbosa**.  
+*Journal of Neuroscience (2017)*
+
 [*Neural circuit basis of visuo-spatial working memory precision*](../files/almeida.pdf)  
 Rita Almeida, **Joao Barbosa**, Albert Compte.  
 *Journal of Neurophysiology (2015)*  
 
-
-Commentaries 
-=====
-
-[*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
-**Joao Barbosa**.  
-*Journal of Neuroscience (2017)*
 
 Pre-prints
 =====
