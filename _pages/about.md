@@ -24,5 +24,5 @@ I started studying Civil Engineering but quickly realized I didn't want to spend
 
 Before enrolling in a PhD program in Barcelona, I traveled within Central America for a year, where I developed a passion for street photography. Please take a look at some of my pictures at my [Street Photography](https://fuji360.tumblr.com/archive) corner. 
 
-During my 6-year long PhD in Albert Compte’s lab I spent most of my time in rooftop barbecues organised by Genis. In my free time, I focused on the possible neural mechanisms of working memory. Because I am now a postdoc, I don't have much free time anymore, so I hope I can finally focus full time on Genis' barbecues.
+During my 6-year long PhD in Albert Compte’s lab I spent most of my time in rooftop barbecues organised by Genis. In my free time, I focused on the possible neural mechanisms of working memory. Because I am now a postdoc, I don't have much free time anymore, so I hope I can finally focus full time on barbecues.
 
