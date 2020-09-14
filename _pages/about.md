@@ -9,7 +9,7 @@ redirect_from:
 ---
 Short CV
 ======
-**2006-2009**. BSc in Computer Science, *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" /> , *Universiteit van Amsterdam* <img src="../images/nl.png" width="18" height="18" /> 
+**2006-2009**. BSc in Computer Science, *Universidade do Minho* <img src="../images/pt.png" width="18" height="18" />, *Universiteit van Amsterdam*<img src="../images/nl.png" width="18" height="18" /> 
 
 **2009-2011**. MSc in Bioinformatics, *Università Di Bologna* <img src="../images/it.png" width="18" height="18" /> 
 
