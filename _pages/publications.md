@@ -15,14 +15,14 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
-*Nature Communications (accepted)*  
+*Nature Communications (2020)*  
 
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
-[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](https://www.nature.com/articles/s41593-020-0644-4)  
+[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](https://www.biorxiv.org/content/10.1101/763938v1)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
