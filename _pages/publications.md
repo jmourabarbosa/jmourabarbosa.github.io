@@ -44,7 +44,7 @@ Pre-prints
 *Conference on Cognitive Computational Neuroscience (2019)*
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
-**Joao Barbosa, Heike Stein, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil**
+**Joao Barbosa**, Heike Stein, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil
 
 PhD Thesis
 =====
