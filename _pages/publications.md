@@ -43,6 +43,9 @@ Pre-prints
 **Joao Barbosa** & Albert Compte.    
 *Conference on Cognitive Computational Neuroscience (2019)*
 
+[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
+**Joao Barbosa, Heike Stein, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil**
+
 PhD Thesis
 =====
 [*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)   
