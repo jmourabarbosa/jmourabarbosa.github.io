@@ -16,6 +16,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Communications (2020)*  
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serialNMDA) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serialNMDA)
 
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
