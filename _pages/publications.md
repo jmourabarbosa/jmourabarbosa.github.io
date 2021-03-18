@@ -13,7 +13,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 
 
-[*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.biorxiv.org/content/10.1101/830471v1)  
+[*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Communications (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serialNMDA) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serialNMDA)
@@ -23,7 +23,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 *Scientific Reports (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
 
-[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](https://www.biorxiv.org/content/10.1101/763938v1)  
+[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
