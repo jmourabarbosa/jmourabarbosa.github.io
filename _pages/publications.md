@@ -39,14 +39,18 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 
 Pre-prints
 =====
+[*Towards biologically constrained attractor models of schizophrenia *](https://psyarxiv.com/uxg2a)  
+ Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
+*PsyArxiv (2021)*
+
+[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
+**Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+*PsyArxiv (2021)*
 
 [*Feature-binding in working memory through neuronal synchronization*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte.    
 *Conference on Cognitive Computational Neuroscience (2019)*
 
-[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
-**Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*PsyArxiv (2020)*
 
 
 PhD Thesis
