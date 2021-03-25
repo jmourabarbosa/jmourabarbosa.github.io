@@ -39,6 +39,10 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 
 Pre-prints
 =====
+[*Unattended memories are not maintained in activity-silent storage*](https://psyarxiv.com/qv6fu/)  
+**Joao Barbosa** <img src="../images/bro.png" width="18" />, Diego Lozano-Soldevilla, Albert Compte.    
+*PsyArxiv (2021)*
+
 [*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
 *PsyArxiv (2021)*
