@@ -40,7 +40,7 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 Pre-prints
 =====
 [*Unattended memories are not maintained in activity-silent storage*](https://psyarxiv.com/qv6fu/)  
-**Joao Barbosa** <img src="../images/bro.png" width="18" />, Diego Lozano-Soldevilla, Albert Compte.    
+**Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
 *PsyArxiv (2021)*
 
 [*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
@@ -54,7 +54,6 @@ Pre-prints
 [*Feature-binding in working memory through neuronal synchronization*](https://bit.ly/32FicoJ)  
 **Joao Barbosa** & Albert Compte.    
 *Conference on Cognitive Computational Neuroscience (2019)*
-
 
 
 PhD Thesis
