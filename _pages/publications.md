@@ -39,7 +39,7 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 
 Pre-prints
 =====
-[*Unattended memories are not maintained in activity-silent storage*](https://psyarxiv.com/qv6fu/)  
+[*Unattended short-term memories are maintained in active neural representations*](https://psyarxiv.com/qv6fu/)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
 *PsyArxiv (2021)*
 
