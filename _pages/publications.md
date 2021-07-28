@@ -19,17 +19,17 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Communications (2020)*  
-[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serialNMDA) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serialNMDA)
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serialNMDA) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serialNMDA) [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1298238425288642561?lang=en)
 
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
-[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/)
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/serial_color) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/serial_color/) [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1278703572029452289)
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
-[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1275127297901813762)
 
 [*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
 **Joao Barbosa**.  
@@ -54,7 +54,8 @@ Pre-prints
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*PsyArxiv (2021)*
+*PsyArxiv (2021)*  
+[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1359100591541280768)
 
 [*Across-area synchronization supports feature integration in working memory*](https://www.biorxiv.org/content/10.1101/2021.06.09.447667v1)  
 **Joao Barbosa**, Vahan Babushkin, Ainsley Temudo, Kartik K. Sreenivasan, Albert Compte.  
