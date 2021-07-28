@@ -12,7 +12,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="../images/twitter.png" width="18" height="18" />  <sup>twitter thread</sup>
+<img src="../images/twitter.png" width="18" height="18" />  <sup>twitter summary</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/prez.png" width="18" height="18" />  <sup>talk</sup>
 
