@@ -44,12 +44,12 @@ Pre-prints
 =====
 [*Unattended short-term memories are maintained in active neural representations*](https://psyarxiv.com/qv6fu/)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
-*PsyArxiv (2021)* 
+*PsyArxiv (2021)*  
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1385623043372900356)
 
 [*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
-*PsyArxiv (2021)* 
+*PsyArxiv (2021)*  
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1377260009390800902)
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
