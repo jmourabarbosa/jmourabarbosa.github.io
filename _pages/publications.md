@@ -58,7 +58,7 @@ Pre-prints
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
 *PsyArxiv (2021)*  
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1377260009390800902)
-[<img src="../images/prez.png" width="18" height="18" />](https://youtu.be/H_ZohMK-Q6M)
+[<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/H_ZohMK-Q6M)
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
