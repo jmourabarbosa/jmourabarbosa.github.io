@@ -29,7 +29,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
  **Joao Barbosa** <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
-[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1275127297901813762)
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC) [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1275127297901813762) [<img src="../images/prez.png" width="18" height="18" />](https://www.youtube.com/watch?v=oKn2GYgQUCk)
 
 [*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
 **Joao Barbosa**.  
