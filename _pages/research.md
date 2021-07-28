@@ -12,7 +12,7 @@ During my PhD I mostly focus the plausible neural mechanisms for working memory 
 
 ## Synaptic basis of reduced serial dependence in patients
 
-We found that serial dependence is dramatically reduced in schizophrenia and anti-NMDAR encephalitis patients [Stein\*, Barbosa\* et al Nature Communications (2020)](https://jmourabarbosa.github.io/publications/) and decreases progressively throughout healthy aging [unpublished, but see a short talk [here (https://youtu.be/dkFhOdXSvRo)]]; others have shown a similar reduction of serial dependence for patients with autism [Lieder et al Nature Neuroscience (2019)](https://www.nature.com/articles/s41593-018-0308-9?WT.feed_name=subjects_cognitive-neuroscience). When we incorporated our monkey and human neurophysiological findings in a biophysically-constrained computational model of working memory, it allowed us to quantitatively explain serial dependence disruption in all of the aforementioned populations on the basis of disrupted short-term plasticity mechanisms. 
+We found that serial dependence is dramatically reduced in schizophrenia and anti-NMDAR encephalitis patients [Stein\*, Barbosa\* et al Nature Communications (2020)](https://jmourabarbosa.github.io/publications/) and decreases progressively throughout healthy aging [unpublished, but see a [short talk here] (https://youtu.be/dkFhOdXSvRo)]; others have shown a similar reduction of serial dependence for patients with autism [Lieder et al Nature Neuroscience (2019)](https://www.nature.com/articles/s41593-018-0308-9?WT.feed_name=subjects_cognitive-neuroscience). When we incorporated our monkey and human neurophysiological findings in a biophysically-constrained computational model of working memory, it allowed us to quantitatively explain serial dependence disruption in all of the aforementioned populations on the basis of disrupted short-term plasticity mechanisms. 
 
 By associating these diseases with short-term plasticity, our work is opening new lines of research to understand their mechanistic basis [Stein\*, Barbosa\* et al 2021](https://psyarxiv.com/uxg2a).
 
@@ -31,6 +31,6 @@ In this project, we are focusing on the population dynamics of previously record
 
 To address this question, we trained recurrent neural networks (RNN) with back-propagation on a similar task and found that the relevant and irrelevant stimuli were equally represented, similar to A1. We reverse-engineered the mechanism employed by these networks, predicting that different populations that selectively integrate the relevant stimuli can be identified by different context-specific activity during the pre-stimulus period. In line with these predictions, we found two distinct populations in A1, each discriminating more strongly the relevant go-stimuli in its preferred context. Finally, we built a multi-area RNN in which decision and context was communicated feedforward and feedback, respectively, through fixed channels, inspired by the communication subspace hypothesis. 
 
-See [this short talk at COSYNE (https://youtu.be/PH7hptJoZpA)] about the otherwise unpubished project (note: back then, only about A1 and overall outdated). 
+See [this short talk at COSYNE](https://youtu.be/PH7hptJoZpA) about the otherwise unpubished project (note: back then, only about A1 and overall outdated). 
 
 
