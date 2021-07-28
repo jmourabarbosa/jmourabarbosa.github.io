@@ -74,3 +74,15 @@ PhD Thesis
 =====
 [*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)   
 *Universitat de Barcelona (2019)*
+
+In progress
+=====
+Serial dependence decreases with structural connectivity decline during healthy aging  
+Virtual Working Memory Symposium 2020   
+[<img src="../images/prez.png" width="18" height="18" />](https://youtu.be/dkFhOdXSvRo)
+
+Context-dependent population dynamics in auditory cortex during flexible behaviour  
+COSYNE 2021    
+[<img src="../images/prez.png" width="18" height="18" />](https://youtu.be/PH7hptJoZpA)
+
+
