@@ -14,7 +14,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/twitter.png" width="18" height="18" />  <sup>twitter summary</sup>
 &nbsp;&nbsp;&nbsp;&nbsp;
-<img src="../images/prez.png" width="18" height="18" />  <sup>talk</sup>
+<img src="../images/prez2.png" width="18" height="18" />  <sup>talk</sup>
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
@@ -36,7 +36,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/interplayPFC)
 [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/interplayPFC)
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1275127297901813762)
-[<img src="../images/prez.png" width="18" height="18" />](https://www.youtube.com/watch?v=oKn2GYgQUCk)
+[<img src="../images/prez2.png" width="18" height="18" />](https://www.youtube.com/watch?v=oKn2GYgQUCk)
 
 [*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
 **Joao Barbosa**.  
@@ -79,10 +79,10 @@ In progress
 =====
 Serial dependence decreases with structural connectivity decline during healthy aging  
 Virtual Working Memory Symposium 2020   
-[<img src="../images/prez.png" width="18" height="18" />](https://youtu.be/dkFhOdXSvRo)
+[<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/dkFhOdXSvRo)
 
 Context-dependent population dynamics in auditory cortex during flexible behaviour  
 COSYNE 2021    
-[<img src="../images/prez.png" width="18" height="18" />](https://youtu.be/PH7hptJoZpA)
+[<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/PH7hptJoZpA)
 
 
