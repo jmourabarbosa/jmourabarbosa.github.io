@@ -11,7 +11,10 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 <img src="../images/py.svg" width="18" /> <sup> code </sup>
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/data.png" width="18" height="18" />  <sup>data</sup>
-
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../images/twitter.png" width="18" height="18" />  <sup>twitter thread</sup>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="../images/prez.png" width="18" height="18" />  <sup>talk</sup>
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte et al.  
