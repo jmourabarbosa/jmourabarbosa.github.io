@@ -19,7 +19,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 
 [*Across-area synchronization supports feature integration in a biophysical network model of working memory*](https://www.biorxiv.org/content/10.1101/2021.06.09.447667v1)  
 **Joao Barbosa**, Vahan Babushkin, Ainsley Temudo, Kartik K. Sreenivasan, Albert Compte.  
-*Frontiers of Neural Circuits (2021)*
+*Frontiers in Neural Circuits (2021)*
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1403339914859757568)
 
 
