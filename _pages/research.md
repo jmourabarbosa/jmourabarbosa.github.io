@@ -7,7 +7,7 @@ author_profile: true
 
 ## Within- and across-area neural dynamics involved in complex behavior
 
-*Early-selection of relevant auditory stimuli through context-dependent population dynamics*. 
+#*Early-selection of relevant auditory stimuli through context-dependent population dynamics*.# 
 
 Understanding how stable neural circuits implement flexible, context-dependent behavior is crucial to understand cognition. Specifically, how different brain areas interact to select relevant stimuli within irrelevant ones remains to be fully elucidated.
 
@@ -24,8 +24,7 @@ This work is in colaboration with [Srdjan Ostojic](https://scholar.google.fr/cit
 
 We built a biophysical neural network model composed of two one-dimensional attractor networks, one for color and another one for location, simulating the storage of  each feature in a different cortical area [Barbosa et al CCCN 2019](https://bit.ly/32FicoJ). Within each area, gamma oscillations were induced during bump attractor activity through the interplay of fast recurrent excitation and slower feedback inhibition. As a result, different memorized items were held at different phases of the network’s intrinsic oscillation. These two areas were then reciprocally connected via weak cortico-cortical excitation, accomplishing binding between color and location through the synchronization of pairs of bumps across the two connected areas. Encoding and decoding of specific color-location associations was accomplished through rate coding, overcoming a long-standing limitation of binding through temporal coding. In some simulations, swap errors arose: “color bumps” abruptly changed their phase relationship with “location bumps”. This model, which keeps the explanatory power that is characteristic of similar attractor models, specifies a plausible mechanism for feature binding and makes specific predictions about swap errors that are testable at behavioral and neurophysiological levels. 
 
-This work is in colaboration with [Kartik Sreenivasan
-](https://nyuad.nyu.edu/en/academics/divisions/science/faculty/kartik-sreenivasan.html). Current work involves collecting MEG data to falsify predictions layed out be our model.
+This work is in colaboration with [Kartik Sreenivasan](https://nyuad.nyu.edu/en/academics/divisions/science/faculty/kartik-sreenivasan.html). Current work involves collecting MEG data to falsify predictions layed out by our model.
 
 ## The neural mechanisms of working memory
 
