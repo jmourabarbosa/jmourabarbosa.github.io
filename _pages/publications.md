@@ -16,6 +16,17 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/prez2.png" width="18" height="18" />  <sup>talk</sup>
 
+[*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://psyarxiv.com/qv6fu/)  
+**Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
+*Plos Biology (in press)*
+[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1385623043372900356)
+
+[*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
+ Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
+*Current Opinion in Neurobiology (in press)*
+[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1377260009390800902)
+[<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/H_ZohMK-Q6M)
+
 
 [*Across-area synchronization supports feature integration in a biophysical network model of working memory*](https://www.frontiersin.org/articles/10.3389/fncir.2021.716965/full)  
 **Joao Barbosa**, Vahan Babushkin, Ainsley Temudo, Kartik K. Sreenivasan, Albert Compte.  
@@ -56,16 +67,6 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 
 Pre-prints
 =====
-[*Unattended short-term memories are maintained in active neural representations*](https://psyarxiv.com/qv6fu/)  
-**Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
-*PsyArxiv (2021)*
-[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1385623043372900356)
-
-[*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
- Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
-*PsyArxiv (2021)*
-[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1377260009390800902)
-[<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/H_ZohMK-Q6M)
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
