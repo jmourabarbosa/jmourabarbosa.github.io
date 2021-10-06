@@ -27,6 +27,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
 *Current Opinion in Neurobiology (in press)*
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/attractorSZ)
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/heikecstein/status/1377260009390800902)
 [<img src="../images/prez2.png" width="18" height="18" />](https://youtu.be/H_ZohMK-Q6M)
 
