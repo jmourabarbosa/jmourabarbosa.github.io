@@ -20,6 +20,9 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
 *Plos Biology (in press)*
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1385623043372900356)
+[<img src="../images/py.svg" width="18" />](https://github.com/comptelab/reactivations)
+[<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/reactivations)
+
 
 [*Towards biologically constrained attractor models of schizophrenia*](https://psyarxiv.com/uxg2a)  
  Heike Stein <img src="../images/bro.png" width="18" />, **Joao Barbosa** <img src="../images/bro.png" width="18" />, Albert Compte.    
