@@ -5,16 +5,6 @@ permalink: /photography/
 author_profile: true
 ---
 
-{% include base_path %}
-
-<!---
-
-{% for post in site.photography %}
-  {% include archive-single.html %}
-{% endfor %}
-
----!>
-
 [Here is a link to a project, in which I uploaded took a picture everyday for 8 months.](https://fuji360.tumblr.com/archive) 
 
 [Here is an old facebook page with several smaller projects.](https://www.facebook.com/jmourabarbosa/photos/?ref=page_internal&tab=album)
