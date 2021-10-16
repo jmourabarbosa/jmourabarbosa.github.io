@@ -9,4 +9,4 @@ author_profile: true
 
 [Here is a link](https://www.facebook.com/jmourabarbosa/photos/?ref=page_internal&tab=album) to an old facebook page with several smaller projects.
 
-* actually I took many more a day!
+\* actually I took many more a day!
