@@ -5,6 +5,6 @@ permalink: /photography/
 author_profile: true
 ---
 
-[Here is a link](https://fuji360.tumblr.com/archive) to a project during which I uploaded took a picture everyday for 8 months.
+[Here is a link](https://fuji360.tumblr.com/archive) to a project during which I took a picture everyday for 8 months.
 
 [Here is a link](https://www.facebook.com/jmourabarbosa/photos/?ref=page_internal&tab=album) to an old facebook page with several smaller projects.
