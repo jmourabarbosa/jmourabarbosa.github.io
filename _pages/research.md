@@ -17,6 +17,7 @@ To address this question, we trained recurrent neural networks (RNN) with back-p
 
 See [this short talk at COSYNE](https://youtu.be/PH7hptJoZpA) about the otherwise unpubished project (note: back then, only about A1 and overall outdated). 
 
+<img src="../images/multi_area.png"/>
 
 This work is in colaboration with [Srdjan Ostojic](https://scholar.google.fr/citations?user=EYC4De8AAAAJ), [Yves Boubenec](https://scholar.google.fr/citations?user=2cY7YoUAAAAJ) and [Remi Proveil](https://scholar.google.fr/citations?user=SOgCmD8AAAAJ&hl=fr).
 
