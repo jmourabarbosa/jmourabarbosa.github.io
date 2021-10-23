@@ -17,7 +17,7 @@ Short CV
 
 **2013-2019** PhD in Computational Neuroscience, [Compte lab](https://braincircuitsbehavior.org/people), *Universidad de Barcelona* <img src="../images/ca.png" width="18" height="18" /> 
 
-**2019-2020** Postdoc, [Compte lab](https://braincircuitsbehavior.org/people), *IDIBAPS* <img src="../images/ca.png" width="18" height="18" /> 
+**2019-2020** Postdoc, [Compte lab](https://braincircuitsbehavior.org/people), *Theoretical Neurobiology, IDIBAPS* <img src="../images/ca.png" width="18" height="18" /> 
 
 **2020-** Postdoc, [Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Group for Neural Theory, Ecole Normale Superieure* <img src="../images/fr.png" width="18" height="18" /> 
 
