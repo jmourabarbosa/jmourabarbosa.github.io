@@ -16,9 +16,9 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/prez2.png" width="18" height="18" />  <sup>talk</sup>
 
-[*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://psyarxiv.com/qv6fu/)  
+[*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
-*Plos Biology (in press)*
+*Plos Biology (2021)*
 [<img src="../images/py.svg" width="18" />](https://github.com/comptelab/reactivations)
 [<img src="../images/data.png" width="18" height="18" />](https://github.com/comptelab/reactivations)
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1385623043372900356)
