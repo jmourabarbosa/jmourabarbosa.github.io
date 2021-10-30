@@ -74,7 +74,7 @@ Pre-prints
 
 [*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*PsyArxiv (2021)*
+*PsyArxiv (2021), under revision at Behavior Research Methods*
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1359100591541280768)
 
 
