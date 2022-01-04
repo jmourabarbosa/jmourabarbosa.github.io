@@ -16,6 +16,12 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 &nbsp;&nbsp;&nbsp;&nbsp;
 <img src="../images/prez2.png" width="18" height="18" />  <sup>talk</sup>
 
+
+[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
+**Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+*Behavior Research Methods (in press)*
+[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1359100591541280768)
+
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
 *Plos Biology (2021)*
@@ -73,11 +79,7 @@ Rita Almeida, **Joao Barbosa**, Albert Compte.
 Pre-prints
 =====
 
-[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
-**Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*PsyArxiv (2021), under revision at Behavior Research Methods*
-[<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1359100591541280768)
-
+n/a
 
 PhD Thesis
 =====
