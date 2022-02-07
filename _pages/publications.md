@@ -81,7 +81,7 @@ Pre-prints
 =====
 
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
-Manuel Molano-Mazón, Joao Barbosa, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
+Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
 *bioRxiv (2021)*
 [<img src="../images/py.svg" width="18" />](https://github.com/neurogym/neurogym)
 
