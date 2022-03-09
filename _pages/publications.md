@@ -17,11 +17,12 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 <img src="../images/prez2.png" width="18" height="18" />  <sup>talk</sup>
 
 
-[*A practical guide for studying human behavior in the lab*](https://psyarxiv.com/tcmvp)  
+[*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (in press)*
 [<img src="../images/py.svg" width="18" />](https://github.com/ahyafil/SampleSize)
 [<img src="../images/twitter.png" width="18" height="18" />](https://twitter.com/jmourabarbosa/status/1359100591541280768)
+
 
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
