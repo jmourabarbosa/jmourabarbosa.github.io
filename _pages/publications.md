@@ -4,7 +4,6 @@ title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
-Also at [[google scholar]](https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en)
 
 All papers are open - either published open acess or directly linked to pdf.
 
