@@ -8,14 +8,14 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**  *, Heike Stein *, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*Behavior Research Methods (2022)* 
+*Behavior Research Methods (2022)*  
 [[code]](https://github.com/ahyafil/SampleSize)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
 
 
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
-*Plos Biology (2021)*
+*Plos Biology (2021)*  
 [[code]](https://github.com/comptelab/reactivations)
 [[data]](https://github.com/comptelab/reactivations)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1385623043372900356)
@@ -23,7 +23,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 
 [*Towards biologically constrained attractor models of schizophrenia*](../files/Stein_CONEURO.pdf)  
  Heike Stein *, **Joao Barbosa** *, Albert Compte.    
-*Current Opinion in Neurobiology (2021)*
+*Current Opinion in Neurobiology (2021)*  
 [[code]](https://github.com/comptelab/attractorSZ)
 [[tweeprint]](https://twitter.com/heikecstein/status/1377260009390800902)
 [[talk]](https://youtu.be/H_ZohMK-Q6M)
@@ -38,21 +38,21 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein *, **Joao Barbosa** *, Albert Compte et al.  
-*Nature Communications (2020)*
+*Nature Communications (2020)*  
 [[code]](https://github.com/comptelab/serialNMDA)
 [[data]](https://github.com/comptelab/serialNMDA)
 [[tweeprint]](https://twitter.com/heikecstein/status/1298238425288642561?lang=en)
 
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
-*Scientific Reports (2020)*
+*Scientific Reports (2020)*  
 [[code]](https://github.com/comptelab/serial_color)
 [[data]](https://github.com/comptelab/serial_color/)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1278703572029452289)
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
  **Joao Barbosa** *, Heike Stein *, Albert Compte et al.  
-*Nature Neuroscience (2020)*
+*Nature Neuroscience (2020)*  
 [[code]](https://github.com/comptelab/interplayPFC)
 [[data]](https://github.com/comptelab/interplayPFC)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1275127297901813762)
@@ -72,7 +72,7 @@ Pre-prints
 
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
 Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
-*PsyArxiv (2021)*
+*PsyArxiv (2021)*  
 [[code]](https://github.com/neurogym/neurogym)
 
 PhD Thesis
@@ -83,11 +83,11 @@ PhD Thesis
 In progress
 =====
 Serial dependence decreases with structural connectivity decline during healthy aging  
-Virtual Working Memory Symposium 2020
+Virtual Working Memory Symposium 2020  
 [[talk]](https://youtu.be/dkFhOdXSvRo)
 
 Context-dependent population dynamics in auditory cortex during flexible behaviour  
-COSYNE 2021
+COSYNE 2021  
 [[talk]](https://youtu.be/PH7hptJoZpA)
 
 
