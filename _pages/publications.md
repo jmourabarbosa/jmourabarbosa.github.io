@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 All papers are open - either published open acess or directly linked to pdf.
- + equal contributions
+\+ equal contributions
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**+, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
