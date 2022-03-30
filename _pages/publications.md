@@ -20,7 +20,7 @@ Also at [<img src="../images/scholar.png" width="20" />](https://scholar.google.
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**  <img src="../images/bro.png" width="18" />, Heike Stein <img src="../images/bro.png" width="18" />, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (2022)*
-[code](https://github.com/ahyafil/SampleSize)
+[[code]](https://github.com/ahyafil/SampleSize)
 [Tweeprint](https://twitter.com/jmourabarbosa/status/1359100591541280768)
 
 
