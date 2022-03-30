@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-All papers are open - either published open acess or directly linked to pdf.
+All papers are open - either published open acess or directly linked to pdf.  
 \+ equal contributions
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
