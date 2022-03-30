@@ -7,8 +7,10 @@ author_profile: true
 
 All papers are open - either published open acess or directly linked to pdf.
 
++ equal contributions
+
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
-**Joao Barbosa** &ast;, Heike Stein`<code>&ast;</code>`,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+**Joao Barbosa**+;, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (2022)*  
 [[code]](https://github.com/ahyafil/SampleSize)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
@@ -23,7 +25,7 @@ All papers are open - either published open acess or directly linked to pdf.
 
 
 [*Towards biologically constrained attractor models of schizophrenia*](../files/Stein_CONEURO.pdf)  
- Heike Stein *, **Joao Barbosa** *, Albert Compte.    
+ Heike Stein+, **Joao Barbosa**+, Albert Compte.    
 *Current Opinion in Neurobiology (2021)*  
 [[code]](https://github.com/comptelab/attractorSZ)
 [[tweeprint]](https://twitter.com/heikecstein/status/1377260009390800902)
@@ -38,7 +40,7 @@ All papers are open - either published open acess or directly linked to pdf.
 
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
- Heike Stein *, **Joao Barbosa** *, Albert Compte et al.  
+ Heike Stein+, **Joao Barbosa**+, Albert Compte et al.  
 *Nature Communications (2020)*  
 [[code]](https://github.com/comptelab/serialNMDA)
 [[data]](https://github.com/comptelab/serialNMDA)
@@ -52,7 +54,7 @@ All papers are open - either published open acess or directly linked to pdf.
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1278703572029452289)
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
- **Joao Barbosa** *, Heike Stein *, Albert Compte et al.  
+ **Joao Barbosa**+, Heike Stein+, Albert Compte et al.  
 *Nature Neuroscience (2020)*  
 [[code]](https://github.com/comptelab/interplayPFC)
 [[data]](https://github.com/comptelab/interplayPFC)
