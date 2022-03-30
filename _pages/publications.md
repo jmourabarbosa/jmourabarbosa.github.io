@@ -97,4 +97,5 @@ COSYNE 2021
 Flexible inter-areal computations through low-rank communication subspaces  
 COSYNE 2022  
 [[poster]](https://t.co/Rla7g3djKe)
+[[audio]](https://jmourabarbosa.github.io/files/poster_Barbosa_COSYNE2022.m4a)
 
