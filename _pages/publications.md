@@ -88,7 +88,10 @@ Virtual Working Memory Symposium 2020
 [[talk]](https://youtu.be/dkFhOdXSvRo)
 
 Context-dependent population dynamics in auditory cortex during flexible behaviour  
-COSYNE 2021  
+COSYNE 2021
 [[talk]](https://youtu.be/PH7hptJoZpA)
 
+Flexible inter-areal computations through low-rank communication subspaces  
+COSYNE 2022
+[[poster]](https://t.co/Rla7g3djKe)
 
