@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-All papers are open - either published open acess or directly linked to pdf. 
+All papers are open - either published open acess or directly linked to pdf. All code and data necessary to replicate the figures are also liked. Don't hesitate contacting me if something is missing. 
 
 
 \+ equal contributions
