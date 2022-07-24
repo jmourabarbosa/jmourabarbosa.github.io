@@ -50,7 +50,7 @@ Peer-reviewed
 
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
- **Joao Barbosa**+, Heike Stein+, Albert Compte et al.  
+**Joao Barbosa**+, Heike Stein+, Rebecca L. Martinez, Adria Galan-Gadea, Sihai Li, Josep Dalmau, Kirsten C. S. Adam, Josep Valls-Sole, Christos Constantinidis & Albert Compte 
 *Nature Neuroscience (2020)*  
 [[code]](https://github.com/comptelab/interplayPFC)
 [[data]](https://github.com/comptelab/interplayPFC)
@@ -59,7 +59,7 @@ Peer-reviewed
 
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
- Heike Stein+, **Joao Barbosa**+, Albert Compte et al.  
+Heike Stein+, **Joao Barbosa**+, Mireia Rosa-Justicia, Laia Prades, Alba Morato, Adria Galan-Gadea, Helena Arino, Eugenia Martinez-Hernandez, Josefina Castro-Fornieles, Josep Dalmau & Albert Compte
 *Nature Communications (2020)*  
 [[code]](https://github.com/comptelab/serialNMDA)
 [[data]](https://github.com/comptelab/serialNMDA)
