@@ -18,7 +18,7 @@ Pre-prints
 =====
 
 [*Flexible selection of task-relevant features through across-area population gating*](https://t.co/RLA5ST02w6)  
-**Joao Barbosa**+, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
+**Joao Barbosa**+✉, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
 *bioRxiv (2022)*  
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
