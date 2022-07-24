@@ -30,7 +30,7 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 [[code]](https://github.com/neurogym/neurogym)
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
-**Joao Barbosa**✉+, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+**Joao Barbosa**✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (2022)*  
 [[code]](https://github.com/ahyafil/SampleSize)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
@@ -82,7 +82,7 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 [[talk]](https://www.youtube.com/watch?v=oKn2GYgQUCk)
 
 [*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
-**Joao Barbosa**.  
+**Joao Barbosa**✉.  
 *Journal of Neuroscience (2017)*
 
 [*Neural circuit basis of visuo-spatial working memory precision*](../files/almeida.pdf)  
