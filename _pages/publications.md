@@ -83,6 +83,11 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 *PsyArxiv (2021)*  
 [[code]](https://github.com/neurogym/neurogym)
 
+[*Flexible selection of task-relevant features through across-area population gating*](https://t.co/RLA5ST02w6)  
+**Joao Barbosa**, Remi Proville, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
+*bioRxiv (2022)*  
+[[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
+
 PhD Thesis
 =====
 [*Neural network mechanisms of working memory interference*](http://diposit.ub.edu/dspace/handle/2445/166717)   
