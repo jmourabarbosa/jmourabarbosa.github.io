@@ -21,6 +21,7 @@ Pre-prints
 **Joao Barbosa**+, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
 *bioRxiv (2022)*  
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
+[[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
 
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
 Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
