@@ -14,6 +14,19 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 \+ equal contributions
 
+Pre-prints
+=====
+
+[*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
+Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
+*PsyArxiv (2021)*  
+[[code]](https://github.com/neurogym/neurogym)
+
+[*Flexible selection of task-relevant features through across-area population gating*](https://t.co/RLA5ST02w6)  
+**Joao Barbosa**+, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
+*bioRxiv (2022)*  
+[[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
+
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**+, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (2022)*  
@@ -74,19 +87,6 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 Rita Almeida, **Joao Barbosa**, Albert Compte.  
 *Journal of Neurophysiology (2015)*  
 
-
-Pre-prints
-=====
-
-[*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
-Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
-*PsyArxiv (2021)*  
-[[code]](https://github.com/neurogym/neurogym)
-
-[*Flexible selection of task-relevant features through across-area population gating*](https://t.co/RLA5ST02w6)  
-**Joao Barbosa**, Remi Proville, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
-*bioRxiv (2022)*  
-[[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 
 PhD Thesis
 =====
