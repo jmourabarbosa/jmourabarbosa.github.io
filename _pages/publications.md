@@ -100,12 +100,4 @@ Serial dependence decreases with structural connectivity decline during healthy 
 Virtual Working Memory Symposium 2020  
 [[talk]](https://youtu.be/dkFhOdXSvRo)
 
-Context-dependent population dynamics in auditory cortex during flexible behaviour  
-COSYNE 2021  
-[[talk]](https://youtu.be/PH7hptJoZpA)
-
-Flexible inter-areal computations through low-rank communication subspaces  
-COSYNE 2022  
-[[poster]](https://t.co/Rla7g3djKe)
-[[audio]](https://jmourabarbosa.github.io/files/poster_Barbosa_COSYNE2022.m4a)
 
