@@ -25,6 +25,7 @@ Pre-prints
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
 
+
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
 Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
 *PsyArxiv (2021)*  
@@ -33,27 +34,12 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 Peer-reviewed
 =====
 
-[*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
-**Joao Barbosa**✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*Behavior Research Methods (2022)*  
-[[code]](https://github.com/ahyafil/SampleSize)
-[[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
-
-
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
 *Plos Biology (2021)*  
 [[code]](https://github.com/comptelab/reactivations)
 [[data]](https://github.com/comptelab/reactivations)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1385623043372900356)
-
-
-[*Towards biologically constrained attractor models of schizophrenia*](../files/Stein_CONEURO.pdf)  
- Heike Stein+, **Joao Barbosa**+, Albert Compte.    
-*Current Opinion in Neurobiology (2021)*  
-[[code]](https://github.com/comptelab/attractorSZ)
-[[tweeprint]](https://twitter.com/heikecstein/status/1377260009390800902)
-[[talk]](https://youtu.be/H_ZohMK-Q6M)
 
 
 [*Across-area synchronization supports feature integration in a biophysical network model of working memory*](https://www.frontiersin.org/articles/10.3389/fncir.2021.716965/full)  
@@ -70,12 +56,14 @@ Peer-reviewed
 [[data]](https://github.com/comptelab/serialNMDA)
 [[tweeprint]](https://twitter.com/heikecstein/status/1298238425288642561?lang=en)
 
+
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.  
 *Scientific Reports (2020)*  
 [[code]](https://github.com/comptelab/serial_color)
 [[data]](https://github.com/comptelab/serial_color/)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1278703572029452289)
+
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
  **Joao Barbosa**+, Heike Stein+, Albert Compte et al.  
@@ -85,14 +73,31 @@ Peer-reviewed
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1275127297901813762)
 [[talk]](https://www.youtube.com/watch?v=oKn2GYgQUCk)
 
-[*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
-**Joao Barbosa**✉.  
-*Journal of Neuroscience (2017)*
 
 [*Neural circuit basis of visuo-spatial working memory precision*](../files/almeida.pdf)  
 Rita Almeida, **Joao Barbosa**, Albert Compte.  
 *Journal of Neurophysiology (2015)*  
 
+Reviews
+=====
+[*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
+**Joao Barbosa**✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+*Behavior Research Methods (2022)*  
+[[code]](https://github.com/ahyafil/SampleSize)
+[[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
+
+
+[*Towards biologically constrained attractor models of schizophrenia*](../files/Stein_CONEURO.pdf)  
+ Heike Stein+, **Joao Barbosa**+, Albert Compte.    
+*Current Opinion in Neurobiology (2021)*  
+[[code]](https://github.com/comptelab/attractorSZ)
+[[tweeprint]](https://twitter.com/heikecstein/status/1377260009390800902)
+[[talk]](https://youtu.be/H_ZohMK-Q6M)
+
+
+[*Working Memories Are Maintained in a Stable Code*](../files/Barbosa2017.pdf)  
+**Joao Barbosa**✉.  
+*Journal of Neuroscience (2017)*
 
 PhD Thesis
 =====
