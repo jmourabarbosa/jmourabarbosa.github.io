@@ -13,6 +13,7 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 
 \+ equal contributions
+
 ✉ corresponding author
 
 Pre-prints
@@ -28,6 +29,9 @@ Pre-prints
 Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
 *PsyArxiv (2021)*  
 [[code]](https://github.com/neurogym/neurogym)
+
+Peer-reviewed
+=====
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
