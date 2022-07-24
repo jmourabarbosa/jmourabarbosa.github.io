@@ -49,6 +49,15 @@ Peer-reviewed
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1403339914859757568)
 
 
+[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
+ **Joao Barbosa**+, Heike Stein+, Albert Compte et al.  
+*Nature Neuroscience (2020)*  
+[[code]](https://github.com/comptelab/interplayPFC)
+[[data]](https://github.com/comptelab/interplayPFC)
+[[tweeprint]](https://twitter.com/jmourabarbosa/status/1275127297901813762)
+[[talk]](https://www.youtube.com/watch?v=oKn2GYgQUCk)
+
+
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
  Heike Stein+, **Joao Barbosa**+, Albert Compte et al.  
 *Nature Communications (2020)*  
@@ -63,15 +72,6 @@ Peer-reviewed
 [[code]](https://github.com/comptelab/serial_color)
 [[data]](https://github.com/comptelab/serial_color/)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1278703572029452289)
-
-
-[*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
- **Joao Barbosa**+, Heike Stein+, Albert Compte et al.  
-*Nature Neuroscience (2020)*  
-[[code]](https://github.com/comptelab/interplayPFC)
-[[data]](https://github.com/comptelab/interplayPFC)
-[[tweeprint]](https://twitter.com/jmourabarbosa/status/1275127297901813762)
-[[talk]](https://www.youtube.com/watch?v=oKn2GYgQUCk)
 
 
 [*Neural circuit basis of visuo-spatial working memory precision*](../files/almeida.pdf)  
