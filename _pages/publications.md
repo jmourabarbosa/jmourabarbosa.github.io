@@ -13,12 +13,13 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 
 \+ equal contributions
+✉ corresponding author
 
 Pre-prints
 =====
 
 [*Flexible selection of task-relevant features through across-area population gating*](https://t.co/RLA5ST02w6)  
-**Joao Barbosa**+✉, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
+**Joao Barbosa**✉+, Remi Proville+, Chris C. Rodgers,  Srdjan Ostojic, Yves Boubenec.    
 *bioRxiv (2022)*  
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
@@ -29,7 +30,7 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 [[code]](https://github.com/neurogym/neurogym)
 
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
-**Joao Barbosa**+, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
+**Joao Barbosa**✉+, Heike Stein+,Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
 *Behavior Research Methods (2022)*  
 [[code]](https://github.com/ahyafil/SampleSize)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
