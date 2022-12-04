@@ -16,7 +16,7 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 Pre-prints
 =====
 
-[*Flexible selection of task-relevant features through population gating*](shorturl.at/efhE9)  
+[*Flexible selection of task-relevant features through population gating*](https://www.biorxiv.org/content/10.1101/2022.07.21.500962v2)  
 **Joao Barbosa**✉, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec.    
 *bioRxiv (2022)*  
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
