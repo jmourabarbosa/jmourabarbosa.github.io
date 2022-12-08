@@ -21,6 +21,7 @@ Pre-prints
 *bioRxiv (2022)*  
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
+[[talk]](https://www.crowdcast.io/e/wwneurise/39)
 
 
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
@@ -37,7 +38,6 @@ Peer-reviewed
 [[code]](https://github.com/comptelab/reactivations)
 [[data]](https://github.com/comptelab/reactivations)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1385623043372900356)
-
 
 [*Across-area synchronization supports feature integration in a biophysical network model of working memory*](https://www.frontiersin.org/articles/10.3389/fncir.2021.716965/full)  
 **Joao Barbosa**, Vahan Babushkin, Ainsley Temudo, Kartik K. Sreenivasan, Albert Compte.  
