@@ -34,7 +34,7 @@ Peer-reviewed
 
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
-*Plos Biology (2021)*  
+*Plos Biology (2021)*
 [[code]](https://github.com/comptelab/reactivations)
 [[data]](https://github.com/comptelab/reactivations)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1385623043372900356)
@@ -48,7 +48,7 @@ Peer-reviewed
 
 [*Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory*](../files/barbosa_interplay.pdf)  
 **Joao Barbosa**+, Heike Stein+, Rebecca L. Martinez, Adria Galan-Gadea, Sihai Li, Josep Dalmau, Kirsten C. S. Adam, Josep Valls-Sole, Christos Constantinidis & Albert Compte.  
-*Nature Neuroscience (2020)*  
+*Nature Neuroscience (2020)*
 [[code]](https://github.com/comptelab/interplayPFC)
 [[data]](https://github.com/comptelab/interplayPFC)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1275127297901813762)
@@ -57,7 +57,7 @@ Peer-reviewed
 
 [*Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://www.nature.com/articles/s41467-020-18033-3)  
 Heike Stein+, **Joao Barbosa**+, Mireia Rosa-Justicia, Laia Prades, Alba Morato, Adria Galan-Gadea, Helena Arino, Eugenia Martinez-Hernandez, Josefina Castro-Fornieles, Josep Dalmau & Albert Compte.  
-*Nature Communications (2020)*  
+*Nature Communications (2020)*
 [[code]](https://github.com/comptelab/serialNMDA)
 [[data]](https://github.com/comptelab/serialNMDA)
 [[tweeprint]](https://twitter.com/heikecstein/status/1298238425288642561?lang=en)
@@ -65,7 +65,7 @@ Heike Stein+, **Joao Barbosa**+, Mireia Rosa-Justicia, Laia Prades, Alba Morato,
 
 [*Build-up of serial dependence in color working memory*](https://www.nature.com/articles/s41598-020-67861-2)  
 **Joao Barbosa** & Albert Compte.   
-*Scientific Reports (2020)*  
+*Scientific Reports (2020)*
 [[code]](https://github.com/comptelab/serial_color)
 [[data]](https://github.com/comptelab/serial_color/)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1278703572029452289)
@@ -79,14 +79,14 @@ Reviews
 =====
 [*A practical guide for studying human behavior in the lab*](../files/Barbosa_2022_BRM.pdf)  
 **Joao Barbosa**✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil.    
-*Behavior Research Methods (2022)*  
+*Behavior Research Methods (2022)*
 [[code]](https://github.com/ahyafil/SampleSize)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1359100591541280768)
 
 
 [*Towards biologically constrained attractor models of schizophrenia*](../files/Stein_CONEURO.pdf)  
  Heike Stein+, **Joao Barbosa**+, Albert Compte.    
-*Current Opinion in Neurobiology (2021)*  
+*Current Opinion in Neurobiology (2021)*
 [[code]](https://github.com/comptelab/attractorSZ)
 [[tweeprint]](https://twitter.com/heikecstein/status/1377260009390800902)
 [[talk]](https://youtu.be/H_ZohMK-Q6M)
