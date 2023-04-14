@@ -104,7 +104,6 @@ PhD Thesis
 In progress
 =====
 Serial dependence decreases with structural connectivity decline during healthy aging  
-Virtual Working Memory Symposium 2020  
-[[talk]](https://youtu.be/dkFhOdXSvRo)
+Virtual Working Memory Symposium 2020  [[talk]](https://youtu.be/dkFhOdXSvRo)
 
 
