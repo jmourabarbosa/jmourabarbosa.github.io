@@ -15,15 +15,6 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 Pre-prints
 =====
-
-[*Flexible selection of task-relevant features through population gating*](https://www.biorxiv.org/content/10.1101/2022.07.21.500962v2)  
-**Joao Barbosa**✉, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec.    
-*bioRxiv (2022)*
-[[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
-[[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
-[[talk]](https://www.crowdcast.io/e/wwneurise/39)
-
-
 [*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
 Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
 *PsyArxiv (2022)*
@@ -31,6 +22,13 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 
 Peer-reviewed
 =====
+
+[*Early selection of task-relevant features through population gating*](https://www.biorxiv.org/content/10.1101/2022.07.21.500962v2)  
+**Joao Barbosa**✉, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec.    
+*Nature Communications, (in press)*
+[[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
+[[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
+[[talk]](https://www.crowdcast.io/e/wwneurise/39)
 
 [*Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories*](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436)  
 **Joao Barbosa**, Diego Lozano-Soldevilla, Albert Compte.    
