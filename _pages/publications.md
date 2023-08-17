@@ -25,7 +25,7 @@ Peer-reviewed
 
 [*Early selection of task-relevant features through population gating*](https://www.biorxiv.org/content/10.1101/2022.07.21.500962v2)  
 **Joao Barbosa**✉, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec.    
-*Nature Communications, (in press)*
+*Nature Communications (in press)*
 [[data]](https://crcns.org/data-sets/pfc/pfc-1}{crcns.org/data-sets/pfc/pfc-1)
 [[tweeprint]](https://twitter.com/jmourabarbosa/status/1550766362280198144)
 [[talk]](https://www.crowdcast.io/e/wwneurise/39)
