@@ -1,9 +1,9 @@
 **Motivation**
-
+=====
 The ability to record from multiple neurons as animals perform complex tasks has revealed that neural representations of behavioural and task variables are highly mixed (Fusi et al., 2021). This observation shifted the focus toward understanding cognitive computations through the dynamics of neuronal populations, rather than by assigning specific functions to specialised cells. More recent techniques which allow recordings from across the entire brain have motivated a similar paradigm change (eg. Steinmetz et al., 2019) and the field is reevaluating the traditional view that assigns specific functions to specialised regions. Instead, systems neuroscience is increasingly focusing on integrated processing that arises from interactions across the brain (Okazawa & Kiani, 2023). My long-term research goals are to understand 1) how computations can be distributed across brain regions, 2) how that facilitates flexible human cognition in changing environments, and 3) how these processes are altered in neuropsychiatric disorders such as schizophrenia.
 
 **Doctoral research**
-
+=====
 In my graduate research I focused on the neural basis of working memory, combining biophysical modelling and data analysis of spiking activity from the monkey PFC, human EEG, and TMS. Data analysis, computational modelling, and human experiments were either performed or supervised by me. Monkey electrophysiological recordings were acquired through collaborations. Here, I highlight two research questions that I have tackled with my doctoral research. For a more detailed descriptio, refer to the publications tab.
 
 First, I uncovered the neural basis of an ubiquitous across-trial interference in working memory, commonly known as serial dependence. While previous accounts regarded persistent activity and activity-silent mechanisms as alternative neural substrates for working memory, I found that serial dependence emerges from their interaction in prefrontal cortex (PFC). More specifically, previous-trial information is stored ‘silently’ in short-lived changes in synaptic connectivity of PFC, which in turn bias current-trial memories that are stored in persistent activity. Since then, I have been co-supervising the PhD thesis of Melanie Tschiersch that extends my graduate research on the neural basis of serial dependence, now considering across-hemisphere interactions in bilateral recordings of the monkley PFC. We found that while there are strong inter-hemispheric interactions during working memory periods, previous-trial information maintained throughout the inter-trial period remains local. The manuscript for this project is in preparation.
@@ -11,14 +11,14 @@ First, I uncovered the neural basis of an ubiquitous across-trial interference i
 Second, we found that subjects with schizophrenia or anti-NMDAR encephalitis exhibit dramatically reduced serial dependence. This finding suggested to us that NMDAR-dependent memory mechanisms operating on longer timescales, such as short-term synaptic potentiation, may be impaired in these patient populations. We used biophysical modelling and EEG experiments to support this hypothesis and motivate a new research program that we outlined in an opinion paper. 
 
 **Postdoctoral research**
-
+=====
 For my postdoctoral research, I am integrating deep learning with modern multi-regional theories of decision-making. Specifically, I used recurrent neural networks (RNN) to model multi-region computations underlying context-dependent behaviour. In my first project, I analysed a two-region electrophysiological dataset collected from rats performing a context-dependent decision-making task (Rodgers and DeWeese, 2014). In this data, I validated key predictions of a novel framework for modelling population dynamics, known as low-rank RNN (Dubreuil, Valente et al., 2022). Guided by these models, I discovered that distinct populations in the rat's auditory cortex (A1) are gain-modulated in different contexts. Furthermore, I showed how the principles developed for within-area dynamics of low-rank RNNs can be extended to across-area interactions in multi-region RNNs. Using a novel multi-region RNN model, I proposed that distinct populations within A1 are controlled by top-down inputs from the PFC. This model, which explains influential empirical findings of inter-areal communication (Semedo et al., 2019), sets the stage for a novel theoretical research program that I plan to continue within my own research group. 
 
 **References**
-
-Fusi, Miller, Rigotti. Why neurons mix: high dimensionality for higher cognition. Current Opinion in Neurobiology (2021)
-Steinmetz, Zatka-Haas, Carandini & Harris. Distributed coding of choice, action and engagement across the mouse brain. Nature (2019)
-Okazawa & Kiani. Neural Mechanisms That Make Perceptual Decisions Flexible. Annual Review of Physiology (2023)
-Semedo, Zandvakili, Machens, M. Yu, Kohn. Cortical Areas Interact through a Communication Subspace. Neuron (2019)
-Rodgers, DeWeese. Neural correlates of task switching in prefrontal cortex and primary auditory cortex in a novel stimulus selection task for rodents. Neuron (2014)
-Dubreuil#, Valente#, Beiran, Mastrogiuseppe, Ostojic. The role of population structure in computations through neural dynamics. Nature Neuroscience (2022)
+=====
+Fusi, Miller, Rigotti. _Why neurons mix: high dimensionality for higher cognition_. Current Opinion in Neurobiology (2021)
+Steinmetz, Zatka-Haas, Carandini & Harris. _Distributed coding of choice, action and engagement across the mouse brain_. Nature (2019)
+Okazawa & Kiani._ Neural Mechanisms That Make Perceptual Decisions Flexible_. Annual Review of Physiology (2023)
+Semedo, Zandvakili, Machens, M. Yu, Kohn. _Cortical Areas Interact through a Communication Subspace_. Neuron (2019)
+Rodgers, DeWeese. _Neural correlates of task switching in prefrontal cortex and primary auditory cortex in a novel stimulus selection task for rodents._ Neuron (2014)
+Dubreuil#, Valente#, Beiran, Mastrogiuseppe, Ostojic. _The role of population structure in computations through neural dynamics. _Nature Neuroscience (2022)
