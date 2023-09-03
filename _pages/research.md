@@ -17,7 +17,7 @@ For my postdoctoral research, I am integrating deep learning with modern multi-r
 **References**
 
 Fusi, Miller, Rigotti. Why neurons mix: high dimensionality for higher cognition. Current Opinion in Neurobiology (2021)
-Steinmetz, Zatka-Haas, Carandini & Harris . Distributed coding of choice, action and engagement across the mouse brain. Nature (2019)
+Steinmetz, Zatka-Haas, Carandini & Harris. Distributed coding of choice, action and engagement across the mouse brain. Nature (2019)
 Okazawa & Kiani. Neural Mechanisms That Make Perceptual Decisions Flexible. Annual Review of Physiology (2023)
 Semedo, Zandvakili, Machens, M. Yu, Kohn. Cortical Areas Interact through a Communication Subspace. Neuron (2019)
 Rodgers, DeWeese. Neural correlates of task switching in prefrontal cortex and primary auditory cortex in a novel stimulus selection task for rodents. Neuron (2014)
