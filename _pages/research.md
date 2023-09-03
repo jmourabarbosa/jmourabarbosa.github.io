@@ -1,47 +1,24 @@
----
-layout: archive
-title: "Research Interests"
-permalink: /research/
-author_profile: true
----
+**Motivation**
 
-## Within- and across-area neural dynamics involved in complex behavior 
+The ability to record from multiple neurons as animals perform complex tasks has revealed that neural representations of behavioural and task variables are highly mixed (Fusi et al., 2021). This observation shifted the focus toward understanding cognitive computations through the dynamics of neuronal populations, rather than by assigning specific functions to specialised cells. More recent techniques which allow recordings from across the entire brain have motivated a similar paradigm change (eg. Steinmetz et al., 2019) and the field is reevaluating the traditional view that assigns specific functions to specialised regions. Instead, systems neuroscience is increasingly focusing on integrated processing that arises from interactions across the brain (Okazawa & Kiani, 2023). My long-term research goals are to understand 1) how computations can be distributed across brain regions, 2) how that facilitates flexible human cognition in changing environments, and 3) how these processes are altered in neuropsychiatric disorders such as schizophrenia.
 
-*Early-selection of relevant auditory stimuli through context-dependent population dynamics*.  
+**Doctoral research**
 
-Understanding how stable neural circuits implement flexible, context-dependent behavior is crucial to understand cognition. Specifically, how different brain areas interact to select relevant stimuli within irrelevant ones remains to be fully elucidated.
+In my graduate research I focused on the neural basis of working memory, combining biophysical modelling and data analysis of spiking activity from the monkey PFC, human EEG, and TMS. Data analysis, computational modelling, and human experiments were either performed or supervised by me. Monkey electrophysiological recordings were acquired through collaborations. Here, I highlight two research questions that I have tackled with my doctoral research. For a more detailed descriptio, refer to the publications tab.
 
-In this project, we are focusing on the population dynamics of previously recorded neurons in the primary auditory cortex (A1) and medial prefrontal cortex (mPFC), while rats exhibited flexible, context-dependent behavior. We found that A1 represented relevant and irrelevant auditory stimulus features (location and pitch) during both contexts, but mPFC exclusively represented the relevant feature for the ongoing context. This raised the question of how these areas interacted to effectively select the relevant stimulus in PFC, specifically assuming a fixed readout from A1.
+First, I uncovered the neural basis of an ubiquitous across-trial interference in working memory, commonly known as serial dependence. While previous accounts regarded persistent activity and activity-silent mechanisms as alternative neural substrates for working memory, I found that serial dependence emerges from their interaction in prefrontal cortex (PFC). More specifically, previous-trial information is stored ‘silently’ in short-lived changes in synaptic connectivity of PFC, which in turn bias current-trial memories that are stored in persistent activity. Since then, I have been co-supervising the PhD thesis of Melanie Tschiersch that extends my graduate research on the neural basis of serial dependence, now considering across-hemisphere interactions in bilateral recordings of the monkley PFC. We found that while there are strong inter-hemispheric interactions during working memory periods, previous-trial information maintained throughout the inter-trial period remains local. The manuscript for this project is in preparation.
 
-To address this question, we trained recurrent neural networks (RNN) with back-propagation on a similar task and found that the relevant and irrelevant stimuli were equally represented, similar to A1. We reverse-engineered the mechanism employed by these networks, predicting that different populations that selectively integrate the relevant stimuli can be identified by different context-specific activity during the pre-stimulus period. In line with these predictions, we found two distinct populations in A1, each discriminating more strongly the relevant go-stimuli in its preferred context. Finally, we built a multi-area RNN in which decision and context was communicated feedforward and feedback, respectively, through fixed channels, inspired by the communication subspace hypothesis. 
+Second, we found that subjects with schizophrenia or anti-NMDAR encephalitis exhibit dramatically reduced serial dependence. This finding suggested to us that NMDAR-dependent memory mechanisms operating on longer timescales, such as short-term synaptic potentiation, may be impaired in these patient populations. We used biophysical modelling and EEG experiments to support this hypothesis and motivate a new research program that we outlined in an opinion paper. 
 
-See this [talk at WWNeurise](https://www.crowdcast.io/e/wwneurise/39) or read our [preprint](https://www.biorxiv.org/content/10.1101/2022.07.21.500962v2) to know more about this line of research. 
+**Postdoctoral research**
 
-<img src="../images/multi_area.png"/>
+For my postdoctoral research, I am integrating deep learning with modern multi-regional theories of decision-making. Specifically, I used recurrent neural networks (RNN) to model multi-region computations underlying context-dependent behaviour. In my first project, I analysed a two-region electrophysiological dataset collected from rats performing a context-dependent decision-making task (Rodgers and DeWeese, 2014). In this data, I validated key predictions of a novel framework for modelling population dynamics, known as low-rank RNN (Dubreuil, Valente et al., 2022). Guided by these models, I discovered that distinct populations in the rat's auditory cortex (A1) are gain-modulated in different contexts. Furthermore, I showed how the principles developed for within-area dynamics of low-rank RNNs can be extended to across-area interactions in multi-region RNNs. Using a novel multi-region RNN model, I proposed that distinct populations within A1 are controlled by top-down inputs from the PFC. This model, which explains influential empirical findings of inter-areal communication (Semedo et al., 2019), sets the stage for a novel theoretical research program that I plan to continue within my own research group. 
 
-This work is in colaboration with [Srdjan Ostojic](https://scholar.google.fr/citations?user=EYC4De8AAAAJ), [Yves Boubenec](https://scholar.google.fr/citations?user=2cY7YoUAAAAJ) and [Remi Proveil](https://scholar.google.fr/citations?user=SOgCmD8AAAAJ&hl=fr).
+**References**
 
-*Across-area synchronized dynamics support the integration of independently stored features in multi-item working memory*. 
-
-In this project we were interested in the long-standing binding problem in working memory. To tackle this, we built a biophysical neural network model composed of two one-dimensional attractor networks, one for color and another one for location, simulating the storage of  each feature in a different cortical area [Barbosa et al Frontiers in Neural Circuits (2021)](https://www.frontiersin.org/articles/10.3389/fncir.2021.716965/full). Within each area, gamma oscillations were induced during bump attractor activity through the interplay of fast recurrent excitation and slower feedback inhibition. As a result, different memorized items were held at different phases of the network’s intrinsic oscillation. These two areas were then reciprocally connected via weak cortico-cortical excitation, accomplishing binding between color and location through the synchronization of pairs of bumps across the two connected areas. Encoding and decoding of specific color-location associations was accomplished through rate coding, overcoming a long-standing limitation of binding through temporal coding. In some simulations, swap errors arose: “color bumps” abruptly changed their phase relationship with “location bumps”. This model, which keeps the explanatory power that is characteristic of similar attractor models, specifies a plausible mechanism for feature binding and makes specific predictions about swap errors that are testable at behavioral and neurophysiological levels. 
-
-<img src="../images/binding.png"/>
-
-
-This work is in colaboration with [Kartik Sreenivasan](https://nyuad.nyu.edu/en/academics/divisions/science/faculty/kartik-sreenivasan.html). Current work involves collecting MEG data to falsify predictions layed out by our model.
-
-## The neural mechanisms of working memory 
-
-During my PhD I mostly focus the plausible neural mechanisms for working memory [Barbosa. Journal of Neuroscience (2017)](https://jmourabarbosa.github.io/files/Barbosa2017.pdf) and in particular whether working memory is supported by activity-silent mechanisms [Barbosa et al (2021)](https://psyarxiv.com/qv6fu/), such as short-term plasticity. Through a combination of human and monkey neurophysiological experiments, data analysis and computational models, we unveiled the neurophysiological basis of the interference of previous, irrelevant memories on currently maintained memories - the so-called serial dependence [Barbosa et al Nature Neuroscience (2020)](https://jmourabarbosa.github.io/publications/). We found that a tight interaction between persistent neuronal firing and short-term plasticity in the prefrontal cortex supports working memory and is expressed behaviorally in serial dependence, both in monkeys and human subjects. 
-
-Currently I am interested in how different prefrontal cortecis, each in a different brain hemisphere, interact to produce serial dependence. This is work lead by [Melanie Tschiersch](https://braincircuitsbehavior.org/people) in colaboration with [Albert Compte](https://braincircuitsbehavior.org/people) and [Matthew A. Smith](https://www.cmu.edu/bme/People/Faculty/profile/msmith.html).
-
-
-## Synaptic basis of reduced serial dependence in patients
-
-We found that serial dependence is dramatically reduced in schizophrenia and anti-NMDAR encephalitis patients [Stein\*, Barbosa\* et al Nature Communications (2020)](https://jmourabarbosa.github.io/publications/); others have shown a similar reduction of serial dependence for patients with autism [Lieder et al Nature Neuroscience (2019)](https://www.nature.com/articles/s41593-018-0308-9?WT.feed_name=subjects_cognitive-neuroscience). When we incorporated our monkey and human neurophysiological findings in a biophysically-constrained computational model of working memory, it allowed us to quantitatively explain serial dependence disruption in all of the aforementioned populations on the basis of disrupted short-term plasticity mechanisms. 
-
-By associating these diseases with short-term plasticity, our work is opening new lines of research to understand their mechanistic basis [Stein\*, Barbosa\* et al 2021](https://psyarxiv.com/uxg2a).
-
-Currently I am interested in studying the neural basis of cognitive decline during ageing. I have found that serial dependence (as well as working memory precision) decreases progressively throughout healthy aging. This is unpublished work, but see a [short talk here](https://youtu.be/dkFhOdXSvRo).
-
+Fusi, Miller, Rigotti. Why neurons mix: high dimensionality for higher cognition. Current Opinion in Neurobiology (2021)
+Steinmetz, Zatka-Haas, Carandini & Harris . Distributed coding of choice, action and engagement across the mouse brain. Nature (2019)
+Okazawa & Kiani. Neural Mechanisms That Make Perceptual Decisions Flexible. Annual Review of Physiology (2023)
+Semedo, Zandvakili, Machens, M. Yu, Kohn. Cortical Areas Interact through a Communication Subspace. Neuron (2019)
+Rodgers, DeWeese. Neural correlates of task switching in prefrontal cortex and primary auditory cortex in a novel stimulus selection task for rodents. Neuron (2014)
+Dubreuil#, Valente#, Beiran, Mastrogiuseppe, Ostojic. The role of population structure in computations through neural dynamics. Nature Neuroscience (2022)
