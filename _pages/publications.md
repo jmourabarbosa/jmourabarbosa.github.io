@@ -20,6 +20,14 @@ Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-
 *PsyArxiv (2022)*
 [[code]](https://github.com/neurogym/neurogym)
 
+[*Neural signatures of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://osf.io/preprints/psyarxiv/kz73s)  
+Heike Stein, **Joao Barbosa**, Diego Lozano-Soldevilla,Mireia Rosa-Justicia, Alba Morató, Adrià Galan-Gadea, Laia Prades, Amaia Muñoz-Lopetegui, Helena Ariño, Eugenia Martinez-Hernandez, Mar Guasp, Josefina Castro-Fornieles, Josep Dalmau, Joan Santamaria, Albert Compte
+*PsyArxiv (2024)*
+
+[*Alpha phase-coding supports feature binding during working memory maintenance*](https://www.biorxiv.org/content/10.1101/2024.01.21.576561v1.abstract)  
+Mattia F. Pagnotta, Aniol Santo-Angles, Ainsley Temudo, **Joao Barbosa**,  Albert Compte,  Mark D’Esposito, Kartik K. Sreenivasan
+*bioRxiv (2024)*
+
 Peer-reviewed
 =====
 
