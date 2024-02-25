@@ -12,7 +12,7 @@ I am a computational neuroscientist with a strong interest in human cognition, p
 
 My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research, I apply and developed statistical methods to analyze large scale recordings and use biophysical and deep learning models to guide the analyses and design of human experiments.  
 
-My long term research goal is to unveil which across-area interactions along the brain hierarchy support cognitive flexibility and whether their disruption is the basis for cognitive flexibility impairments in clinical populations, such as schizophrenia.  
+My long term research goal is to unveil which across-area interactions along the brain hierarchy support cognitive flexibility and whether their disruption is the basis for cognitive flexibility impairments in clinical populations, such as schizophrenia.  1
 
 Short CV
 ======
