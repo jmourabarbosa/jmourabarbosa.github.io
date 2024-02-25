@@ -23,6 +23,6 @@ Short CV
 **2016** Visiting Researcher, [Buschman lab](https://www.timbuschman.com/), *Princeton University*.  
 **2019-2020** Postdoc, [Compte lab](https://braincircuitsbehavior.org/people), *Theoretical Neurobiology, IDIBAPS*.  
 **2020-2024** Postdoc, [Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Group for Neural Theory, Ecole Normale Superieure*. 
-**2023** Visiting Researcher, [Williams lab](http://neurostatslab.org/), *Center for Computational Neuroscience at the Flatiron Institute*
+**2023** Visiting Researcher, [Williams lab](http://neurostatslab.org/), *Center for Computational Neuroscience at the Flatiron Institute* 
 **2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris.
 
