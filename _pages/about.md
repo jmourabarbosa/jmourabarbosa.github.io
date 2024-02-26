@@ -17,7 +17,7 @@ My long term research goal is to unveil which across-area interactions along the
 
 Short CV
 ======
-<code style="color : red">(new!)</code>**2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris.  
+**2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris.  <code style="color : red">(new!)</code>
 **2023** Visiting Researcher, [Williams lab](http://neurostatslab.org/), *Center for Computational Neuroscience at the Flatiron Institute*  
 **2020-2024** Postdoc, [Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Group for Neural Theory, Ecole Normale Superieure*.  
 **2019-2020** Postdoc, [Compte lab](https://braincircuitsbehavior.org/people), *Theoretical Neurobiology, IDIBAPS*.  
