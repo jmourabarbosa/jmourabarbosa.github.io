@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-About
+About me
 ======
 I am a computational neuroscientist with a strong interest in human cognition, particularly focusing on working memory and decision-making and how these functions are affected in pathological conditions.  
 
