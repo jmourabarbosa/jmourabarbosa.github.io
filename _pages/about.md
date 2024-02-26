@@ -10,7 +10,7 @@ redirect_from:
 
 About me
 ======
-I am a computational neuroscientist with a strong interest in human cognition, particularly focusing on working memory and decision-making and how these functions are affected in pathological conditions.  
+I am a computational neuroscientist with a strong interest in human cognition, in particular working memory and decision-making and how these are affected in pathological conditions.  
 
 My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research, I use biophysical and deep learning models to guide the analyses of large scale recordings, as well as the design of novel human experiments.  
 
