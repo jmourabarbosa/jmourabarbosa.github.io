@@ -8,6 +8,7 @@ redirect_from:
   - /about.html
 ---
 
+
 I am a computational neuroscientist with a strong interest in human cognition, particularly focusing on working memory and context-dependent decision-making and how these are affected in normal and pathological conditions.  
 
 My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research, I develop and apply statistical methods to analyze large scale recordings and use biophysical and deep learning models to guide the analyses and design of human experiments.  
@@ -16,7 +17,7 @@ My long term research goal is to unveil which across-area interactions along the
 
 Short CV
 ======
-**2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris.  
+<code style="color : red">(new!)</code>**2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris.  
 **2023** Visiting Researcher, [Williams lab](http://neurostatslab.org/), *Center for Computational Neuroscience at the Flatiron Institute*  
 **2020-2024** Postdoc, [Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Group for Neural Theory, Ecole Normale Superieure*.  
 **2019-2020** Postdoc, [Compte lab](https://braincircuitsbehavior.org/people), *Theoretical Neurobiology, IDIBAPS*.  
