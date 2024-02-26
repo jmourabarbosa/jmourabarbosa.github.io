@@ -13,6 +13,9 @@ I am a computational neuroscientist with a strong interest in human cognition, p
 
 My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research I develop statistical methods to analyze large scale recordings, and use biophysical and deep learning models to guide these analyses as well as the design of novel human experiments.  
 
+My current research goal is to help unveil which across-region interactions along the brain hierarchy support cognitive flexibility and whether their disruption is the basis for cognitive inflexibility of clinical populations, such as schizophrenia. This goal will be acomplished within the newly created Institute de Neuromodulation, born out of a close colaboration between the Sainte-Anne Hospital (Paris) and Neurospin (Paris-Saclay). In the lab, we record and manipulate the human brain at all scales with non invasive (ultra high field MRI, EEG, MEG), invasive electrophy (sEEG, tracking of monoamine release with voltametry) as well as casual interventions (deep brain stimulation, pharmacology, vagus nerve stimulation, focused ultrasound stimulation + intravenous infusion of microbubble agent and TMS).
+
+
 Short CV
 ======
 **2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris <code style="color : red">(new!)</code>  
