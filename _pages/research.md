@@ -5,15 +5,15 @@ permalink: /research/
 author_profile: true
 ---
 
-Extracting dynamical systems from large-scale recordings
+Extracting dynamical systems from large-scale recordings.
 =====
-**Motivation** 
+**Motivation**  
 Neural computations supporting complex behaviors involve multiple brain regions, and large-scale recordings from animals engaged in complex tasks are increasingly common. A current challenge in analysing these data is to identify which part of the information contained within a brain region is shared with others. For instance, using linear decoding, one might find that a given area encodes all task-related variables but using decoding alone it is hard to identify which variables are actually communicated to a specific downstream area. This is particularly challenging when considering more than two interconnected areas.
 
 **Summary of approach and findings**   
 To address this limitation, we train multi-region recurrent neural networks (RNN) models to reproduce the dynamics of large-scale recordings. This recordings can in principle be of different modalities (single units, fmri, M/EEG, etc). For instance, we show case this apporach by reproducing the dynamics of more than 6000 neurons across 7 cortical areas from monkeys engaged in a two-dimensional (color and motion direction). After fitting, we partition the activity of each area, separating recurrent inputs from those originating in other areas. Decoding analyses show that all areas encode both stimuli (color and direction), but selectively project different dimensions of their activity. Sensory areas (V4, MT and IT) project only one variable (color or direction) while compressing others, irrespective of the context or downstream area. In contrast, we observed that the prefrontal cortex (PFC) and frontal eye fields (FEF) projected different aspects of the stimulus, depending on the downstream area or context. In the model, PFC/FEF strongly compress the irrelevant stimulus dimension in their projections to fronto-parietal areas but not as much towards sensory areas. These preliminary results motivate a novel approach to study how different regions coordinate their activity to solve context-dependent tasks. 
 
-The neural basis of working memory
+The neural basis of working memory.
 =====
 **Motivation**  
 Working memory (WM) is a core function of cognition. This is reflected in the strong correlation between WM performance and other cognitive abilities, notably IQ. Importantly, WM is impaired in major neurological dysfunctions, including schizophrenia. Sustained activity in prefrontal cortex neurons has been regarded as the neural substrate of working memory, but this has been under intense debate in recent years. Alternative proposals suggest that short-term synaptic plasticity also plays a role in supporting working memory. 
