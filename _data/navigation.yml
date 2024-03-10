@@ -7,7 +7,7 @@ main:
     url: /research/    
     
   - title: "CV"
-    url: https://jmourabarbosa.github.io/files/CV.pdf
+    url: /cv/
     
   - title: "Street Photography"
     url: /photography/
