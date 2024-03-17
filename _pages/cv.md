@@ -1,13 +1,12 @@
 ---
 layout: archive
-title: "CV"
+title: "Short CV"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
-Short CV
-======
+
 **2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris <code style="color : red">(new!)</code>  
 **2023** Visiting Researcher, [Williams lab](http://neurostatslab.org/), *Center for Computational Neuroscience at the Flatiron Institute.*  
 **2020-2024** Postdoc, [Ostojic lab](https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic), *Group for Neural Theory, Ecole Normale Superieure*.  
