@@ -3,8 +3,6 @@ layout: archive
 title: "Short CV"
 permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 **2024-** Junior group leader at Institut de Neuromodulation and Neurospin, Paris <code style="color : red">(new!)</code>  
