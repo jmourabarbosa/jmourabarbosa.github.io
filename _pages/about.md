@@ -16,7 +16,7 @@ My research approach reflects the breadth of my academic background, which spans
 
 My current research goal is to help unveil the across-region interactions along the primate brain that support cognitive flexibility, and whether their disruption is the basis for the cognitive inflexibility observed in clinical populations, such as schizophrenia. This goal will be accomplished within the newly created Institute for Neuromodulation (INM), born out of a close collaboration between the Sainte-Anne Hospital and Neurospin, in Paris.
 
-At INM, we record and manipulate the human brain at all scales with non invasive methods (ultra high field MRI, M/EEG), invasive electrophysiology (sEEG, tracking of monoamine release with voltammetry) as well as casual interventions (deep brain stimulation, pharmacology, vagus nerve stimulation, focused ultrasound stimulation + intravenous infusion of microbubble agent and TMS).
+At INM, we record and manipulate the human brain at all scales with non invasive methods (ultra high field MRI, M/EEG), invasive electrophysiology (sEEG, tracking of monoamine release with voltammetry) as well as casual interventions (deep brain stimulation, pharmacology, vagus nerve stimulation, focused ultrasound stimulation and TMS).
 
 
 <code style="color : red">We are hiring at all levels, so don't hesitate to reach out if you are interested in joining the group!</code>
