@@ -15,5 +15,4 @@ author_profile: true
 **2009-2011** MSc in Bioinformatics, *Università Di Bologna*.  
 **2006-2009** BSc in Computer Science, *Universidade do Minho*, *Universiteit van Amsterdam*.  
 
-[(download long version)](https://www.dropbox.com/s/kpujbam56si214y/Barbosa_CV.pdf?dl=0)
 
