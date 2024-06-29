@@ -12,7 +12,7 @@ About me
 ======
 I am a computational neuroscientist with a strong interest in human cognition, in particular working memory and decision-making and how these are affected in pathological conditions.  
 
-My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research, I use biophysical and deep learning models to guide the analyses of large scale recordings, as well as the design of novel human experiments.  
+My research approach reflects the breadth of my academic background, which spans computer science, biology and machine learning. In my research, I use biophysical and deep learning models to guide the analyses of large scale recordings, as well as the design of novel experiments in humans.  
 
 My current research goal is to help unveil the across-region interactions along the primate brain that support cognitive flexibility, and whether their disruption is the basis for the cognitive inflexibility observed in clinical populations, such as schizophrenia. This goal will be accomplished within the newly created Institute for Neuromodulation (INM), born out of a close collaboration between the Sainte-Anne Hospital and Neurospin, in Paris.
 
