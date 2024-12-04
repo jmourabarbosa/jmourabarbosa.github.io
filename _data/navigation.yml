@@ -5,13 +5,14 @@ main:
 
   - title: "Research Interests"
     url: /research/    
-    
+  
+  - title: "People working with me"
+    url: /people/
+
   - title: "CV"
     url: /cv/
     
   - title: "Street Photography"
     url: /photography/
         
-  - title: "People"
-    url: /people/
-        
+
