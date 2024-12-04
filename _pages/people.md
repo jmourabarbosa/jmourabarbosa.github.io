@@ -13,6 +13,7 @@ Here is a list of people working in my group.
 PhD
 =====
 [Melanie Tschiersch (co-supervised with Albert Compte)](https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a)
+
 [Lubna Abdul](https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a)
 
 Research Engineers
