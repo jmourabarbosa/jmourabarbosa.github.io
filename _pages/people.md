@@ -6,12 +6,18 @@ author_profile: true
 ---
 
 
-I am grateful to have the privilege to supervise a few students. Here is a list of people working in group.
+I have the privilege (and responsability!) to supervise a group of brilliant trainees.
 
-PhD students
+Here is a list of people working in my group.
+
+PhD
+=====
 
 Research Engineers
+=====
 
-Master Students
+Master
+=====
 
 Alumni
+=====
