@@ -21,7 +21,7 @@ Lubna, in the first year of her PhD thesis, is analysing and modelling behaviora
 ### [Kaleab Belay (co-supervised with Nikolas Karalis](https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en)
 Kaleab is working in data-driven RNN models of neuromodulators. Data comes from Nikolas Karalis lab.
 
-## [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
+### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
 Philipp is working in data-driven RNN models of multi-regional recordings. Data comes form Earl Miller lab.
 
 # Master
