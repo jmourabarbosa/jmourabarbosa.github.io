@@ -28,7 +28,7 @@ Master
 
 [Ibrîze Bonneville (second year)](https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217)
 
-[Jeanne Sentenac (second year, co-supervised with Srdjan Ostojic)]
+Jeanne Sentenac (second year, co-supervised with Srdjan Ostojic)
 
 Romain Hû (first year)
 
