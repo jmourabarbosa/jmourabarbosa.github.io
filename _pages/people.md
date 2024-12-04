@@ -16,7 +16,7 @@ _Melanie, who will graduate soon, has been working on data-analysis and modeling
 ### [Lubna Abdul](https://projects.learningplanetinstitute.org/projects/a-cross-species-approach-to-investigate-altern/summary)
 _Lubna, in the first year of her PhD thesis, is analysing and modelling behavioral and neural data collected from monkeys and humans, including patients, while they perform context-dependent decision making tasks. She collects human data. Monkey data comes form Earl Miller lab._
 # Research Engineers
-### [Kaleab Belay (co-supervised with Nikolas Karalis](https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en)
+### [Kaleab Belay (co-supervised with Nikolas Karalis)](https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en)
 _Kaleab is working in data-driven RNN models of neuromodulators. Data comes from Nikolas Karalis lab._
 ### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
 _Philipp is working in data-driven RNN models of multi-regional recordings. Data comes form Earl Miller lab._
