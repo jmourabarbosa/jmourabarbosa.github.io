@@ -26,7 +26,7 @@ _Laurine studies Computer Science and Cognitive Neuroscience. Her thesis is abou
 ### [Ibrîze Bonneville (second year)](https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217)
 _Ibrîze studied Math, Life Sciences and Biomedical Engineering. In her thesis, she uses data-driven RNN to model behaivoral data that she collects online._
 ### Jeanne Sentenac (second year, co-supervised with Srdjan Ostojic)
-_Jeanne studied Physics. For her master thesis, she is working devolopping theoretical models of working memory manipulation._
+_Jeanne studied Physics. For her master thesis, she is devolopping theoretical models of working memory manipulation._
 ### Romain Hû (first year)
 _Romain studied Medicine and Math. He is doing is Master in Math and AI. He is getting first-hand experience with analysing and modeling single-unit recordings from human patients during working memory tasks. Data comes from [Jan Kaminski lab](https://www.jankaminski.com/news)._
 
