@@ -17,9 +17,9 @@ _Melanie is an engineer and she will graduate soon. She has been working on data
 _Lubna, in the first year of her PhD thesis, studied Physics and Science Communciation. She is analysing and modelling behavioral and neural data collected from monkeys and humans, including patients, while they perform context-dependent decision making tasks. She collects human data. Monkey data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
 # Research Engineers
 ### [Kaleab Belay (co-supervised with Nikolas Karalis)](https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en)
-_Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from Nikolas Karalis lab._
+_Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from [Nikolas Karalis lab](https://www.neuronaldynamics.eu/team/nikolas)._
 ### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
-_Philipp studies Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
+_Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
 # Master
 ### [Laurine Marty (second year)](https://fr.linkedin.com/in/laurine-marty)
 _Laurine studies Computer Science and Cognitive Neuroscience. Her thesis is about foundation models, specificaly transformers, of neuroimaging data. Data comes form [Michael Pereira](https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira) lab._
