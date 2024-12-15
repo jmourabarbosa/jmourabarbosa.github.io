@@ -17,6 +17,7 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 
 [PINTS homepage](pints.fr) 
 
+Organizers: Joao Barbosa, Sophie Bagur, Yves Boubenec, N Alex Cayco Gajic
 
 
 # Neural Networking Nights 
