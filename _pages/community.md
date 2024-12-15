@@ -1,7 +1,7 @@
 
 ---
 layout: archive
-title: "Community building"
+title: "Community"
 permalink: /community/
 author_profile: true
 ---
