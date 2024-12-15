@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "community"
+title: "Community building"
 permalink: /community/
 author_profile: true
 ---
@@ -8,7 +8,7 @@ author_profile: true
 I strongly belive that a tight community is important for the well being of scientists. Since my PhD, I have been inolved in community building activities. Here's a list of the current initiatives that I am co-organizing.
 
 
-# Paris Ile-de-France Neuroscience, Theory, and Systems
+# 1. Paris Ile-de-France Neuroscience, Theory, and Systems
   
 ![alt text](../images/pints_header_10.png)
 
@@ -19,7 +19,7 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 Organizers: Joao Barbosa, Sophie Bagur, Yves Boubenec, N Alex Cayco Gajic
 
 
-# Neural Networking Nights 
+# 2. Neural Networking Nights 
 
 ![alt text](../images/logo-NNN_small2.png)
 
@@ -29,3 +29,9 @@ A monthly seminar series designed to bring together the Parisian neuroscience co
 [NNN homepage](https://neuralnetworkingnight.github.io/)
 
 Organizers: Michael Graupner, Joao Barbosa, Srdjan Ostojic, N Alex Cayco Gajic 
+
+# 3. Neurochats (founder, not an organizer anymore)
+
+The goal of the Neurochats seminar aims to bring together young researchers from Barcelona and to encourage interaction among the various research centers in the city and its surroundings. The event counts with the pleasure of free pizza and the excitement of scientific discovery, creating a relaxed and engaging atmosphere for knowledge exchange. The format includes informal talks lasting 45 minutes followed by a 15-minute discussion, allowing masters, PhD students, and postdoctoral fellows to familiarize themselves with their colleagues’ research.
+
+Organizers: Caterina Barezzi, Tomas Berjaga I Buisan, Alexandre Garcia-Duran Castilla
