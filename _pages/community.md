@@ -21,6 +21,6 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 
 A monthly seminar series designed to bring together the Parisian neuroscience community. One Friday a month, we host a scientific talk and an apéro in an iconic student bar in the 5th arrondissement of Paris. Doors at 17.00, talk at 17.15, happy hour at 18.00. Like Pint of Science, but for researchers.
 
-[NNN homepage]([pints.fr](https://neuralnetworkingnight.github.io/)) 
+[NNN homepage](https://neuralnetworkingnight.github.io/)
 
 Organizers: Michael Graupner, Joao Barbosa, Srdjan Ostojic, N Alex Cayco Gajic 
