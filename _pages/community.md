@@ -9,7 +9,7 @@ author_profile: true
 I strongly belive that a tight community is important for the well being of scientists. Since my PhD, I have been inolved in community building activities. Here's a list of the current initiatives that I am co-organizing.
 
 
-### PINTS - yearly conference of all things neuroscience.
+# Paris Ile-de-France Neuroscience, Theory, and Systems
   
 ![alt text](../images/pints_header_10.png)
 
@@ -19,7 +19,7 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 
 
 
-### Neural Networking Nights - The Parisien neuroscience community gathers in a bar for an informal talk will enjoying a cold, free drink.
+# Neural Networking Nights 
 
 ![alt text](../images/logo-NNN_small2.png)
 
