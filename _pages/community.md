@@ -20,7 +20,7 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 Organizers: Joao Barbosa, Sophie Bagur, Yves Boubenec, N Alex Cayco Gajic
 
 
-## 2. Neural Networking Nights 
+## 2. Neural Networking Night
 
 <img src="../images/logo-NNN_small2.png" alt="image" style="width:500px;height:auto;">
 
