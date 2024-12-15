@@ -36,4 +36,6 @@ Organizers: Michael Graupner, Joao Barbosa, Srdjan Ostojic, N Alex Cayco Gajic
 
 The goal of the Neurochats seminar aims to bring together young researchers from Barcelona and to encourage interaction among the various research centers in the city and its surroundings. The event counts with the pleasure of free pizza and the excitement of scientific discovery, creating a relaxed and engaging atmosphere for knowledge exchange. The format includes informal talks lasting 45 minutes followed by a 15-minute discussion, allowing masters, PhD students, and postdoctoral fellows to familiarize themselves with their colleagues’ research.
 
+[Neurochats homepage](https://www.crm.cat/neurochats-seminar/)
+
 Organizers: Caterina Barezzi, Tomas Berjaga I Buisan, Alexandre Garcia-Duran Castilla
