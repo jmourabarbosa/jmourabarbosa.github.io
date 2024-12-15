@@ -13,7 +13,7 @@ I strongly belive that a tight community is important for the well being of scie
 <img src="../images/pints_header_10.png" alt="image" style="width:500px;height:auto;">
 
 
-A one-day conference for the Paris area, with an international keynote speaker, contributed talks, and posters. After a pilot event in 2022 and a successful revamped edition in 2024, we hope to make this a staple local conference that can highlight the excellence research performed across Île-de-France. 
+A one-day conference for the Paris area, with an international keynote speaker, contributed talks, and posters. After a pilot event in 2022 and a successful revamped edition in 2024, we hope to make this a staple local conference that can highlight the excellent research performed across Île-de-France. 
 
 [PINTS homepage](pints.fr) 
 
