@@ -10,6 +10,8 @@ I strongly belive that a tight community is important for the well being of scie
 
 
 ### PINTS - yearly conference of all things neuroscience.
+  
+![alt text](../images/pints_header_10.png)
 
 A one-day conference for the Paris area, with an international keynote speaker, contributed talks, and posters. After a pilot event in 2022 and a successful revamped edition in 2024, we hope to make this a staple local conference that can highlight the excellence research performed across Île-de-France. 
 
@@ -18,6 +20,9 @@ A one-day conference for the Paris area, with an international keynote speaker, 
 
 
 ### Neural Networking Nights - The Parisien neuroscience community gathers in a bar for an informal talk will enjoying a cold, free drink.
+
+![alt text](../images/logo-NNN_small2.png)
+
 
 A monthly seminar series designed to bring together the Parisian neuroscience community. One Friday a month, we host a scientific talk and an apéro in an iconic student bar in the 5th arrondissement of Paris. Doors at 17.00, talk at 17.15, happy hour at 18.00. Like Pint of Science, but for researchers.
 
