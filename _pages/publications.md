@@ -15,10 +15,9 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 Pre-prints
 =====
-[*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
-Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
-*PsyArxiv (2022)*
-[[code]](https://github.com/neurogym/neurogym)
+[*Quantifying Differences in Neural Population Activity With Shape Metrics*](https://www.biorxiv.org/content/10.1101/2025.01.10.632411v1.full.pdf+html)  
+**Joao Barbosa**, Amin Nejatbakhsh, Lyndon Duong, Sarah E. Harvey, Scott L. Brincat, Markus Siegel, Earl K. Miller, Alex H. Williams  
+*bioRxiv (2025)*
 
 [*Neural signatures of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia*](https://osf.io/preprints/psyarxiv/kz73s)  
 Heike Stein, **Joao Barbosa**, Diego Lozano-Soldevilla,Mireia Rosa-Justicia, Alba Morató, Adrià Galan-Gadea, Laia Prades, Amaia Muñoz-Lopetegui, Helena Ariño, Eugenia Martinez-Hernandez, Mar Guasp, Josefina Castro-Fornieles, Josep Dalmau, Joan Santamaria, Albert Compte  
@@ -27,6 +26,11 @@ Heike Stein, **Joao Barbosa**, Diego Lozano-Soldevilla,Mireia Rosa-Justicia, Alb
 [*Alpha phase-coding supports feature binding during working memory maintenance*](https://www.biorxiv.org/content/10.1101/2024.01.21.576561v1.abstract)  
 Mattia F. Pagnotta, Aniol Santo-Angles, Ainsley Temudo, **Joao Barbosa**,  Albert Compte,  Mark D’Esposito, Kartik K. Sreenivasan  
 *bioRxiv (2024)*
+
+[*NeuroGym: An open resource for developing and sharing neuroscience tasks*](https://psyarxiv.com/aqc9n/)  
+Manuel Molano-Mazón, **Joao Barbosa**, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang.    
+*PsyArxiv (2022)*
+[[code]](https://github.com/neurogym/neurogym)
 
 Peer-reviewed
 =====
