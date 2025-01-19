@@ -15,6 +15,10 @@ Don't hesitate contacting me at palerma @ google mail if something is missing.
 
 Pre-prints
 =====
+[*Redundant, weakly connected prefrontal hemispheres balance precision and capacity in spatial working memory*](https://www.biorxiv.org/content/10.1101/2025.01.15.633176v1)  
+Melanie Tschiersch, Akash Umakantha, Ryan C. Williamson, Matthew A Smith, **Joao Barbosa**+, Albert Compte+  
+*bioRxiv (2025)*
+
 [*Quantifying Differences in Neural Population Activity With Shape Metrics*](https://www.biorxiv.org/content/10.1101/2025.01.10.632411v1.full.pdf+html)  
 **Joao Barbosa**, Amin Nejatbakhsh, Lyndon Duong, Sarah E. Harvey, Scott L. Brincat, Markus Siegel, Earl K. Miller, Alex H. Williams  
 *bioRxiv (2025)*
