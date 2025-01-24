@@ -9,6 +9,9 @@ main:
   - title: "People working with me"
     url: /people/
 
+  - title: "Teaching"
+    url: /teaching/
+    
   - title: "Community"
     url: /community/
     
