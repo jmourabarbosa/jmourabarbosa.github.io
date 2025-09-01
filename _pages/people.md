@@ -20,6 +20,8 @@ _Lubna, in the first year of her PhD thesis, studied Physics and Science Communc
 _Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from [Nikolas Karalis lab](https://www.neuronaldynamics.eu/team/nikolas)._
 ### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
 _Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
+### [Bruna Junqueira Lopes](https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en)
+_Burna studied Computer Science and Machine Learning._ 
 # Master
 
 ### Clara Hornung.
