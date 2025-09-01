@@ -24,7 +24,7 @@ _Philipp studied Physics and Neuroscience. He is working in data-driven RNN mode
 _Burna studied Computer Science and Machine Learning._ 
 # Master
 
-### Clara Hornung.
+### Clara Hornung
 ### [Arghavan Aslani](https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en)
 # Alumni
 
