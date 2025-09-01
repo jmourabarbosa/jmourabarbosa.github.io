@@ -22,6 +22,8 @@ _Kaleab studied Computer Science and Machine learning. He is working in data-dri
 _Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
 # Master
 
+### [Clara Hornung]
+### [Arghavan Aslani]
 # Alumni
 
 ### [Laurine Marty (Master student)](https://fr.linkedin.com/in/laurine-marty)
