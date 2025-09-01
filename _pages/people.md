@@ -21,10 +21,15 @@ _Kaleab studied Computer Science and Machine learning. He is working in data-dri
 ### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
 _Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
 # Master
-### [Laurine Marty (second year)](https://fr.linkedin.com/in/laurine-marty)
-_Laurine studies Computer Science and Cognitive Neuroscience. Her thesis is about foundation models, specificaly transformers, of neuroimaging data. Data comes form [Michael Pereira](https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira) lab._
-### [Ibrîze Bonneville (second year)](https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217)
-_Ibrîze studied Math, Life Sciences and Biomedical Engineering. In her thesis, she uses data-driven RNN to model behaivoral data that she collects online._
-### Romain Hû (first year)
-_Romain studied Medicine and Math. He is doing is Master in Math and AI. He is getting first-hand experience with analysing and modeling single-unit recordings from human patients during working memory tasks. Data comes from [Jan Kaminski lab](https://www.jankaminski.com/news)._
+
+# Alumni
+
+### [Laurine Marty (Master student)](https://fr.linkedin.com/in/laurine-marty)
+_Laurine studies Computer Science and Cognitive Neuroscience. Her thesis was about foundation models, specificaly transformers, of neuroimaging data. Data was form [Michael Pereira](https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira) lab._
+She is now doing a PhD with Guillaume Bellec.
+
+### [Ibrîze Bonneville (Master student)](https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217)
+_Ibrîze studied Math, Life Sciences and Biomedical Engineering. In her thesis, she used data-driven RNN to model behaivoral data.  Data was form [Gouki Okazawa]([https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira](https://www.g-okazawa-lab.net/)) lab._
+### Romain Hû (Master student)
+_Romain studied Medicine and Math. He was doing is Master in Math and AI. He got first-hand experience with analysing and modeling single-unit recordings from human patients during working memory tasks. Data came from [Jan Kaminski lab](https://www.jankaminski.com/news)._
 
