@@ -17,28 +17,14 @@
 .research-card {
   background: var(--body-color);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     border-color: #6b4c93;
-  }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #6b4c93, var(--primary-color));
   }
   
   &.hidden {
@@ -50,7 +36,6 @@
   }
   
   &.expanded {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border-color: #6b4c93;
   }
 }
@@ -303,7 +288,6 @@
     background: #6b4c93;
     color: white;
     transform: translateY(-1px);
-    box-shadow: 0 2px 4px rgba(107, 76, 147, 0.3);
   }
 }
 
@@ -362,7 +346,7 @@
   text-align: center;
   margin: 0 0 3rem 0;
   padding: 2rem 0;
-  background: linear-gradient(135deg, var(--body-color) 0%, var(--lighter-gray) 100%);
+  background: var(--body-color);
   border-radius: 12px;
   border: 1px solid var(--border-color);
 }
@@ -523,28 +507,14 @@
 .person-card {
   background: var(--body-color);
   border: 1px solid var(--border-color);
-  border-radius: 6px;
-  padding: 1.2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     border-color: #6b4c93;
-  }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #6b4c93, var(--primary-color));
   }
   
   &.hidden {
@@ -556,7 +526,6 @@
   }
   
   &.expanded {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border-color: #6b4c93;
   }
 }
@@ -727,28 +696,14 @@
 .community-card {
   background: var(--body-color);
   border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
   cursor: pointer;
   
   &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     border-color: #6b4c93;
-  }
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #6b4c93, var(--primary-color));
   }
   
   &.collapsed {
@@ -756,7 +711,6 @@
   }
   
   &.expanded {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border-color: #6b4c93;
   }
 }
@@ -893,7 +847,6 @@
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   position: relative;
   cursor: pointer;
@@ -919,7 +872,6 @@
   }
   
   &.expanded {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     border-color: #6b4c93;
   }
 }
@@ -1121,15 +1073,15 @@
 
 /* Photography Page Styling */
 .photography-main {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: var(--body-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
   margin-bottom: 2rem;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   
   &:hover {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #6b4c93;
   }
 }
 
@@ -1285,12 +1237,11 @@
 
 /* Hiring Alert */
 .hiring-alert {
-  background: linear-gradient(135deg, #f0e6ff 0%, #e6f3ff 100%);
+  background: var(--body-color);
   border-left: 4px solid #6b4c93;
   border-radius: 8px;
   padding: 1.2rem;
   margin: 1.5rem 0;
-  box-shadow: 0 2px 8px rgba(107, 76, 147, 0.1);
   
   strong {
     display: block;
@@ -1313,7 +1264,6 @@
   padding: 1.5rem;
   background: white;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .news-section__title {
@@ -1525,19 +1475,9 @@
 
 /* Dark mode specific adjustments */
 [data-theme="dark"] {
-  .research-card,
-  .publication-item,
-  .publications-intro,
-  .person-card {
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
-    
-    &:hover {
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
-    }
-  }
   
   .page-header {
-    background: linear-gradient(135deg, var(--body-color) 0%, var(--light-gray) 100%);
+    background: var(--body-color);
   }
   
   .publication-link,
@@ -1555,11 +1495,9 @@
   
   .filter-tab {
     &:hover {
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
     
     &.active {
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
     }
   }
   
