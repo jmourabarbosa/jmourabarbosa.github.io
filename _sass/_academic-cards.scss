@@ -896,12 +896,17 @@
   
   a {
     color: #6b4c93;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border: none !important;
     transition: all 0.2s ease;
     
     &:hover {
-      border-bottom-color: #6b4c93;
+      color: #6b4c93 !important;
+      font-weight: bold;
+      text-decoration: none !important;
+      border-bottom: none !important;
+      border: none !important;
     }
   }
 }
