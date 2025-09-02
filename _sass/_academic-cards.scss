@@ -236,12 +236,11 @@
   a {
     color: var(--text-color);
     text-decoration: none;
-    border-bottom: 2px solid transparent;
     transition: all 0.2s ease;
     
     &:hover {
       color: #6b4c93;
-      border-bottom-color: #6b4c93;
+      font-weight: bold;
     }
   }
 }
