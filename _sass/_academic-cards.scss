@@ -235,12 +235,17 @@
   
   a {
     color: var(--text-color);
-    text-decoration: none;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    border: none !important;
     transition: all 0.2s ease;
     
     &:hover {
-      color: #6b4c93;
+      color: #6b4c93 !important;
       font-weight: bold;
+      text-decoration: none !important;
+      border-bottom: none !important;
+      border: none !important;
     }
   }
 }
