@@ -5,14 +5,14 @@ permalink: /research/
 author_profile: true
 ---
 
-<div class="page-header">
-  <h1 class="page-header__title">Research Interests</h1>
-  <p class="page-header__subtitle">I combine machine learning with multiregional theories of decision-making and working memory. My research focuses on understanding how computations necessary to solve complex tasks can be distributed across segregated brain regions through data-driven approaches and biophysical modeling.</p>
-</div>
-
 <div class="hiring-alert">
   <strong>Open Positions</strong>
   <p>If you are interested in computational neuroscience, machine learning, and working at the intersection of theory and experiments, please contact me with your CV and research interests. Check our publications to understand the type of research we do.</p>
+</div>
+
+<div class="page-header">
+  <h1 class="page-header__title">Research Interests</h1>
+  <p class="page-header__subtitle">I combine machine learning with multiregional theories of decision-making and working memory. My research focuses on understanding how computations necessary to solve complex tasks can be distributed across segregated brain regions through data-driven approaches and biophysical modeling.</p>
 </div>
 
 <div class="research-grid">
