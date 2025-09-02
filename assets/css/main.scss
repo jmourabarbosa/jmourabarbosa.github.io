@@ -38,4 +38,20 @@
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
+@import "dark-mode";
+@import "academic-cards"; /* updated styles */
+
+/* Test purple override */
+.filter-tab {
+  border-radius: 8px !important;
+}
+.filter-tab.active, .filter-tab:hover {
+  background: #6b4c93 !important;
+  border-color: #6b4c93 !important;
+}
+.person-card__position {
+  background: #6b4c93 !important;
+  border-radius: 6px !important;
+}
+
 @import "print";

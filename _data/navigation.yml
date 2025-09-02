@@ -1,12 +1,12 @@
 # main links links
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Research"
+    url: /research/
 
-  - title: "Research Interests"
-    url: /research/    
+  - title: "Publications"
+    url: /publications/    
   
-  - title: "People working with me"
+  - title: "People"
     url: /people/
 
   - title: "Teaching"
@@ -18,7 +18,7 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Street Photography"
+  - title: "Photography"
     url: /photography/
         
 

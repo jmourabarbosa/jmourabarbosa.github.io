@@ -1,42 +1,237 @@
 ---
 layout: archive
-title: "People"
+title: ""
 permalink: /people/
 author_profile: true
 ---
 
+<div class="page-header">
+  <h1 class="page-header__title">People</h1>
+  <p class="page-header__subtitle">I have the privilege (and responsibility!) to supervise a group of brilliant trainees. Here is the team working in my group, exploring the neural mechanisms of cognition.</p>
+</div>
 
-I have the privilege (and responsability!) to supervise a group of brilliant trainees.
+<div class="filter-tabs people-filter">
+  <button class="filter-tab active" data-filter="current">
+    Current Members <span class="count">6</span>
+  </button>
+  <button class="filter-tab" data-filter="phd">
+    PhD Students <span class="count">2</span>
+  </button>
+  <button class="filter-tab" data-filter="engineer">
+    Research Engineers <span class="count">3</span>
+  </button>
+  <button class="filter-tab" data-filter="master">
+    Master Students <span class="count">2</span>
+  </button>
+  <button class="filter-tab" data-filter="alumni">
+    Alumni <span class="count">3</span>
+  </button>
+</div>
 
-Here is a list of people working in my group.
+<div class="people-grid">
 
-# PhD
-### [Melanie Tschiersch (co-supervised with Albert Compte)](https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a)
-_Melanie is an engineer and she will graduate soon. She has been working on data-analysis and modeling of working memory, in particular how the two prefrontal cortices interact with each other during working memory tasks. Monkey data comes form [Matthew Smith lab](https://www.cmu.edu/bme/People/Faculty/profile/msmith.html)._
-### [Lubna Abdul](https://projects.learningplanetinstitute.org/projects/a-cross-species-approach-to-investigate-altern/summary)
-_Lubna, in the first year of her PhD thesis, studied Physics and Science Communciation. She is analysing and modelling behavioral and neural data collected from monkeys and humans, including patients, while they perform context-dependent decision making tasks. She collects human data. Monkey data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._ 
+  <div class="person-card collapsed" data-position="phd" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/melanie-tschiersch.jpg" alt="Melanie Tschiersch" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Melanie Tschiersch</h3>
+        <p class="person-card__position">PhD Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        <strong>Co-supervised with Albert Compte</strong><br>
+        Melanie is an engineer and she will graduate soon. She has been working on data-analysis and modeling of working memory, in particular how the two prefrontal cortices interact with each other during working memory tasks. Monkey data comes from <a href="https://www.cmu.edu/bme/People/Faculty/profile/msmith.html">Matthew Smith lab</a>.
+      </div>
+      <div class="person-card__links">
+        <a href="https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a" class="person-link">Profile</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-# Research Engineers
-### [Kaleab Belay (co-supervised with Nikolas Karalis)](https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en)
-_Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from [Nikolas Karalis lab](https://www.neuronaldynamics.eu/team/nikolas)._
-### [Philipp Werthmann](https://www.researchgate.net/profile/Philipp-Werthmann)
-_Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes form [Earl Miller lab](https://ekmillerlab.mit.edu/earl-miller/)._
-### [Bruna Junqueira Lopes](https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en)
-_Burna studied Computer Science and Machine Learning._ 
+  <div class="person-card collapsed" data-position="phd" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/lubna-abdul.jpg" alt="Lubna Abdul" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Lubna Abdul</h3>
+        <p class="person-card__position">PhD Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Lubna, in the first year of her PhD thesis, studied Physics and Science Communication. She is analysing and modelling behavioral and neural data collected from monkeys and humans, including patients, while they perform context-dependent decision making tasks. She collects human data. Monkey data comes from <a href="https://ekmillerlab.mit.edu/earl-miller/">Earl Miller lab</a>.
+      </div>
+      <div class="person-card__links">
+        <a href="https://projects.learningplanetinstitute.org/projects/a-cross-species-approach-to-investigate-altern/summary" class="person-link">Project</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-# Master
-### Clara Hornung
-### [Arghavan Aslani](https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en) 
+  <div class="person-card collapsed" data-position="engineer" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/kaleab-belay.jpg" alt="Kaleab Belay" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Kaleab Belay</h3>
+        <p class="person-card__position">Research Engineer</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        <strong>Co-supervised with Nikolas Karalis</strong><br>
+        Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from <a href="https://www.neuronaldynamics.eu/team/nikolas">Nikolas Karalis lab</a>.
+      </div>
+      <div class="person-card__links">
+        <a href="https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en" class="person-link">Google Scholar</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-# Alumni
+  <div class="person-card collapsed" data-position="engineer" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/philipp-werthmann.jpg" alt="Philipp Werthmann" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Philipp Werthmann</h3>
+        <p class="person-card__position">Research Engineer</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes from <a href="https://ekmillerlab.mit.edu/earl-miller/">Earl Miller lab</a>.
+      </div>
+      <div class="person-card__links">
+        <a href="https://www.researchgate.net/profile/Philipp-Werthmann" class="person-link">ResearchGate</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-### [Laurine Marty (Master student)](https://fr.linkedin.com/in/laurine-marty)
-<!-- :_Laurine studies Computer Science and Cognitive Neuroscience. Her thesis was about foundation models, specificaly transformers, of neuroimaging data. Data was form [Michael Pereira](https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira) lab._  -->
+  <div class="person-card collapsed" data-position="engineer" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/bruna-junqueira-lopes.jpg" alt="Bruna Junqueira Lopes" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Bruna Junqueira Lopes</h3>
+        <p class="person-card__position">Research Engineer</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Bruna studied Computer Science and Machine Learning. She brings expertise in computational approaches to understanding neural mechanisms.
+      </div>
+      <div class="person-card__links">
+        <a href="https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en" class="person-link">Google Scholar</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-She is now doing a PhD with Guillaume Bellec.
+  <div class="person-card collapsed" data-position="master" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/clara-hornung.jpg" alt="Clara Hornung" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Clara Hornung</h3>
+        <p class="person-card__position">Master Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Clara is working on her Master's thesis, contributing to our research in computational neuroscience and neural data analysis.
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
 
-### [Ibrîze Bonneville (Master student)](https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217)
-<!-- _Ibrîze studied Math, Life Sciences and Biomedical Engineering. In her thesis, she used data-driven RNN to model behaivoral data.  Data was form [Gouki Okazawa]([https://neurosciences.univ-grenoble-alpes.fr/en/michael-pereira](https://www.g-okazawa-lab.net/)) lab._-->
-### Romain Hû (Master student)
-<!--_Romain studied Medicine and Math. He was doing is Master in Math and AI. He got first-hand experience with analysing and modeling single-unit recordings from human patients during working memory tasks. Data came from [Jan Kaminski lab](https://www.jankaminski.com/news)._-->
+  <div class="person-card collapsed" data-position="master" data-current="true">
+    <div class="person-card__header">
+      <div class="person-card__avatar">
+        <img src="/images/people/arghavan-aslani.jpg" alt="Arghavan Aslani" class="person-card__image">
+      </div>
+      <div class="person-card__info">
+        <h3 class="person-card__name">Arghavan Aslani</h3>
+        <p class="person-card__position">Master Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Arghavan is pursuing her Master's degree and contributing valuable insights to our research projects.
+      </div>
+      <div class="person-card__links">
+        <a href="https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en" class="person-link">Google Scholar</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
+
+</div>
+
+<div class="alumni-section">
+  <div class="people-grid">
+
+  <div class="person-card collapsed alumni-card" data-position="alumni" data-current="false">
+    <div class="person-card__header">
+      <div>
+        <h3 class="person-card__name">Laurine Marty</h3>
+        <p class="person-card__position alumni">Former Master Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Former Master student. She is now doing a PhD with Guillaume Bellec.
+      </div>
+      <div class="person-card__links">
+        <a href="https://fr.linkedin.com/in/laurine-marty" class="person-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
+
+  <div class="person-card collapsed alumni-card" data-position="alumni" data-current="false">
+    <div class="person-card__header">
+      <div>
+        <h3 class="person-card__name">Ibrîze Bonneville</h3>
+        <p class="person-card__position alumni">Former Master Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Former Master student who contributed to our research projects.
+      </div>
+      <div class="person-card__links">
+        <a href="https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217" class="person-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
+
+  <div class="person-card collapsed alumni-card" data-position="alumni" data-current="false">
+    <div class="person-card__header">
+      <div>
+        <h3 class="person-card__name">Romain Hû</h3>
+        <p class="person-card__position alumni">Former Master Student</p>
+      </div>
+    </div>
+    <div class="person-card__expandable">
+      <div class="person-card__description">
+        Former Master student who worked on computational neuroscience projects.
+      </div>
+    </div>
+    <div class="person-card__expand-indicator">+</div>
+  </div>
+
+  </div>
+</div>
 

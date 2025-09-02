@@ -95,4 +95,616 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-});
+  // Dark Mode Toggle
+  function initDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const toggleIcon = document.getElementById('toggleIcon');
+    const html = document.documentElement;
+    
+    // Check for saved theme preference or default to 'light'
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    
+    // Apply the saved theme
+    html.setAttribute('data-theme', currentTheme);
+    updateToggleIcon(currentTheme, toggleIcon);
+    
+    // Toggle theme on button click
+    if (darkModeToggle) {
+      darkModeToggle.addEventListener('click', function() {
+        const currentTheme = html.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        // Apply new theme
+        html.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        updateToggleIcon(newTheme, toggleIcon);
+        
+        // Add a subtle animation
+        darkModeToggle.style.transform = 'scale(0.95)';
+        setTimeout(function() {
+          darkModeToggle.style.transform = 'scale(1)';
+        }, 100);
+      });
+    }
+  }
+  
+  function updateToggleIcon(theme, iconElement) {
+    if (iconElement) {
+      iconElement.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+  }
+  
+  // Initialize dark mode when DOM is ready
+  initDarkMode();
+  
+  // Initialize filtering functionality
+  initFiltering();
+  
+  // Initialize expandable cards
+  initExpandableCards();
+
+}); // DOM ready
+
+// Filtering functionality
+function initFiltering() {
+  // Publication filtering
+  initPublicationFilters();
+  
+  // People filtering  
+  initPeopleFilters();
+}
+
+function initPublicationFilters() {
+  var filterTabs = document.querySelectorAll('.publications-filter .filter-tab');
+  var keywordTabs = document.querySelectorAll('.keywords-filter .keyword-tab');
+  var publicationItems = document.querySelectorAll('.publication-item');
+  var publicationSections = document.querySelectorAll('.publications-section');
+  
+  if (filterTabs.length === 0 || publicationItems.length === 0) return;
+  
+  function filterPublications() {
+    var activePublicationFilter = document.querySelector('.publications-filter .filter-tab.active');
+    var activeKeywordFilter = document.querySelector('.keywords-filter .keyword-tab.active');
+    var publicationFilterValue = activePublicationFilter ? activePublicationFilter.getAttribute('data-filter') : 'all';
+    var keywordFilterValue = activeKeywordFilter ? activeKeywordFilter.getAttribute('data-filter') : 'all-keywords';
+    
+    publicationItems.forEach(function(item) {
+      var itemCategories = (item.getAttribute('data-categories') || '').split(' ');
+      var showByPublication = (publicationFilterValue === 'all' || itemCategories.indexOf(publicationFilterValue) !== -1);
+      var showByKeyword = (keywordFilterValue === 'all-keywords' || itemCategories.indexOf(keywordFilterValue) !== -1);
+      
+      if (showByPublication && showByKeyword) {
+        item.style.display = 'block';
+        item.classList.remove('filtering-out');
+      } else {
+        item.classList.add('filtering-out');
+        setTimeout(function() {
+          if (item.classList.contains('filtering-out')) {
+            item.style.display = 'none';
+          }
+        }, 300);
+      }
+    });
+    
+    // Update section visibility
+    setTimeout(function() {
+      publicationSections.forEach(function(section) {
+        var visibleItems = section.querySelectorAll('.publication-item:not([style*="display: none"])');
+        if (visibleItems.length > 0) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }, 350);
+  }
+
+  filterTabs.forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Update active tab
+      filterTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      
+      filterPublications();
+    });
+  });
+  
+  keywordTabs.forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Update active tab
+      keywordTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      
+      filterPublications();
+    });
+  });
+  
+  // Tag click functionality
+  var tags = document.querySelectorAll('.tag');
+  tags.forEach(function(tag) {
+    tag.addEventListener('click', function(e) {
+      e.preventDefault();
+      var tagValue = this.getAttribute('data-tag');
+      
+      // Find corresponding keyword filter and activate it
+      var correspondingFilter = document.querySelector('.keywords-filter .keyword-tab[data-filter="' + tagValue + '"]');
+      if (correspondingFilter) {
+        keywordTabs.forEach(function(t) { t.classList.remove('active'); });
+        correspondingFilter.classList.add('active');
+        filterPublications();
+      }
+    });
+  });
+}
+
+function initPeopleFilters() {
+  var filterTabs = document.querySelectorAll('.people-filter .filter-tab');
+  var peopleCards = document.querySelectorAll('.person-card');
+  var alumniSection = document.querySelector('.alumni-section');
+  
+  if (filterTabs.length === 0 || peopleCards.length === 0) return;
+  
+  filterTabs.forEach(function(tab) {
+    tab.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var targetFilter = tab.getAttribute('data-filter');
+      
+      // Update active tab
+      filterTabs.forEach(function(t) { t.classList.remove('active'); });
+      tab.classList.add('active');
+      
+      // Show/hide alumni section based on filter
+      if (alumniSection) {
+        if (targetFilter === 'alumni') {
+          alumniSection.classList.add('visible');
+        } else {
+          alumniSection.classList.remove('visible');
+        }
+      }
+      
+      // Filter people
+      peopleCards.forEach(function(card) {
+        var cardPosition = card.getAttribute('data-position');
+        var isCurrent = card.getAttribute('data-current') === 'true';
+        
+        var shouldShow = false;
+        if (targetFilter === 'current' && isCurrent) {
+          shouldShow = true;
+        } else if (targetFilter === cardPosition) {
+          shouldShow = true;
+        }
+        
+        if (shouldShow) {
+          card.style.display = 'block';
+          card.classList.remove('filtering-out');
+        } else {
+          card.classList.add('filtering-out');
+          setTimeout(function() {
+            if (card.classList.contains('filtering-out')) {
+              card.style.display = 'none';
+            }
+          }, 300);
+        }
+      });
+    });
+  });
+}
+
+// Initialize expandable cards
+function initExpandableCards() {
+  var personCards = document.querySelectorAll('.person-card');
+  var researchCards = document.querySelectorAll('.research-card');
+  var communityCards = document.querySelectorAll('.community-card');
+  var teachingCards = document.querySelectorAll('.teaching-card');
+  
+  // Initialize person cards
+  if (personCards.length > 0) {
+    personCards.forEach(function(card) {
+      card.addEventListener('click', function() {
+        var isCollapsed = card.classList.contains('collapsed');
+        var expandableContent = card.querySelector('.person-card__expandable');
+        var indicator = card.querySelector('.person-card__expand-indicator');
+        
+        if (isCollapsed) {
+          // Close all other cards of all types first
+          personCards.forEach(function(otherCard) {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.person-card__expandable');
+              var otherIndicator = otherCard.querySelector('.person-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          researchCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.research-card__expandable');
+              var otherIndicator = otherCard.querySelector('.research-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          communityCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.community-card__expandable');
+              var otherIndicator = otherCard.querySelector('.community-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          teachingCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.teaching-card__expandable');
+              var otherIndicator = otherCard.querySelector('.teaching-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          
+          // Expand the clicked card
+          card.classList.remove('collapsed');
+          card.classList.add('expanded');
+          if (expandableContent) {
+            expandableContent.classList.add('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '−';
+          }
+        } else {
+          // Collapse the card
+          card.classList.remove('expanded');
+          card.classList.add('collapsed');
+          if (expandableContent) {
+            expandableContent.classList.remove('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '+';
+          }
+        }
+      });
+    });
+  }
+  
+  // Initialize research cards
+  if (researchCards.length > 0) {
+    researchCards.forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Check if text is being selected
+        var selection = window.getSelection();
+        if (selection.toString().length > 0) {
+          return; // Don't toggle if text is selected
+        }
+        
+        // Don't toggle if clicking on links or inside expandable content
+        if (e.target.tagName === 'A' || e.target.closest('.research-card__expandable')) {
+          return;
+        }
+        
+        var isCollapsed = card.classList.contains('collapsed');
+        var expandableContent = card.querySelector('.research-card__expandable');
+        var indicator = card.querySelector('.research-card__expand-indicator');
+        
+        if (isCollapsed) {
+          // Close all other cards of all types first
+          personCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.person-card__expandable');
+              var otherIndicator = otherCard.querySelector('.person-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          researchCards.forEach(function(otherCard) {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.research-card__expandable');
+              var otherIndicator = otherCard.querySelector('.research-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          communityCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.community-card__expandable');
+              var otherIndicator = otherCard.querySelector('.community-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          teachingCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.teaching-card__expandable');
+              var otherIndicator = otherCard.querySelector('.teaching-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          
+          // Expand the clicked card
+          card.classList.remove('collapsed');
+          card.classList.add('expanded');
+          if (expandableContent) {
+            expandableContent.classList.add('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '×';
+          }
+        } else {
+          // Collapse the card
+          card.classList.remove('expanded');
+          card.classList.add('collapsed');
+          if (expandableContent) {
+            expandableContent.classList.remove('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '+';
+          }
+        }
+      });
+    });
+  }
+  
+  // Initialize community cards
+  if (communityCards.length > 0) {
+    communityCards.forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Check if text is being selected
+        var selection = window.getSelection();
+        if (selection.toString().length > 0) {
+          return; // Don't toggle if text is selected
+        }
+        
+        // Don't toggle if clicking on links or inside expandable content
+        if (e.target.tagName === 'A' || e.target.closest('.community-card__expandable')) {
+          return;
+        }
+        
+        var isCollapsed = card.classList.contains('collapsed');
+        var expandableContent = card.querySelector('.community-card__expandable');
+        var indicator = card.querySelector('.community-card__expand-indicator');
+        
+        if (isCollapsed) {
+          // Close all other cards of all types first
+          personCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.person-card__expandable');
+              var otherIndicator = otherCard.querySelector('.person-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          researchCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.research-card__expandable');
+              var otherIndicator = otherCard.querySelector('.research-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          communityCards.forEach(function(otherCard) {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.community-card__expandable');
+              var otherIndicator = otherCard.querySelector('.community-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          
+          // Expand the clicked card
+          card.classList.remove('collapsed');
+          card.classList.add('expanded');
+          if (expandableContent) {
+            expandableContent.classList.add('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '×';
+          }
+        } else {
+          // Collapse the card
+          card.classList.remove('expanded');
+          card.classList.add('collapsed');
+          if (expandableContent) {
+            expandableContent.classList.remove('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '+';
+          }
+        }
+      });
+    });
+  }
+  
+  // Initialize photography cards
+  var photographyCards = document.querySelectorAll('.photography-card');
+  if (photographyCards.length > 0) {
+    photographyCards.forEach(function(card) {
+      var header = card.querySelector('.photography-card__header');
+      if (header) {
+        header.addEventListener('click', function() {
+          // Close other cards
+          photographyCards.forEach(function(otherCard) {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+            }
+          });
+          
+          // Toggle current card
+          card.classList.toggle('expanded');
+          card.classList.toggle('collapsed');
+        });
+      }
+    });
+  }
+  
+  // Initialize teaching cards
+  if (teachingCards.length > 0) {
+    teachingCards.forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Check if text is being selected
+        var selection = window.getSelection();
+        if (selection.toString().length > 0) {
+          return; // Don't toggle if text is selected
+        }
+        
+        // Don't toggle if clicking on links or inside expandable content
+        if (e.target.tagName === 'A' || e.target.closest('.teaching-card__expandable')) {
+          return;
+        }
+        
+        var isCollapsed = card.classList.contains('collapsed');
+        var expandableContent = card.querySelector('.teaching-card__expandable');
+        var indicator = card.querySelector('.teaching-card__expand-indicator');
+        
+        if (isCollapsed) {
+          // Close all other cards of all types first
+          personCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.person-card__expandable');
+              var otherIndicator = otherCard.querySelector('.person-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          researchCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.research-card__expandable');
+              var otherIndicator = otherCard.querySelector('.research-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          communityCards.forEach(function(otherCard) {
+            if (otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.community-card__expandable');
+              var otherIndicator = otherCard.querySelector('.community-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          teachingCards.forEach(function(otherCard) {
+            if (otherCard !== card && otherCard.classList.contains('expanded')) {
+              otherCard.classList.remove('expanded');
+              otherCard.classList.add('collapsed');
+              var otherExpandable = otherCard.querySelector('.teaching-card__expandable');
+              var otherIndicator = otherCard.querySelector('.teaching-card__expand-indicator');
+              if (otherExpandable) {
+                otherExpandable.classList.remove('expanded');
+              }
+              if (otherIndicator) {
+                otherIndicator.textContent = '+';
+              }
+            }
+          });
+          
+          // Expand the clicked card
+          card.classList.remove('collapsed');
+          card.classList.add('expanded');
+          if (expandableContent) {
+            expandableContent.classList.add('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '×';
+          }
+        } else {
+          // Collapse the card
+          card.classList.remove('expanded');
+          card.classList.add('collapsed');
+          if (expandableContent) {
+            expandableContent.classList.remove('expanded');
+          }
+          if (indicator) {
+            indicator.textContent = '+';
+          }
+        }
+      });
+    });
+  }
+}

@@ -20,52 +20,48 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      {% if author.location %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.location }}</li>
-      {% endif %}
-      {% if author.employer %}
-        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> {{ author.employer }}</li>
-      {% endif %}
+    <ul class="author__urls social-icons social-icons-horizontal">
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
       {% endif %}
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+        <li><a href="mailto:{{ author.email }}" title="Email"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.keybase %}
         <li><a href="https://keybase.io/{{ author.keybase }}"><i class="fas fa-fw fa-key" aria-hidden="true"></i> Keybase</a></li>
       {% endif %}
        {% if author.researchgate %}
-        <li><a href="{{ author.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>
+        <li><a href="{{ author.researchgate }}" title="ResearchGate"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.twitter %}
-        <li><a href="https://twitter.com/{{ author.twitter }}"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        <li><a href="https://twitter.com/{{ author.twitter }}" title="Twitter"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i></a></li>
+      {% endif %}
+      {% if author.bluesky %}
+        <li><a href="https://bsky.app/profile/{{ author.bluesky | remove: '@' }}" title="Bluesky"><img src="{{ base_path }}/images/bluesky-logo.png" class="bluesky-icon" alt="Bluesky"></a></li>
       {% endif %}
       {% if author.facebook %}
-        <li><a href="https://www.facebook.com/{{ author.facebook }}"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        <li><a href="https://www.facebook.com/{{ author.facebook }}" title="Facebook"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.google_plus %}
-        <li><a href="https://plus.google.com/+{{ author.google_plus }}"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i> Google+</a></li>
+        <li><a href="https://plus.google.com/+{{ author.google_plus }}" title="Google+"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}" title="LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.xing %}
-        <li><a href="https://www.xing.com/profile/{{ author.xing }}"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i> XING</a></li>
+        <li><a href="https://www.xing.com/profile/{{ author.xing }}" title="XING"><i class="fab fa-fw fa-xing-square" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.instagram %}
-        <li><a href="https://instagram.com/{{ author.instagram }}"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        <li><a href="https://instagram.com/{{ author.instagram }}" title="Instagram"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.tumblr %}
-        <li><a href="https://{{ author.tumblr }}.tumblr.com"><i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i> Tumblr</a></li>
+        <li><a href="https://{{ author.tumblr }}.tumblr.com" title="Tumblr"><i class="fab fa-fw fa-tumblr-square" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.bitbucket %}
-        <li><a href="https://bitbucket.org/{{ author.bitbucket }}"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
+        <li><a href="https://bitbucket.org/{{ author.bitbucket }}" title="Bitbucket"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+        <li><a href="https://github.com/{{ author.github }}" title="GitHub"><i class="fab fa-fw fa-github" aria-hidden="true"></i></a></li>
       {% endif %}
       {% if author.stackoverflow %}
         <li><a href="https://www.stackoverflow.com/users/{{ author.stackoverflow }}"><i class="fab fa-fw fa-stack-overflow" aria-hidden="true"></i> Stackoverflow</a></li>
@@ -104,13 +100,13 @@
         <li><a href="https://vine.co/u/{{ author.vine }}"><i class="fab fa-fw fa-vine" aria-hidden="true"></i> Vine</a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+        <li><a href="{{ author.googlescholar }}" title="Google Scholar"><i class="fas fa-fw fa-graduation-cap"></i></a></li>
       {% endif %}
       {% if author.pubmed %}
-        <li><a href="{{ author.pubmed }}"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
+        <li><a href="{{ author.pubmed }}" title="PubMed"><i class="ai ai-pubmed-square ai-fw"></i></a></li>
       {% endif %}
       {% if author.orcid %}
-        <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+        <li><a href="{{ author.orcid }}" title="ORCID"><i class="ai ai-orcid-square ai-fw"></i></a></li>
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw"></i> Impactstory</a></li>
@@ -119,5 +115,39 @@
         <li><a href="https://en.wikipedia.org/wiki/User:{{ author.wikipedia }}"><i class="fab fa-fw fa-wikipedia-w" aria-hidden="true"></i> Wikipedia</a></li>
 {% endif %}
     </ul>
+  </div>
+</div>
+
+<div class="author-news-section">
+  <h3 class="author-news__title">News & Events</h3>
+  <div class="author-news__list">
+    <div class="author-news__item">
+      <span class="author-news__date">Oct 2025</span>
+      <span class="author-news__content">Joao will give two talks at Bernstein Workshops 2025: <a href="https://bernstein-network.de/bernstein-conference/program/satellite-workshops/machine-learning/">Machine Learning</a> and <a href="https://bernstein-network.de/bernstein-conference/program/satellite-workshops/top-down/">Top-down</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">Sept 2025</span>
+      <span class="author-news__content">Joao teaching at <a href="https://www.uc.pt/events/computationalbiology/2025/">Summer School on Computational Biology, Coimbra</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">Aug 2025</span>
+      <span class="author-news__content">Lubna gave a talk at <a href="https://2025.ccneuro.org/">CCN 2025, Amsterdam</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">Aug 2025</span>
+      <span class="author-news__content">Joao participated in the <a href="https://compneurosci.com/Neuro4Pros/index.html">Neuroscience Leadership Training in Kingston, Canada</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">July 2025</span>
+      <span class="author-news__content">Joao taught at <a href="https://www.csh-asia.org/?content/2621">Cognitive and Computational Neuroscience Summer School, Suzhou, China</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">July 2025</span>
+      <span class="author-news__content">Joao taught at <a href="https://biortc.com/computational-neuroscience-course-2025/">Simons-BioRTC Computational Neuroscience Summer School, Damaturo, Nigeria</a></span>
+    </div>
+    <div class="author-news__item">
+      <span class="author-news__date">May 2025</span>
+      <span class="author-news__content">Philipp and Joao gave talks at Mathematics of Neuroscience and AI in Split. Kaleab presented a poster.</span>
+    </div>
   </div>
 </div>
