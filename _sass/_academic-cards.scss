@@ -811,6 +811,16 @@
   border-radius: 8px;
 }
 
+// Neural Networking Night card - increase size
+.community-card:nth-child(2) .community-card__image {
+  max-width: 600px;
+}
+
+// Neurochats card - decrease size
+.community-card:nth-child(3) .community-card__image {
+  max-width: 400px;
+}
+
 .community-card__content {
   color: var(--text-color);
   line-height: 1.6;

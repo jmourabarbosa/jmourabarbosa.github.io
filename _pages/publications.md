@@ -37,7 +37,6 @@ author_profile: true
 </div>
 
 <div class="filter-tabs keywords-filter">
-  <span class="filter-label">Filter by topic:</span>
   <button class="filter-tab keyword-tab active" data-filter="all-keywords">
     All
   </button>

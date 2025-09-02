@@ -128,7 +128,7 @@ author_profile: true
     </div>
     <div class="person-card__expandable">
       <div class="person-card__description">
-        Bruna studied Computer Science and Machine Learning. She brings expertise in computational approaches to understanding neural mechanisms.
+        Bruna studied Computer Science. She is working on fusion of EEG and fMRI using multi modal deep learning techniques.
       </div>
       <div class="person-card__links">
         <a href="https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en" class="person-link">Google Scholar</a>
@@ -149,7 +149,7 @@ author_profile: true
     </div>
     <div class="person-card__expandable">
       <div class="person-card__description">
-        Clara is working on her Master's thesis, contributing to our research in computational neuroscience and neural data analysis.
+        Clara studied Cognitive Sciences. She is working on the geometry of working memory using E-phys decoding techniques.
       </div>
     </div>
     <div class="person-card__expand-indicator">+</div>
@@ -167,7 +167,7 @@ author_profile: true
     </div>
     <div class="person-card__expandable">
       <div class="person-card__description">
-        Arghavan is pursuing her Master's degree and contributing valuable insights to our research projects.
+        Arghavan studied Electrical Engineering and Cognitive Sciences. She is working on distributed mechanisms of working memory using eye tracker and E-phys decoding techniques.
       </div>
       <div class="person-card__links">
         <a href="https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en" class="person-link">Google Scholar</a>

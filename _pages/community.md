@@ -52,7 +52,7 @@ author_profile: true
 
   <div class="community-card collapsed">
     <div class="community-card__header">
-      <h2 class="community-card__title">Neurochats</h2>
+      <h2 class="community-card__title">Neurochats (ongoing, but not involved)</h2>
       <div class="community-card__expand-indicator">+</div>
     </div>
     <div class="community-card__expandable">
