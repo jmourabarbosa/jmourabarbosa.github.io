@@ -8,14 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-About me
-======
-
 <div class="hiring-alert">
   <strong>Open Positions</strong>
   <p>If you are interested in computational neuroscience, machine learning, and working at the intersection of theory and experiments, please contact me with your CV and research interests. Check our publications to understand the type of research we do.</p>
 </div>
 
+About me
+======
 
 I am a computational neuroscientist with a strong interest in human cognition, in particular working memory and decision-making and how these are affected in pathological conditions.  
 
