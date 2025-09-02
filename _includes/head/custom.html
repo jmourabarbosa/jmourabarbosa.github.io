@@ -2,6 +2,10 @@
 
 <!-- start custom head snippets -->
 
+<!-- Brave Browser Compatibility -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' https: data: blob:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:;">
+<meta name="referrer" content="no-referrer-when-downgrade">
+
 <link rel="apple-touch-icon" sizes="57x57" href="{{ base_path }}/images/apple-touch-icon-57x57.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ base_path }}/images/apple-touch-icon-60x60.png?v=M44lzPylqQ">
 <link rel="apple-touch-icon" sizes="72x72" href="{{ base_path }}/images/apple-touch-icon-72x72.png?v=M44lzPylqQ">
@@ -24,15 +28,39 @@
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
 
-<script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+<!-- MathJax Configuration with Brave Browser Compatibility -->
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    tex2jax: {
-      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-      processEscapes: true
-    }
-  });
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      },
+      TeX: { 
+        equationNumbers: { autoNumber: "all" } 
+      }
+    };
+  }
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML' async></script>
+
+<!-- Load MathJax with fallback for privacy-focused browsers -->
+<script>
+  (function() {
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML';
+    
+    // Fallback if external CDN is blocked
+    script.onerror = function() {
+      console.log('MathJax CDN blocked - mathematical expressions may not render');
+    };
+    
+    // Only load if not blocked by privacy browser
+    if (navigator.userAgent.indexOf('Brave') === -1 || confirm('This site uses MathJax for mathematical expressions. Allow external resource?')) {
+      document.getElementsByTagName('head')[0].appendChild(script);
+    }
+  })();
+</script>
 
 <!-- end custom head snippets -->

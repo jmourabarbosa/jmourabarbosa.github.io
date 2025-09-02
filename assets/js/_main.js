@@ -3,6 +3,29 @@
    ========================================================================== */
 
 $(document).ready(function(){
+  
+  // Brave Browser Compatibility Helper
+  function addEventListenerSafe(element, event, handler) {
+    try {
+      if (element && typeof element === 'object') {
+        if (element.addEventListener) {
+          element.addEventListener(event, handler, false);
+        } else if (element.attachEvent) {
+          element.attachEvent('on' + event, handler);
+        } else {
+          element['on' + event] = handler;
+        }
+        return true;
+      }
+    } catch (error) {
+      console.warn('Failed to attach event listener:', error);
+    }
+    return false;
+  }
+  
+  // Make it globally available
+  window.addEventListenerSafe = addEventListenerSafe;
+   
    // Sticky footer
   var bumpIt = function() {
       $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
@@ -95,36 +118,79 @@ $(document).ready(function(){
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
-  // Dark Mode Toggle
+  // Dark Mode Toggle with Brave Browser Compatibility
   function initDarkMode() {
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const toggleIcon = document.getElementById('toggleIcon');
-    const html = document.documentElement;
-    
-    // Check for saved theme preference or default to 'light'
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    
-    // Apply the saved theme
-    html.setAttribute('data-theme', currentTheme);
-    updateToggleIcon(currentTheme, toggleIcon);
-    
-    // Toggle theme on button click
-    if (darkModeToggle) {
-      darkModeToggle.addEventListener('click', function() {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    try {
+      const darkModeToggle = document.getElementById('darkModeToggle');
+      const toggleIcon = document.getElementById('toggleIcon');
+      const html = document.documentElement;
+      
+      if (!html) {
+        console.warn('Document element not found - dark mode disabled');
+        return;
+      }
+      
+      // Check for saved theme preference or default to 'light'
+      let currentTheme = 'light';
+      try {
+        currentTheme = localStorage.getItem('theme') || 'light';
+      } catch (e) {
+        console.warn('localStorage blocked - using default light theme');
+      }
+      
+      // Apply the saved theme
+      html.setAttribute('data-theme', currentTheme);
+      updateToggleIcon(currentTheme, toggleIcon);
+      
+      // Toggle theme on button click with fallback for blocked addEventListener
+      if (darkModeToggle) {
+        const toggleTheme = function() {
+          try {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            // Apply new theme
+            html.setAttribute('data-theme', newTheme);
+            updateToggleIcon(newTheme, toggleIcon);
+            
+            // Save preference (with error handling for privacy browsers)
+            try {
+              localStorage.setItem('theme', newTheme);
+            } catch (e) {
+              console.warn('localStorage blocked - theme preference not saved');
+            }
+            
+            // Add a subtle animation with error handling
+            try {
+              darkModeToggle.style.transform = 'scale(0.95)';
+              setTimeout(function() {
+                if (darkModeToggle && darkModeToggle.style) {
+                  darkModeToggle.style.transform = 'scale(1)';
+                }
+              }, 100);
+            } catch (e) {
+              // Animation failed, ignore
+            }
+          } catch (error) {
+            console.error('Theme toggle failed:', error);
+          }
+        };
         
-        // Apply new theme
-        html.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateToggleIcon(newTheme, toggleIcon);
-        
-        // Add a subtle animation
-        darkModeToggle.style.transform = 'scale(0.95)';
-        setTimeout(function() {
-          darkModeToggle.style.transform = 'scale(1)';
-        }, 100);
-      });
+        // Try modern addEventListener first, fallback to older methods for compatibility
+        try {
+          if (darkModeToggle.addEventListener) {
+            darkModeToggle.addEventListener('click', toggleTheme, false);
+          } else if (darkModeToggle.attachEvent) {
+            darkModeToggle.attachEvent('onclick', toggleTheme);
+          } else {
+            darkModeToggle.onclick = toggleTheme;
+          }
+        } catch (error) {
+          console.error('Failed to attach dark mode toggle event:', error);
+        }
+      }
+    } catch (error) {
+      console.error('Dark mode initialization failed:', error);
     }
   }
   
@@ -200,24 +266,40 @@ function initPublicationFilters() {
   }
 
   filterTabs.forEach(function(tab) {
-    tab.addEventListener('click', function(e) {
-      e.preventDefault();
+    addEventListenerSafe(tab, 'click', function(e) {
+      if (e && e.preventDefault) {
+        e.preventDefault();
+      }
       
       // Update active tab
-      filterTabs.forEach(function(t) { t.classList.remove('active'); });
-      tab.classList.add('active');
+      filterTabs.forEach(function(t) { 
+        if (t && t.classList) {
+          t.classList.remove('active'); 
+        }
+      });
+      if (tab && tab.classList) {
+        tab.classList.add('active');
+      }
       
       filterPublications();
     });
   });
   
   keywordTabs.forEach(function(tab) {
-    tab.addEventListener('click', function(e) {
-      e.preventDefault();
+    addEventListenerSafe(tab, 'click', function(e) {
+      if (e && e.preventDefault) {
+        e.preventDefault();
+      }
       
       // Update active tab
-      keywordTabs.forEach(function(t) { t.classList.remove('active'); });
-      tab.classList.add('active');
+      keywordTabs.forEach(function(t) { 
+        if (t && t.classList) {
+          t.classList.remove('active'); 
+        }
+      });
+      if (tab && tab.classList) {
+        tab.classList.add('active');
+      }
       
       filterPublications();
     });
