@@ -482,8 +482,9 @@ table {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
   .dark-mode-toggle {
-    top: 15px;
-    right: 15px;
+    top: auto;
+    bottom: 20px;
+    right: 20px;
     width: 45px;
     height: 45px;
     
