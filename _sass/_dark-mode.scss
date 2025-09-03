@@ -101,7 +101,7 @@ pre {
   background: var(--body-color);
   
   a {
-    color: var(--masthead-link-color);
+    color: #e0e0e0; /* Light gray for dark mode */
     
     &:hover {
       color: #8A6BB1;
@@ -191,7 +191,7 @@ table {
 /* Dark mode toggle button */
 .dark-mode-toggle {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   background-color: var(--body-color);
   border: 2px solid var(--border-color);
@@ -488,9 +488,6 @@ table {
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
   .dark-mode-toggle {
-    top: auto;
-    bottom: 20px;
-    right: 20px;
     width: 45px;
     height: 45px;
     
