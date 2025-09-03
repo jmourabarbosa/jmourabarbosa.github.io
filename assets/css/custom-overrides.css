@@ -1,0 +1,151 @@
+/* Custom overrides to apply SCSS changes without rebuild */
+
+/* Make dark mode toggle positioned below navigation */
+.dark-mode-toggle { 
+    top: 110px !important; 
+}
+
+@media (max-width: 768px) {
+    .dark-mode-toggle {
+        top: 90px !important;
+    }
+}
+
+/* Make news window longer */
+.author-news__list { 
+    max-height: 400px !important; 
+}
+
+/* Remove box styling from page headers (publications and people) */
+.page-header { 
+    text-align: center; 
+    margin: 0 0 3rem 0; 
+    padding: 2rem 0; 
+    background: none !important; 
+    border: none !important; 
+    border-radius: 0 !important;
+}
+
+/* Make photography titles purple instead of blue */
+.photography-card__title { 
+    color: #8A6BB1 !important; 
+}
+
+.photography-card__expand-indicator { 
+    color: #8A6BB1 !important; 
+    border-color: #8A6BB1 !important; 
+}
+
+.photography-links__title {
+    color: #8A6BB1 !important;
+}
+
+/* Remove box styling from Other Photography Projects section */
+.photography-links {
+    background: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin-top: 2rem !important;
+    border: none !important;
+}
+
+/* Keep box styling for hiring alert on research page - reverted */
+
+/* Keep filter tabs styling - reverted */
+
+/* Change all regular Helvetica to Helvetica Light/Ultra Light */
+body, p, div, span, li, td, th, a, 
+.author__bio, .author__name, .author__content,
+.archive__item-excerpt, .publication-item__authors, 
+.publication-item__journal, .person-card__description,
+.research-card__content, .community-card__content,
+.teaching-card__content, .photography-card__description,
+.page-header__subtitle, .author-news__content,
+input, textarea, select, button {
+    font-weight: 200 !important; /* Ultra Light */
+}
+
+/* Keep bold text as bold */
+strong, b, h1, h2, h3, h4, h5, h6,
+.page-header__title, .publication-item__title,
+.research-card__title, .community-card__title, 
+.teaching-card__title, .photography-card__title, 
+.author-news__title, .author-news__date,
+.research-card__section-title, .tag, .filter-tab,
+.publication-item__tags .tag, .person-card__position {
+    font-weight: bold !important;
+}
+
+/* Special cases for lighter text */
+.publication-item__journal, .person-card__name,
+.author__name, .teaching-card__venue, 
+.community-card__meta, .archive__item-title {
+    font-weight: 200 !important; /* Light */
+}
+
+/* Add missing sections to light font weight */
+.teaching-card__content, .teaching-card__description,
+.community-card__content, .community-card__description,
+.cv-section, .cv-item, .cv-content, .archive__item,
+.archive__item-excerpt, .archive__subtitle {
+    font-weight: 200 !important; /* Ultra Light */
+}
+
+/* Remove purple lines in teaching section */
+.teaching-column__title::after, 
+.teaching-column__title::before,
+.teaching-column::after,
+.teaching-column::before,
+.teaching-columns::after,
+.teaching-columns::before {
+    display: none !important;
+}
+
+.teaching-column__title {
+    border: none !important;
+    border-bottom: none !important;
+    border-top: none !important;
+    box-shadow: none !important;
+}
+
+/* Make teaching labels bold */
+.teaching-card__type {
+    font-weight: bold !important;
+}
+
+/* Fix people card accordion behavior - prevent height stretching */
+.people-grid {
+    align-items: flex-start !important;
+}
+
+.person-card.collapsed, .alumni-card.collapsed {
+    align-self: flex-start !important;
+    height: auto !important;
+    min-height: auto !important;
+}
+
+.person-card.expanded, .alumni-card.expanded {
+    align-self: flex-start !important;
+}
+
+.person-card__expandable {
+    display: none;
+}
+
+.person-card.expanded .person-card__expandable,
+.alumni-card.expanded .person-card__expandable {
+    display: block;
+}
+
+/* Make research grid single column layout */
+.research-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 800px !important;
+    margin: 2rem auto !important;
+}
+
+@media (min-width: 768px) {
+    .research-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
