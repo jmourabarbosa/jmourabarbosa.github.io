@@ -1,0 +1,124 @@
+/* ==========================================================================
+   NEWS TICKER
+   ========================================================================== */
+
+.news-ticker-wrapper {
+  background: #f8f8f8;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 0.5rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.news-ticker {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 2rem;
+  
+  @include breakpoint($large) {
+    padding: 0 2rem;
+  }
+}
+
+.news-ticker__label {
+  font-weight: 700;
+  color: #8A6BB1;
+  margin-right: 1rem;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.news-ticker__content {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.news-ticker__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+.news-ticker__item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  
+  &.active {
+    opacity: 1;
+  }
+  
+  a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    
+    &:hover {
+      color: #8A6BB1;
+    }
+  }
+}
+
+.news-ticker__date {
+  font-weight: 600;
+  color: #666;
+  margin-right: 0.5rem;
+}
+
+/* Dark mode styles */
+[data-theme="dark"] {
+  .news-ticker-wrapper {
+    background: #2a2a2a;
+    border-bottom: 1px solid #404040;
+  }
+  
+  .news-ticker__label {
+    color: #8A6BB1;
+  }
+  
+  .news-ticker__item {
+    color: #e0e0e0;
+    
+    a {
+      color: #e0e0e0;
+      
+      &:hover {
+        color: #8A6BB1;
+      }
+    }
+  }
+  
+  .news-ticker__date {
+    color: #b0b0b0;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .news-ticker {
+    padding: 0 0.5rem;
+  }
+  
+  .news-ticker__label {
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+  }
+  
+  .news-ticker__item {
+    font-size: 0.85rem;
+  }
+}

@@ -55,10 +55,12 @@ p, li, td, th {
 
 /* Links */
 a {
-  color: var(--link-color);
+  color: var(--text-color); /* Default text color matching content */
+  text-decoration: none;
+  transition: all 0.2s ease;
   
   &:hover {
-    color: var(--link-hover-color);
+    color: #8A6BB1; /* Purple on hover */
   }
 }
 
@@ -69,6 +71,10 @@ a {
   
   a {
     color: var(--masthead-link-color);
+    
+    &:hover {
+      color: #8A6BB1;
+    }
   }
 }
 
@@ -98,7 +104,7 @@ pre {
     color: var(--masthead-link-color);
     
     &:hover {
-      color: var(--link-hover-color);
+      color: #8A6BB1;
     }
   }
   
@@ -144,10 +150,10 @@ pre {
     color: var(--text-color);
     
     a {
-      color: var(--link-color);
+      color: var(--text-color);
       
       &:hover {
-        color: var(--link-hover-color);
+        color: #8A6BB1;
       }
     }
   }
@@ -228,10 +234,10 @@ table {
   }
   
   .publication-item__title a {
-    color: #64b5f6 !important;
+    color: #e0e0e0 !important; /* Light gray text in dark mode */
     
     &:hover {
-      color: #42a5f5 !important;
+      color: #8A6BB1 !important; /* Purple on hover */
     }
   }
   
