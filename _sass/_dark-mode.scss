@@ -24,9 +24,9 @@
   --text-color: #e0e0e0;
   --border-color: #404040;
   --code-bg-color: #2a2a2a;
-  --link-color: #64b5f6;
-  --link-hover-color: #42a5f5;
-  --masthead-link-color: #e0e0e0;
+  --link-color: #e0e0e0; /* Light gray for dark mode */
+  --link-hover-color: #8A6BB1; /* Same purple hover */
+  --masthead-link-color: #e0e0e0; /* Light gray for masthead in dark mode */
   --primary-color: #b0b0b0;
   --light-gray: #505050;
   --lighter-gray: #404040;
@@ -114,6 +114,20 @@ pre {
     &:before,
     &:after {
       background: var(--text-color);
+    }
+  }
+  
+  .hidden-links {
+    background: var(--background-color); /* Use background color for consistency */
+    border-color: var(--border-color);
+    
+    a {
+      color: var(--link-color); /* Use the same link color */
+      
+      &:hover {
+        color: var(--link-hover-color); /* Same purple hover */
+        background: var(--lighter-gray); /* Subtle hover background */
+      }
     }
   }
 }

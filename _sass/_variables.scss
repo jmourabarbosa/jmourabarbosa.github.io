@@ -90,11 +90,11 @@ $xing-color                 : #006567;
 
 
 /* links */
-$link-color                 : $info-color;
-$link-color-hover           : mix(#000, $link-color, 25%);
-$link-color-visited         : mix(#fff, $link-color, 25%);
-$masthead-link-color        : $primary-color;
-$masthead-link-color-hover  : mix(#000, $primary-color, 25%);
+$link-color                 : #333; /* Gray/black for all links */
+$link-color-hover           : #8A6BB1; /* Purple on hover */
+$link-color-visited         : #333; /* Keep visited links gray/black */
+$masthead-link-color        : #333; /* Gray/black for masthead links */
+$masthead-link-color-hover  : #8A6BB1; /* Purple on hover */
 
 
 /*

@@ -365,7 +365,7 @@
 .page-header__subtitle {
   font-size: 1.1rem;
   color: var(--primary-color);
-  margin: 1.5rem 2rem 0 2rem;
+  margin: 1.5rem 3rem 0 3rem; /* Increased left/right margins */
   font-style: normal;
   text-align: justify;
   line-height: 1.6;
@@ -373,6 +373,13 @@
   margin-left: auto;
   margin-right: auto;
   font-family: $sans-serif;
+}
+
+/* Medium screen sizes */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .page-header__subtitle {
+    margin: 1.5rem 2.5rem 0 2.5rem; /* Medium margins for medium screens */
+  }
 }
 
 /* Responsive Design */
@@ -414,7 +421,7 @@
   }
   
   .page-header__subtitle {
-    margin: 1rem 1rem 0 1rem;
+    margin: 1.5rem 2rem 0 2rem; /* Better margins on mobile */
     text-align: left;
   }
   
