@@ -1,8 +1,11 @@
 ---
 layout: archive
 title: ""
-permalink: /research/
+permalink: /
 author_profile: true
+redirect_from: 
+  - /research/
+  - /research.html
 ---
 
 <div class="hiring-alert">
@@ -12,7 +15,7 @@ author_profile: true
 
 <div class="page-header">
   <h1 class="page-header__title">Research Interests</h1>
-  <p class="page-header__subtitle">I combine machine learning with multiregional theories of decision-making and working memory. My research focuses on understanding how computations necessary to solve complex tasks can be distributed across segregated brain regions through data-driven approaches and biophysical modeling.</p>
+  <p class="page-header__subtitle">We combine machine learning with multiregional theories of decision-making and working memory. Our research focuses on understanding how computations necessary to solve complex tasks can be distributed across segregated brain regions through data-driven approaches and biophysical modeling.</p>
 </div>
 
 <div class="research-grid">
@@ -64,14 +67,14 @@ author_profile: true
       <div class="research-card__section">
         <h3 class="research-card__section-title">Findings</h3>
         <div class="research-card__content">
-          In my graduate research, I contributed substantially to this debate by showing that both mechanisms co-exist and interact in the monkey PFC. Moreover, I bridged some insights from biophysical modeling and monkey research directly to experiments with clinical populations (i.e. people with schizophrenia (PSZ) and anti-NMDAR encephalitis).
+          In Joao's graduate research, he contributed substantially to this debate by showing that both mechanisms co-exist and interact in the monkey PFC. Moreover, we bridged some insights from biophysical modeling and monkey research directly to experiments with clinical populations (i.e. people with schizophrenia (PSZ) and anti-NMDAR encephalitis).
         </div>
       </div>
       
       <div class="research-card__section">
         <h3 class="research-card__section-title">Approach</h3>
         <div class="research-card__content">
-          I combined biophysical modeling and data analysis of spiking activity from the monkey PFC, human EEG, and TMS, to tackle open questions in working memory research. Data analysis, computational modeling, and human experiments were performed by me, with the exception of the design of EEG experiments and their data collection, which were done in our lab through direct collaboration.
+          We combine biophysical modeling and data analysis of spiking activity from the monkey PFC, human EEG, and TMS, to tackle open questions in working memory research. Data analysis, computational modeling, and human experiments are performed by our team, with EEG experiments designed and collected through direct collaboration.
         </div>
       </div>
       
