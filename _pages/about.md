@@ -24,3 +24,5 @@ My current research goal is to help unveil the cross-region interactions within 
 
 At INM, we record and manipulate the human brain at all scales with non invasive methods (ultra high field MRI, M/EEG), invasive electrophysiology (sEEG, tracking of monoamine release with voltammetry) as well as casual interventions (deep brain stimulation, pharmacology, vagus nerve stimulation, focused ultrasound stimulation and TMS).
 
+<p style="margin-top: 2rem; font-style: italic; text-align: center; color: #8A6BB1;">If this resonates with you in any way, please don't hesitate to reach out or check the research tab.</p>
+

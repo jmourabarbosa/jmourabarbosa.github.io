@@ -20,7 +20,7 @@ author_profile: true
           <div class="teaching-card__expand-indicator">+</div>
         </div>
         <div class="teaching-card__content">
-          <p>Course co-coordinator (w/ Boris Gutkin) at Cognitive Science master.</p>
+          <p>From INSERM position to course coordination, invited lectures and summer schools.</p>
           <div class="teaching-card__meta">
             <span class="teaching-card__venue">ENS Paris (2025-present)</span>
           </div>
@@ -120,6 +120,28 @@ author_profile: true
             <ul>
               <li><a href="https://github.com/jmourabarbosa/lowrank_tutorial" target="_blank">GitHub Repository with code and notebooks</a></li>
             </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="teaching-card collapsed">
+        <div class="teaching-card__header">
+          <h3 class="teaching-card__title">
+            Use of recurrent neural networks to study cognition
+          </h3>
+          <span class="teaching-card__type">Lecture</span>
+          <div class="teaching-card__expand-indicator">+</div>
+        </div>
+        <div class="teaching-card__content">
+          <p>Lecture in the Interplay between Deep Learning and Cognitive Science course, part of the ENS/EHESS Master in Cognitive Science.</p>
+          <div class="teaching-card__meta">
+            <span class="teaching-card__venue"><a href="https://master-cognitive-science.ens.psl.eu/en">ENS/EHESS Master in Cognitive Science</a></span>
+          </div>
+        </div>
+        <div class="teaching-card__expandable">
+          <div class="teaching-card__details">
+            <h4>Course Description</h4>
+            <p>After a brief reminder on RNNs, this course introduced and explained the notions of state space, dimensionality reduction, and dynamic system. It presented a framework to reverse engineering a recurrent neural network to gain insights on their working. The course provided a comparison with neuronal data and various examples of applications: decision-making, working memory, spatial navigation (head direction and grid cells), motor cortex.</p>
           </div>
         </div>
       </div>
