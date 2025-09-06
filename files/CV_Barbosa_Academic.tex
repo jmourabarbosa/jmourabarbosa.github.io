@@ -1,0 +1,181 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{amssymb}
+
+% Formatting
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*,noitemsep,topsep=0pt}
+
+% Colors
+\definecolor{linkcolor}{RGB}{0,0,139}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkcolor,
+    urlcolor=linkcolor,
+    citecolor=linkcolor
+}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries}
+  {}
+  {0em}
+  {}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Custom command for CV entries
+\newcommand{\cventry}[4]{
+\noindent
+\begin{minipage}[t]{0.15\textwidth}
+\raggedright #1
+\end{minipage}%
+\begin{minipage}[t]{0.15\textwidth}
+\raggedright \textbf{#2}
+\end{minipage}%
+\begin{minipage}[t]{0.7\textwidth}
+\raggedright #3 \textit{#4}
+\end{minipage}
+\vspace{3pt}
+}
+
+\newcommand{\cventryshort}[3]{
+\noindent
+\begin{minipage}[t]{0.15\textwidth}
+\raggedright #1
+\end{minipage}%
+\begin{minipage}[t]{0.85\textwidth}
+\raggedright \textbf{#2} #3
+\end{minipage}
+\vspace{3pt}
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+{\LARGE \textbf{João Barbosa}}\\
+\vspace{6pt}
+Principal Investigator (INSERM)\\
+Neuromodulation Institute \& NeuroSpin, Paris\\
+\vspace{4pt}
+\href{mailto:palerma@gmail.com}{palerma@gmail.com} | \href{https://jbarbosa.org}{jbarbosa.org} | \href{https://orcid.org/0000-0002-1907-3010}{ORCID: 0000-0002-1907-3010}
+\end{center}
+
+\vspace{12pt}
+
+\section{Academic Positions}
+
+\cventry{2025--present}{INSERM Researcher}{Neuromodulation Institute and NeuroSpin, Paris}{}
+
+\cventry{2024--2025}{Junior group leader}{Neuromodulation Institute and NeuroSpin, Paris}{}
+
+\cventry{2023}{Visiting Researcher}{\href{http://neurostatslab.org/}{Williams lab}, Center for Computational Neuroscience at the Flatiron Institute}{}
+
+\cventry{2020--2024}{Postdoc}{\href{https://lnc2.dec.ens.fr/en/member/655/srdjan-ostojic}{Ostojic lab}, Group for Neural Theory, École Normale Supérieure}{}
+
+\cventry{2019--2020}{Postdoc}{\href{https://braincircuitsbehavior.org/people}{Compte lab}, Theoretical Neurobiology, IDIBAPS}{}
+
+\cventry{2016}{Visiting Researcher}{\href{https://www.timbuschman.com/}{Buschman lab}, Princeton University}{}
+
+\section{Education}
+
+\cventry{2013--2019}{PhD}{Computational Neuroscience, Universidad de Barcelona}{Advisor: Albert Compte}
+
+\cventry{}{Gap Year}{Mexico}{}
+
+\cventry{2009--2011}{MSc}{Bioinformatics, Università di Bologna}{}
+
+\cventry{2006--2009}{BSc}{Computer Science, Universidade do Minho \& Universiteit van Amsterdam}{}
+
+\section{Teaching}
+
+\subsection{Course co-director}
+\cventry{2025--present}{Course co-director}{Computational Neuroscience at Cognitive Science Master}{(ENS, Paris)}
+
+\subsection{Invited lecturer}
+\cventry{2025--present}{Invited lecturer}{Model-based Neuroimaging at Cognitive Science Master}{(Paris Cité)}
+
+\cventry{2025--present}{Invited lecturer}{Interplay between Deep Learning and Cognitive Science course, part of the ENS/EHESS Master in Cognitive Science}{}
+
+\subsection{Short courses}
+\cventry{2025}{Faculty}{Computational and Cognitive Neuroscience Summer School (China)}{}
+
+\cventry{2025}{Faculty}{BioRTC Simons Computational Neuroscience Course (Nigeria)}{}
+
+\cventry{2024}{Teacher}{PSL-QLife Winter School Quantifying and Modeling Plasticity in Neuronal Networks (Paris)}{}
+
+\cventry{2023}{Teaching Assistant}{Machine learning for neuroscience summer school, Champalimaud Centre for the Unknown, (Portugal)}{}
+
+\cventry{2019}{Teaching Assistant}{Computational and Cognitive Neuroscience Summer School (China)}{}
+
+\cventry{2016}{Teaching Assistant}{Introduction to Python at Master in Brain and Cognition (Universitat Pompeu Fabra, Barcelona)}{}
+
+\section{Selected Publications}
+
+\subsection{Peer-reviewed articles}
+
+\textbf{Barbosa J}$^{\checkmark}$, Proville R, Rodgers CC, DeWeese MR, Ostojic S, Boubenec Y. Early selection of task-relevant features through population gating. \textit{Nature Communications} 14, 6837 (2023).
+
+\textbf{Barbosa J}, Lozano-Soldevilla D, Compte A. Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories. \textit{PLoS Biology} 19(4): e3001436 (2021).
+
+\textbf{Barbosa J}, Babushkin V, Temudo A, Sreenivasan KK, Compte A. Across-area synchronization supports feature integration in a biophysical network model of working memory. \textit{Frontiers in Neural Circuits} 15:716965 (2021).
+
+\textbf{Barbosa J}$^{+}$, Stein H$^{+}$, Martinez RL, Galan-Gadea A, Li S, Dalmau J, Adam KCS, Valls-Solé J, Constantinidis C, Compte A. Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory. \textit{Nature Neuroscience} 23(8): 1016-1024 (2020).
+
+Stein H$^{+}$, \textbf{Barbosa J}$^{+}$, Rosa-Justicia M, Prades L, Morató A, Galan-Gadea A, Ariño H, Martinez-Hernandez E, Castro-Fornieles J, Dalmau J, Compte A. Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia. \textit{Nature Communications} 11, 4250 (2020).
+
+\textbf{Barbosa J}, Compte A. Build-up of serial dependence in color working memory. \textit{Scientific Reports} 10, 10959 (2020).
+
+Almeida R, \textbf{Barbosa J}, Compte A. Neural circuit basis of visuo-spatial working memory precision. \textit{Journal of Neurophysiology} 114(3): 1806-1818 (2015).
+
+\subsection{Preprints}
+
+\textbf{Barbosa J}, Nejatbakhsh A, Duong L, Harvey SE, Brincat SL, Siegel M, Miller EK, Williams AH. Quantifying Differences in Neural Population Activity With Shape Metrics. \textit{bioRxiv} (2025).
+
+Tschiersch M, Umakantha A, Williamson RC, Smith MA, \textbf{Barbosa J}$^{+}$, Compte A$^{+}$. Redundant, weakly connected prefrontal hemispheres balance precision and capacity in spatial working memory. \textit{bioRxiv} (2025).
+
+Stein H, \textbf{Barbosa J}, Lozano-Soldevilla D, Rosa-Justicia M, Morató A, Galan-Gadea A, Prades L, Muñoz-Lopetegui A, Ariño H, Martinez-Hernandez E, Guasp M, Castro-Fornieles J, Dalmau J, Santamaria J, Compte A. Neural signatures of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia. \textit{PsyArXiv} (2024).
+
+\subsection{Reviews}
+
+\textbf{Barbosa J}$^{\checkmark+}$, Stein H$^{+}$, Zorowitz S, Niv Y, Summerfield C, Soto-Faraco S, Hyafil A. A practical guide for studying human behavior in the lab. \textit{Behavior Research Methods} 54(1): 58-76 (2022).
+
+Stein H$^{+}$, \textbf{Barbosa J}$^{+}$, Compte A. Towards biologically constrained attractor models of schizophrenia. \textit{Current Opinion in Neurobiology} 70: 54-62 (2021).
+
+\textbf{Barbosa J}$^{\checkmark}$. Working Memories Are Maintained in a Stable Code. \textit{Journal of Neuroscience} 37(39): 9315-9317 (2017).
+
+\section{Conference Presentations}
+
+Abdul LS, Brincat SL, Miller EK, \textbf{Barbosa J}. Task-Relevant Information is Distributed Across the Cortex, but the Past is State-Dependent and Restricted to Frontal Regions. \textit{Cognitive Computational Neuroscience} (2025).
+
+\textbf{Barbosa J}, Valente A, Brincat SL, Miller EK, Ostojic S. Estimating flexible across-area communication with neurally-constrained RNN. \textit{Cognitive Computational Neuroscience} (2024).
+
+\section{Grants \& Awards}
+
+\textbf{Principal Investigator}
+\begin{itemize}
+\item INSERM Research Position (2025-present)
+\item Junior Group Leader Position, Neuromodulation Institute (2024-2025)
+\end{itemize}
+
+\section{Professional Service}
+
+\textbf{Reviewer:} Nature Neuroscience, eLife, Journal of Neuroscience, PLoS Computational Biology, Neural Computation
+
+\textbf{Organization:} Co-organizer of Bernstein Workshops (2025): Machine learning for constraining interpretable models \& Top-down control of neural dynamics
+
+\vspace{12pt}
+\hrule
+\vspace{6pt}
+
+\footnotesize
+$^{+}$ equal contributions, $^{\checkmark}$ corresponding author\\
+Last updated: \today
+
+\end{document}
