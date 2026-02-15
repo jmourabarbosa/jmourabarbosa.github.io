@@ -1,0 +1,65 @@
+{
+  "header": {
+    "title": "Teaching",
+    "subtitle": "While my INSERM position does not formally require teaching duties, I am passionate about education and helping the next generation of scientists. I voluntarily engage in teaching activities in several forms, from course coordination to invited lectures and summer schools, because I believe in the importance of sharing knowledge and fostering scientific curiosity."
+  },
+  "columns": [
+    {
+      "id": "col-coordinator",
+      "title": "Course Coordinator",
+      "items": [
+        {
+          "id": "teach-1",
+          "title": "Computational Neuroscience",
+          "url": "https://master-cognitive-science.ens.psl.eu/en/program/first-year-program-17281",
+          "type": "Graduate Course",
+          "summary": "Course co-coordinator (w/ Boris Gutkin) at Cognitive Science master.",
+          "venue": "ENS Paris (2025-present)",
+          "details": "<h4>Module 1. Modeling Behaviour (5 lectures)</h4><ul><li>The Rescorla-Wagner Rule + Exploration-Exploitation (Boris)</li><li>Reinforcement Learning: TDRL &amp; Model-Based Approaches (Boris)</li><li>Reinforcement Learning as Rational Decision-Making (Joao)</li><li>Perceptual Decision-Making: Drift Diffusion Model (Boris)</li><li>Inferring Latent Behavioral States (Heike Stein)</li></ul><h4>Module 2. Encoding/Decoding Models of Neural Data (3 lectures)</h4><ul><li>Introduction to Neural Data: Encoding/Decoding Dichotomy (Joao)</li><li>Neural Encoding (Joao)</li><li>Neural Decoding (Joao)</li></ul><h4>Module 3. Network Models of Cognition (4 lectures)</h4><ul><li>Building Blocks: Single Neuron Models (Pierre Houzelstein)</li><li>Feed-Forward vs. Recurrent Networks (Joao)</li><li>Linear Dynamical Systems (Joao)</li><li>Modeling Complex Cognitive Tasks (Joao)</li></ul><p><em>Drop me an email if you want the slides for my lectures.</em></p>"
+        }
+      ]
+    },
+    {
+      "id": "col-lectures",
+      "title": "Invited Lectures",
+      "items": [
+        {
+          "id": "teach-2",
+          "title": "Model-Based Neuroimaging",
+          "url": "https://cog-sup.fr/about/",
+          "type": "Graduate Seminar",
+          "summary": "Invited lecturer at the Cognitive Science Master.",
+          "venue": "Paris Cit\u00e9 (2025-present)",
+          "details": "<h4>Course Content (2 lectures)</h4><ul><li>Biophysical models: from synapses to EEG</li><li>Inferring network models from data</li></ul><p><em>Drop me an email if you want the slides for my lectures.</em></p>"
+        },
+        {
+          "id": "teach-3",
+          "title": "Computational Psychiatry",
+          "url": "#",
+          "type": "Graduate Seminar",
+          "summary": "Invited lecturer in the Computational Psychiatry course at the Cognitive Science Master.",
+          "venue": "Paris Cit\u00e9 (2025-present)",
+          "details": "<h4>Lecture: Cortical NMDA Receptors: From models of working memory deficits to early psychosis onset</h4><p>This lecture explores the role of NMDA receptors in cortical function and dysfunction, bridging computational models of working memory with clinical observations in early psychosis. The course covers biophysical models of NMDA receptor function, their role in working memory maintenance, and how alterations in NMDA signaling can lead to cognitive deficits observed in psychiatric conditions.</p><p><em>Drop me an email if you want the slides for my lectures.</em></p>"
+        },
+        {
+          "id": "teach-4",
+          "title": "Interplay between Deep Learning and Cognitive Science",
+          "url": "https://master-cognitive-science.ens.psl.eu/en",
+          "type": "Graduate Seminar",
+          "summary": "Invited lecturer in the Interplay between Deep Learning and Cognitive Science course.",
+          "venue": "ENS/EHESS (2025-present)",
+          "details": "<h4>Lecture: Use of recurrent neural networks to study cognition</h4><p>After a brief reminder on RNNs, this course introduced and explained the notions of state space, dimensionality reduction, and dynamic system. It presented a framework to reverse engineer a recurrent neural network to gain insights on their working. The course provided a comparison with neuronal data and various examples of applications: decision-making, working memory, spatial navigation (head direction and grid cells), motor cortex.</p><p><em>Drop me an email if you want the slides for my lectures.</em></p>"
+        },
+        {
+          "id": "teach-5",
+          "title": "Tutorial on Low-Rank Networks",
+          "url": "https://github.com/jmourabarbosa/lowrank_tutorial",
+          "type": "Workshop Tutorial",
+          "summary": "Invited tutorial at Winter School on Learning and Plasticity in Neuronal Networks.",
+          "venue": "ENS Paris (2024)",
+          "details": "<h4>Tutorial Overview</h4><p>A hands-on tutorial on understanding and implementing low-rank recurrent neural networks for modeling cognitive tasks. The tutorial covers:</p><ul><li>Mathematical foundations of low-rank networks</li><li>Applications to working memory and decision-making tasks</li><li>Analysis techniques for understanding network dynamics</li><li>Reverse engineering trained RNN</li></ul><p><strong>Resources:</strong></p><ul><li><a href=\"https://github.com/jmourabarbosa/lowrank_tutorial\" target=\"_blank\">GitHub Repository with code and notebooks</a></li></ul>"
+        }
+      ]
+    }
+  ]
+}

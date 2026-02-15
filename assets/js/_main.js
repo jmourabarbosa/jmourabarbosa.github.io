@@ -211,6 +211,10 @@ $(document).ready(function(){
 
 }); // DOM ready
 
+// Expose init functions globally for CMS dynamic content reloading
+window.initFiltering = initFiltering;
+window.initExpandableCards = initExpandableCards;
+
 // Filtering functionality
 function initFiltering() {
   // Publication filtering

@@ -1,0 +1,412 @@
+/* ============================================================
+   CMS Admin Styles
+   Edit buttons, modals, forms - only visible in admin mode
+   ============================================================ */
+
+/* --- Admin-only elements: hidden by default --- */
+.cms-add-btn,
+.cms-edit-btn,
+.cms-delete-btn,
+.cms-item-actions,
+.cms-logout-btn {
+  display: none;
+}
+
+body.cms-admin .cms-add-btn,
+body.cms-admin .cms-edit-btn,
+body.cms-admin .cms-delete-btn,
+body.cms-admin .cms-item-actions,
+body.cms-admin .cms-logout-btn {
+  display: inline-flex;
+}
+
+/* --- Admin button in footer --- */
+.cms-admin-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  margin-left: 8px;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.cms-admin-btn:hover {
+  opacity: 1;
+}
+
+.cms-login-btn {
+  font-size: 0.7rem;
+}
+
+.cms-logout-btn {
+  font-size: 0.75rem;
+  color: var(--primary-color, #333);
+}
+
+/* --- Add button --- */
+.cms-add-btn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+  align-items: center;
+  gap: 4px;
+}
+
+.cms-add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* --- Edit / Delete buttons --- */
+.cms-edit-btn,
+.cms-delete-btn {
+  background: none;
+  border: 1px solid #d1d5db;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  line-height: 1;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s;
+}
+
+.cms-edit-btn {
+  color: #2563eb;
+}
+
+.cms-edit-btn:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+}
+
+.cms-delete-btn {
+  color: #dc2626;
+}
+
+.cms-delete-btn:hover {
+  background: #fef2f2;
+  border-color: #dc2626;
+}
+
+.cms-edit-btn--header,
+.cms-delete-btn--header {
+  position: relative;
+  z-index: 2;
+  margin-left: 4px;
+}
+
+/* --- Item actions container --- */
+.cms-item-actions {
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+body.cms-admin .cms-item-actions {
+  display: inline-flex;
+}
+
+.cms-item-actions--card {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+}
+
+/* Make cards position relative for absolute action buttons */
+body.cms-admin .person-card,
+body.cms-admin .author-news__item {
+  position: relative;
+}
+
+/* --- Modal overlay --- */
+.cms-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* --- Modal --- */
+.cms-modal {
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 32px;
+  max-width: 480px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.cms-modal--editor {
+  max-width: 640px;
+}
+
+.cms-modal__title {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111;
+}
+
+.cms-modal__desc {
+  margin: 0 0 16px 0;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.cms-modal__desc code {
+  background: #f3f4f6;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+.cms-modal__form {
+  margin-bottom: 16px;
+}
+
+.cms-modal__actions {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* --- Form fields --- */
+.cms-field {
+  margin-bottom: 14px;
+}
+
+.cms-field label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.cms-field label small {
+  font-weight: 400;
+  color: #9ca3af;
+}
+
+.cms-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.15s;
+}
+
+.cms-input:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.cms-textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.cms-richtext {
+  min-height: 100px;
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+.cms-input--half {
+  width: calc(50% - 20px);
+  display: inline-block;
+}
+
+/* --- Buttons --- */
+.cms-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.cms-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.cms-btn--primary {
+  background: #2563eb;
+  color: #fff;
+}
+
+.cms-btn--primary:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.cms-btn--secondary {
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.cms-btn--secondary:hover {
+  background: #e5e7eb;
+}
+
+.cms-btn--danger {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.cms-btn--danger:hover {
+  background: #fee2e2;
+}
+
+.cms-btn--small {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  margin-bottom: 12px;
+}
+
+.cms-btn--tiny {
+  padding: 2px 6px;
+  font-size: 0.7rem;
+}
+
+/* --- Error --- */
+.cms-error {
+  color: #dc2626;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+
+/* --- Section groups (research sections) --- */
+.cms-section-group,
+.cms-link-group {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #fafbfc;
+}
+
+.cms-section-group__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.cms-field-group-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #374151;
+  margin: 8px 0;
+}
+
+.cms-link-group {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  padding: 8px;
+}
+
+/* --- Dark mode overrides --- */
+[data-theme="dark"] .cms-modal,
+.dark-mode .cms-modal {
+  background: #1f2937;
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .cms-modal__title,
+.dark-mode .cms-modal__title {
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .cms-modal__desc,
+.dark-mode .cms-modal__desc {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .cms-input,
+.dark-mode .cms-input {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+[data-theme="dark"] .cms-field label,
+.dark-mode .cms-field label {
+  color: #d1d5db;
+}
+
+[data-theme="dark"] .cms-section-group,
+[data-theme="dark"] .cms-link-group,
+.dark-mode .cms-section-group,
+.dark-mode .cms-link-group {
+  background: #374151;
+  border-color: #4b5563;
+}
+
+[data-theme="dark"] .cms-modal__actions,
+.dark-mode .cms-modal__actions {
+  border-top-color: #4b5563;
+}
+
+[data-theme="dark"] .cms-btn--secondary,
+.dark-mode .cms-btn--secondary {
+  background: #374151;
+  color: #d1d5db;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .cms-modal {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .cms-modal--editor {
+    max-width: 100%;
+  }
+
+  .cms-input--half {
+    width: 100%;
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  .cms-link-group {
+    flex-wrap: wrap;
+  }
+}

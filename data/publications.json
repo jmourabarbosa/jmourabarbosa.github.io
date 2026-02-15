@@ -1,0 +1,357 @@
+{
+  "header": {
+    "title": "Publications",
+    "subtitle": "All papers are open - either published open access or directly linked to pdf. All code and all data necessary to replicate the papers' figures are also linked. Don't hesitate contacting me at palerma @ gmail if something is missing.",
+    "legend": "<strong>+</strong> equal contributions &nbsp;&nbsp;&nbsp; <strong>\u2709</strong> corresponding author"
+  },
+  "sections": [
+    {
+      "id": "peer-reviewed",
+      "title": "Peer-reviewed",
+      "publications": [
+        {
+          "id": "pub-1",
+          "title": "Early selection of task-relevant features through population gating",
+          "url": "https://www.nature.com/articles/s41467-023-42519-5",
+          "authors": "<strong>Joao Barbosa</strong>\u2709, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec",
+          "journal": "Nature Communications (2023)",
+          "categories": "peer-reviewed decision-making normative-models neural-geometry ephys",
+          "tags": [
+            {"label": "Decision Making", "key": "decision-making"},
+            {"label": "RNN", "key": "normative-models"},
+            {"label": "Neural Geometry", "key": "neural-geometry"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": [
+            {"label": "data", "url": "https://crcns.org/data-sets/pfc/pfc-1"},
+            {"label": "code", "url": "https://github.com/jmourabarbosa/multi-area-ctx"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1550766362280198144"},
+            {"label": "talk", "url": "https://www.crowdcast.io/e/wwneurise/39"}
+          ]
+        },
+        {
+          "id": "pub-2",
+          "title": "Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories",
+          "url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436",
+          "authors": "<strong>Joao Barbosa</strong>, Diego Lozano-Soldevilla, Albert Compte",
+          "journal": "Plos Biology (2021)",
+          "categories": "peer-reviewed working-memory meeg",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "M/EEG", "key": "meeg"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/reactivations"},
+            {"label": "data", "url": "https://github.com/comptelab/reactivations"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1385623043372900356"}
+          ]
+        },
+        {
+          "id": "pub-3",
+          "title": "Across-area synchronization supports feature integration in a biophysical network model of working memory",
+          "url": "https://www.frontiersin.org/articles/10.3389/fncir.2021.716965/full",
+          "authors": "<strong>Joao Barbosa</strong>, Vahan Babushkin, Ainsley Temudo, Kartik K. Sreenivasan, Albert Compte",
+          "journal": "Frontiers in Neural Circuits (2021)",
+          "categories": "peer-reviewed working-memory spiking-networks",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/binding"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1403339914859757568"}
+          ]
+        },
+        {
+          "id": "pub-4",
+          "title": "Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory",
+          "url": "../files/barbosa_interplay.pdf",
+          "authors": "<strong>Joao Barbosa</strong>+, Heike Stein+, Rebecca L. Martinez, Adria Galan-Gadea, Sihai Li, Josep Dalmau, Kirsten C. S. Adam, Josep Valls-Sole, Christos Constantinidis &amp; Albert Compte",
+          "journal": "Nature Neuroscience (2020)",
+          "categories": "peer-reviewed working-memory spiking-networks meeg ephys",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "M/EEG", "key": "meeg"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/interplayPFC"},
+            {"label": "data", "url": "https://github.com/comptelab/interplayPFC"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1275127297901813762"},
+            {"label": "talk", "url": "https://www.youtube.com/watch?v=oKn2GYgQUCk"}
+          ]
+        },
+        {
+          "id": "pub-5",
+          "title": "Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia",
+          "url": "https://www.nature.com/articles/s41467-020-18033-3",
+          "authors": "Heike Stein+, <strong>Joao Barbosa</strong>+, Mireia Rosa-Justicia, Laia Prades, Alba Morato, Adria Galan-Gadea, Helena Arino, Eugenia Martinez-Hernandez, Josefina Castro-Fornieles, Josep Dalmau &amp; Albert Compte",
+          "journal": "Nature Communications (2020)",
+          "categories": "peer-reviewed working-memory spiking-networks schizophrenia",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "Computational Psychiatry", "key": "schizophrenia"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/serialNMDA"},
+            {"label": "data", "url": "https://github.com/comptelab/serialNMDA"},
+            {"label": "tweeprint", "url": "https://twitter.com/heikecstein/status/1298238425288642561?lang=en"}
+          ]
+        },
+        {
+          "id": "pub-6",
+          "title": "Build-up of serial dependence in color working memory",
+          "url": "https://www.nature.com/articles/s41598-020-67861-2",
+          "authors": "<strong>Joao Barbosa</strong> &amp; Albert Compte",
+          "journal": "Scientific Reports (2020)",
+          "categories": "peer-reviewed working-memory",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/serial_color"},
+            {"label": "data", "url": "https://github.com/comptelab/serial_color/"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1278703572029452289"}
+          ]
+        },
+        {
+          "id": "pub-7",
+          "title": "Neural circuit basis of visuo-spatial working memory precision",
+          "url": "../files/almeida.pdf",
+          "authors": "Rita Almeida, <strong>Joao Barbosa</strong>, Albert Compte",
+          "journal": "Journal of Neurophysiology (2015)",
+          "categories": "peer-reviewed working-memory spiking-networks",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"}
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "conference",
+      "title": "Conference Papers",
+      "publications": [
+        {
+          "id": "pub-8",
+          "title": "Task-Relevant Information is Distributed Across the Cortex, but the Past is State-Dependent and Restricted to Frontal Regions",
+          "url": "https://2025.ccneuro.org/abstract_pdf/Abdul_2025_Task-Relevant_Information_Distributed_Across_Cortex_Past.pdf",
+          "authors": "Lubna S. Abdul, Scott L. Brincat, Earl K. Miller, <strong>Joao Barbosa</strong>",
+          "journal": "CCN (2025)",
+          "categories": "conference decision-making ephys",
+          "tags": [
+            {"label": "Decision Making", "key": "decision-making"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": []
+        },
+        {
+          "id": "pub-9",
+          "title": "Estimating flexible across-area communication with neurally-constrained RNN",
+          "url": "https://2024.ccneuro.org/pdf/159_Paper_authored_CCN_2024-(1).pdf",
+          "authors": "<strong>Joao Barbosa</strong>, Adrian Valente, Scott L. Brincat, Earl K. Miller, Srdjan Ostojic",
+          "journal": "CCN vol. 15, 716965, Frontiers Media SA (2024)",
+          "categories": "conference normative-models neural-geometry decision-making ephys",
+          "tags": [
+            {"label": "RNN", "key": "normative-models"},
+            {"label": "Neural Geometry", "key": "neural-geometry"},
+            {"label": "Decision Making", "key": "decision-making"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "preprint",
+      "title": "Pre-prints",
+      "publications": [
+        {
+          "id": "pub-10",
+          "title": "Redundant, weakly connected prefrontal hemispheres balance precision and capacity in spatial working memory",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.15.633176v1",
+          "authors": "Melanie Tschiersch, Akash Umakantha, Ryan C. Williamson, Matthew A Smith, <strong>Joao Barbosa</strong>+, Albert Compte+",
+          "journal": "bioRxiv (2025)",
+          "categories": "preprint working-memory spiking-networks ephys",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": []
+        },
+        {
+          "id": "pub-11",
+          "title": "Quantifying Differences in Neural Population Activity With Shape Metrics",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.10.632411v1.full.pdf+html",
+          "authors": "<strong>Joao Barbosa</strong>, Amin Nejatbakhsh, Lyndon Duong, Sarah E. Harvey, Scott L. Brincat, Markus Siegel, Earl K. Miller, Alex H. Williams",
+          "journal": "bioRxiv (2025)",
+          "categories": "preprint neural-geometry ephys",
+          "tags": [
+            {"label": "Neural Geometry", "key": "neural-geometry"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": []
+        },
+        {
+          "id": "pub-12",
+          "title": "Neural signatures of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia",
+          "url": "https://osf.io/preprints/psyarxiv/kz73s",
+          "authors": "Heike Stein, <strong>Joao Barbosa</strong>, Diego Lozano-Soldevilla, Mireia Rosa-Justicia, Alba Morat\u00f3, Adri\u00e0 Galan-Gadea, Laia Prades, Amaia Mu\u00f1oz-Lopetegui, Helena Ari\u00f1o, Eugenia Martinez-Hernandez, Mar Guasp, Josefina Castro-Fornieles, Josep Dalmau, Joan Santamaria, Albert Compte",
+          "journal": "PsyArxiv (2024)",
+          "categories": "preprint working-memory meeg spiking-networks schizophrenia",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "M/EEG", "key": "meeg"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "Computational Psychiatry", "key": "schizophrenia"}
+          ],
+          "links": []
+        },
+        {
+          "id": "pub-13",
+          "title": "Alpha phase-coding supports feature binding during working memory maintenance",
+          "url": "https://www.biorxiv.org/content/10.1101/2024.01.21.576561v1.abstract",
+          "authors": "Mattia F. Pagnotta, Aniol Santo-Angles, Ainsley Temudo, <strong>Joao Barbosa</strong>, Albert Compte, Mark D'Esposito, Kartik K. Sreenivasan",
+          "journal": "bioRxiv (2024)",
+          "categories": "preprint working-memory meeg",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "M/EEG", "key": "meeg"}
+          ],
+          "links": []
+        },
+        {
+          "id": "pub-14",
+          "title": "NeuroGym: An open resource for developing and sharing neuroscience tasks",
+          "url": "https://psyarxiv.com/aqc9n/",
+          "authors": "Manuel Molano-Maz\u00f3n, <strong>Joao Barbosa</strong>, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang",
+          "journal": "PsyArxiv (2022)",
+          "categories": "preprint normative-models",
+          "tags": [
+            {"label": "RNN", "key": "normative-models"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/neurogym/neurogym"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "Reviews",
+      "publications": [
+        {
+          "id": "pub-15",
+          "title": "A practical guide for studying human behavior in the lab",
+          "url": "../files/Barbosa_2022_BRM.pdf",
+          "authors": "<strong>Joao Barbosa</strong>\u2709+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil",
+          "journal": "Behavior Research Methods (2022)",
+          "categories": "review decision-making working-memory",
+          "tags": [
+            {"label": "Decision Making", "key": "decision-making"},
+            {"label": "Working Memory", "key": "working-memory"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/ahyafil/SampleSize"},
+            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1359100591541280768"}
+          ]
+        },
+        {
+          "id": "pub-16",
+          "title": "Towards biologically constrained attractor models of schizophrenia",
+          "url": "../files/Stein_CONEURO.pdf",
+          "authors": "Heike Stein+, <strong>Joao Barbosa</strong>+, Albert Compte",
+          "journal": "Current Opinion in Neurobiology (2021)",
+          "categories": "review schizophrenia spiking-networks working-memory",
+          "tags": [
+            {"label": "Computational Psychiatry", "key": "schizophrenia"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "Working Memory", "key": "working-memory"}
+          ],
+          "links": [
+            {"label": "code", "url": "https://github.com/comptelab/attractorSZ"},
+            {"label": "tweeprint", "url": "https://twitter.com/heikecstein/status/1377260009390800902"},
+            {"label": "talk", "url": "https://youtu.be/H_ZohMK-Q6M"}
+          ]
+        },
+        {
+          "id": "pub-17",
+          "title": "Working Memories Are Maintained in a Stable Code",
+          "url": "../files/Barbosa2017.pdf",
+          "authors": "<strong>Joao Barbosa</strong>\u2709",
+          "journal": "Journal of Neuroscience (2017)",
+          "categories": "review working-memory",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"}
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "thesis",
+      "title": "PhD Thesis",
+      "publications": [
+        {
+          "id": "pub-18",
+          "title": "Neural network mechanisms of working memory interference",
+          "url": "http://diposit.ub.edu/dspace/handle/2445/166717",
+          "authors": "<strong>Joao Barbosa</strong>",
+          "journal": "Universitat de Barcelona (2019)",
+          "categories": "thesis working-memory meeg spiking-networks ephys",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "M/EEG", "key": "meeg"},
+            {"label": "Spiking Networks", "key": "spiking-networks"},
+            {"label": "E-phys", "key": "ephys"}
+          ],
+          "links": []
+        }
+      ]
+    },
+    {
+      "id": "in-progress",
+      "title": "In Progress",
+      "publications": [
+        {
+          "id": "pub-19",
+          "title": "Serial dependence decreases with structural connectivity decline during healthy aging",
+          "url": "",
+          "authors": "<strong>Joao Barbosa</strong>",
+          "journal": "Virtual Working Memory Symposium 2020",
+          "categories": "thesis working-memory spiking-networks",
+          "tags": [
+            {"label": "Working Memory", "key": "working-memory"},
+            {"label": "Spiking Networks", "key": "spiking-networks"}
+          ],
+          "links": [
+            {"label": "talk", "url": "https://youtu.be/dkFhOdXSvRo"}
+          ]
+        }
+      ]
+    }
+  ],
+  "filterTabs": [
+    {"label": "All", "filter": "all", "count": 19},
+    {"label": "Peer-reviewed", "filter": "peer-reviewed", "count": 7},
+    {"label": "Pre-prints", "filter": "preprint", "count": 5},
+    {"label": "Conference", "filter": "conference", "count": 2},
+    {"label": "Reviews", "filter": "review", "count": 3},
+    {"label": "Other", "filter": "thesis", "count": 2}
+  ],
+  "keywordTabs": [
+    {"label": "All", "filter": "all-keywords"},
+    {"label": "Working Memory", "filter": "working-memory", "count": 14},
+    {"label": "Spiking Networks", "filter": "spiking-networks", "count": 9},
+    {"label": "M/EEG", "filter": "meeg", "count": 5},
+    {"label": "Decision Making", "filter": "decision-making", "count": 4},
+    {"label": "E-phys", "filter": "ephys", "count": 7},
+    {"label": "RNN", "filter": "normative-models", "count": 3},
+    {"label": "Neural Geometry", "filter": "neural-geometry", "count": 3},
+    {"label": "Computational Psychiatry", "filter": "schizophrenia", "count": 3}
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "news-1",
+    "date": "Oct 2025",
+    "content": "Joao will give a talk at <a href=\"https://nencki.edu.pl/\">Nencki Institute of Experimental Biology, Poland</a> (Oct 30)"
+  },
+  {
+    "id": "news-2",
+    "date": "Oct 2025",
+    "content": "Joao will give two talks at Bernstein Workshops 2025: <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/machine-learning/\">Machine learning for constraining interpretable models</a> and <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/top-down/\">Top-down control of neural dynamics</a>"
+  },
+  {
+    "id": "news-3",
+    "date": "Sept 2025",
+    "content": "Joao teaching at <a href=\"https://www.uc.pt/events/computationalbiology/2025/\">Summer School on Computational Biology, Coimbra</a>"
+  },
+  {
+    "id": "news-4",
+    "date": "Aug 2025",
+    "content": "Lubna gave a talk at <a href=\"https://2025.ccneuro.org/\">CCN 2025, Amsterdam</a>"
+  },
+  {
+    "id": "news-5",
+    "date": "Aug 2025",
+    "content": "Joao participated in the <a href=\"https://compneurosci.com/Neuro4Pros/index.html\">Neuroscience Leadership Training in Kingston, Canada</a>"
+  },
+  {
+    "id": "news-6",
+    "date": "July 2025",
+    "content": "Joao taught at <a href=\"https://www.csh-asia.org/?content/2621\">Cognitive and Computational Neuroscience Summer School, Suzhou, China</a>"
+  },
+  {
+    "id": "news-7",
+    "date": "July 2025",
+    "content": "Joao taught at <a href=\"https://biortc.com/computational-neuroscience-course-2025/\">Simons-BioRTC Computational Neuroscience Summer School, Damaturo, Nigeria</a>"
+  },
+  {
+    "id": "news-8",
+    "date": "May 2025",
+    "content": "Philipp and Joao gave talks at Mathematics of Neuroscience and AI in Split. Kaleab presented a poster."
+  }
+]
