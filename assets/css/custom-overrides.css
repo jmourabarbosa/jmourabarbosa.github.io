@@ -11,9 +11,23 @@
     }
 }
 
-/* Make news window longer */
-.author-news__list { 
-    max-height: 400px !important; 
+/* Make news list show all items, no scroll cap */
+.author-news__list {
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Make sidebar wider */
+.sidebar {
+    width: 300px !important;
+    min-width: 300px !important;
+}
+
+@media (min-width: 1024px) {
+    .sidebar {
+        width: 300px !important;
+        min-width: 300px !important;
+    }
 }
 
 /* Remove box styling from page headers (publications and people) */
