@@ -10,6 +10,21 @@
       "title": "Peer-reviewed",
       "publications": [
         {
+          "id": "pub-1772415167666-1i69f",
+          "title": "NJ",
+          "url": "J",
+          "authors": "J",
+          "journal": "J",
+          "categories": "peer-reviewed J",
+          "tags": [
+            {
+              "label": "J",
+              "key": "J"
+            }
+          ],
+          "links": []
+        },
+        {
           "id": "pub-1",
           "title": "Early selection of task-relevant features through population gating",
           "url": "https://www.nature.com/articles/s41467-023-42519-5",
