@@ -1,0 +1,574 @@
+/* Dark Theme — black-first design */
+
+:root {
+  --theme-accent: #8A6BB1;
+  --theme-accent-hover: #a484cc;
+  --theme-bg: #0a0a0a;
+  --theme-surface: #141414;
+  --theme-surface-hover: #1e1e1e;
+  --theme-border: #2a2a2a;
+  --theme-text: #e0e0e0;
+  --theme-text-muted: #888;
+  --theme-text-dim: #666;
+  --theme-link: #8A6BB1;
+  --theme-link-hover: #a484cc;
+  --theme-nav-bg: #0a0a0a;
+  --theme-nav-text: #e0e0e0;
+  --theme-nav-hover-bg: #1e1e1e;
+  --theme-nav-border: #2a2a2a;
+  --theme-font-light: 200;
+  --theme-font-bold: bold;
+  --theme-news-max-height: 400px;
+  --theme-research-max-width: 800px;
+}
+
+/* Force dark mode on — override main.css light defaults */
+html {
+  --bg-color: var(--theme-bg);
+  --body-color: var(--theme-bg);
+  --text-color: var(--theme-text);
+  --border-color: var(--theme-border);
+  --code-bg-color: var(--theme-surface);
+  --link-color: var(--theme-link);
+  --link-hover-color: var(--theme-link-hover);
+  --masthead-link-color: var(--theme-text-muted);
+  --primary-color: var(--theme-text-muted);
+  --light-gray: #555;
+  --lighter-gray: var(--theme-border);
+}
+
+body {
+  background-color: var(--theme-bg) !important;
+  color: var(--theme-text) !important;
+}
+
+/* Navigation */
+.masthead {
+  background: var(--theme-nav-bg) !important;
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.greedy-nav {
+  background: var(--theme-nav-bg) !important;
+}
+
+.greedy-nav a {
+  color: var(--theme-nav-text) !important;
+}
+
+.greedy-nav a:hover {
+  color: var(--theme-accent) !important;
+}
+
+.greedy-nav .visible-links a {
+  color: var(--theme-text-muted) !important;
+}
+
+.greedy-nav .visible-links a:hover {
+  color: var(--theme-accent) !important;
+}
+
+.greedy-nav .masthead__menu-item--lg a {
+  color: var(--theme-text) !important;
+}
+
+.greedy-nav .hidden-links {
+  background: var(--theme-surface) !important;
+  border: 1px solid var(--theme-border) !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5) !important;
+}
+
+.greedy-nav .hidden-links a {
+  color: var(--theme-text) !important;
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: var(--theme-surface-hover) !important;
+}
+
+.greedy-nav button {
+  background: var(--theme-nav-bg) !important;
+  color: var(--theme-text) !important;
+}
+
+/* Hide dark mode toggle — we're already dark */
+.dark-mode-toggle {
+  display: none;
+}
+
+/* Page content area */
+.archive {
+  background: transparent;
+  color: var(--theme-text);
+}
+
+/* Page header */
+.page-header {
+  text-align: center;
+  margin: 0 0 3rem 0;
+  padding: 2rem 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.page-header__title {
+  color: var(--theme-text) !important;
+}
+
+.page-header__subtitle {
+  color: var(--theme-text-muted) !important;
+}
+
+/* Links */
+a {
+  color: var(--theme-link);
+}
+
+a:hover {
+  color: var(--theme-link-hover);
+}
+
+/* Hiring alert */
+.hiring-alert {
+  background: var(--theme-surface) !important;
+  border: 1px solid var(--theme-border) !important;
+  color: var(--theme-text) !important;
+}
+
+/* Research cards */
+.research-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.research-card:hover {
+  border-color: var(--theme-accent) !important;
+}
+
+.research-card__title {
+  color: var(--theme-accent) !important;
+}
+
+.research-card__content {
+  color: var(--theme-text) !important;
+}
+
+.research-card__section-title {
+  color: var(--theme-accent) !important;
+}
+
+.research-card__expand-indicator {
+  color: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+.research-grid {
+  grid-template-columns: 1fr;
+  max-width: var(--theme-research-max-width);
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Publications */
+.publication-item {
+  border-color: var(--theme-border) !important;
+}
+
+.publication-item__title a {
+  color: var(--theme-accent) !important;
+}
+
+.publication-item__title a:hover {
+  color: var(--theme-accent-hover) !important;
+}
+
+.publication-item__authors {
+  color: var(--theme-text) !important;
+}
+
+.publication-item__journal {
+  color: var(--theme-text-muted) !important;
+}
+
+.publication-link {
+  color: var(--theme-accent) !important;
+}
+
+.publications-section__title {
+  color: var(--theme-text) !important;
+}
+
+/* Tags & Filters */
+.tag {
+  background: var(--theme-surface) !important;
+  color: var(--theme-text) !important;
+  border: 1px solid var(--theme-border) !important;
+}
+
+.tag:hover {
+  background: var(--theme-surface-hover) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+.filter-tabs {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.keywords-filter {
+  background: var(--theme-surface) !important;
+}
+
+.filter-tab {
+  background: var(--theme-bg) !important;
+  border-color: var(--theme-border) !important;
+  color: var(--theme-text) !important;
+}
+
+.filter-tab:hover {
+  border-color: var(--theme-accent) !important;
+}
+
+.filter-tab.active {
+  background: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+  color: #fff !important;
+}
+
+/* People cards */
+.person-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.person-card:hover {
+  border-color: var(--theme-accent) !important;
+}
+
+.person-card__name {
+  color: var(--theme-text) !important;
+}
+
+.person-card__position {
+  color: var(--theme-accent) !important;
+}
+
+.person-card__position.alumni {
+  color: var(--theme-text-muted) !important;
+}
+
+.person-card__description {
+  color: var(--theme-text) !important;
+}
+
+.person-card__expand-indicator {
+  color: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+.people-grid {
+  align-items: flex-start;
+}
+
+.person-card.collapsed, .alumni-card.collapsed {
+  align-self: flex-start;
+  height: auto;
+  min-height: auto;
+}
+
+.person-card.expanded, .alumni-card.expanded {
+  align-self: flex-start;
+}
+
+.person-card__expandable {
+  display: none;
+}
+
+.person-card.expanded .person-card__expandable,
+.alumni-card.expanded .person-card__expandable {
+  display: block;
+}
+
+.alumni-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+/* Teaching */
+.teaching-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.teaching-card:hover {
+  border-color: var(--theme-accent) !important;
+}
+
+.teaching-card__title a {
+  color: var(--theme-accent) !important;
+}
+
+.teaching-card__content {
+  color: var(--theme-text) !important;
+}
+
+.teaching-card__venue {
+  color: var(--theme-text-muted) !important;
+}
+
+.teaching-card__expand-indicator {
+  color: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+.teaching-column__title {
+  color: var(--theme-text) !important;
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  box-shadow: none;
+}
+
+.teaching-column__title::after,
+.teaching-column__title::before,
+.teaching-column::after,
+.teaching-column::before,
+.teaching-columns::after,
+.teaching-columns::before {
+  display: none;
+}
+
+.teaching-card__type {
+  color: var(--theme-text-muted) !important;
+}
+
+/* Community cards */
+.community-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.community-card:hover {
+  border-color: var(--theme-accent) !important;
+}
+
+.community-card__title {
+  color: var(--theme-accent) !important;
+}
+
+.community-card__content {
+  color: var(--theme-text) !important;
+}
+
+.community-card__meta {
+  color: var(--theme-text-muted) !important;
+}
+
+.community-card__expand-indicator {
+  color: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+/* Photography */
+.photography-card {
+  background: var(--theme-surface) !important;
+  border-color: var(--theme-border) !important;
+}
+
+.photography-card__title {
+  color: var(--theme-accent) !important;
+}
+
+.photography-card__expand-indicator {
+  color: var(--theme-accent) !important;
+  border-color: var(--theme-accent) !important;
+}
+
+.photography-card__description {
+  color: var(--theme-text) !important;
+}
+
+.photography-links {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 2rem;
+  border: none;
+}
+
+.photography-links__title {
+  color: var(--theme-accent) !important;
+}
+
+/* About content */
+.about-content {
+  color: var(--theme-text) !important;
+}
+
+.about-content h2 {
+  color: var(--theme-text) !important;
+}
+
+/* CV */
+.page__title {
+  color: var(--theme-text) !important;
+}
+
+/* Footer */
+.page__footer {
+  background: var(--theme-surface) !important;
+  border-top: 1px solid var(--theme-border) !important;
+  color: var(--theme-text-muted) !important;
+}
+
+.page__footer a {
+  color: var(--theme-text-muted) !important;
+}
+
+.page__footer a:hover {
+  color: var(--theme-accent) !important;
+}
+
+.page__footer-copyright {
+  color: var(--theme-text-dim) !important;
+}
+
+/* Sidebar (when shown) */
+.sidebar {
+  background: transparent;
+}
+
+.author__name {
+  color: var(--theme-text) !important;
+}
+
+.author__bio {
+  color: var(--theme-text-muted) !important;
+}
+
+.author-news__title {
+  color: var(--theme-text) !important;
+}
+
+.author-news__date {
+  color: var(--theme-accent) !important;
+}
+
+.author-news__content {
+  color: var(--theme-text) !important;
+}
+
+.author-news__content a {
+  color: var(--theme-link) !important;
+}
+
+.author-news__list {
+  max-height: var(--theme-news-max-height);
+}
+
+/* Typography */
+body, p, div, span, li, td, th, a,
+.author__bio, .author__name, .author__content,
+.archive__item-excerpt, .publication-item__authors,
+.publication-item__journal, .person-card__description,
+.research-card__content, .community-card__content,
+.teaching-card__content, .photography-card__description,
+.page-header__subtitle, .author-news__content,
+input, textarea, select, button {
+  font-weight: var(--theme-font-light);
+}
+
+strong, b, h1, h2, h3, h4, h5, h6,
+.page-header__title, .publication-item__title,
+.research-card__title, .community-card__title,
+.teaching-card__title, .photography-card__title,
+.author-news__title, .author-news__date,
+.research-card__section-title, .tag, .filter-tab,
+.publication-item__tags .tag, .person-card__position {
+  font-weight: var(--theme-font-bold);
+}
+
+.publication-item__journal, .person-card__name,
+.author__name, .teaching-card__venue,
+.community-card__meta, .archive__item-title {
+  font-weight: var(--theme-font-light);
+}
+
+.teaching-card__content, .teaching-card__description,
+.community-card__content, .community-card__description,
+.cv-section, .cv-item, .cv-content, .archive__item,
+.archive__item-excerpt, .archive__subtitle {
+  font-weight: var(--theme-font-light);
+}
+
+.teaching-card__type {
+  font-weight: var(--theme-font-bold);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .author__urls-wrapper {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .author__urls {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .author__urls li {
+    margin: 0.25rem;
+  }
+}
+
+/* Full-width content when sidebar is hidden */
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.archive {
+  width: 100%;
+  padding-right: 0;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--theme-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--theme-text-dim);
+}
+
+/* Selection */
+::selection {
+  background: var(--theme-accent);
+  color: #fff;
+}

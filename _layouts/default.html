@@ -13,7 +13,7 @@
 {% include nav.html %}
 {% include dark-mode-toggle.html %}
 <div id="main" role="main">
-  {% unless page.hide_sidebar %}{% include sidebar.html %}{% endunless %}
+  {% unless page.hide_sidebar or site.hide_sidebar %}{% include sidebar.html %}{% endunless %}
   <div class="archive">
     {% if page.page_title %}<h1 class="page__title">{{ page.page_title }}</h1>{% else %}<h1 class="page__title"></h1>{% endif %}
     {{ content }}

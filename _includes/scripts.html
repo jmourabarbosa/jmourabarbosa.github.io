@@ -1,7 +1,8 @@
 <script src="/assets/js/main.min.js"></script>
 <script src="/assets/js/custom-accordion.js"></script>
 {% if page.load_content_loader %}
-<script src="/assets/js/templates/{{ site.theme_name }}.js"></script>
+<script src="/assets/js/templates/default.js"></script>
+{% if site.theme_name != "default" %}<script src="/assets/js/templates/{{ site.theme_name }}.js"></script>{% endif %}
 <script src="/assets/js/content-loader.js"></script>
 {% endif %}
 {% if page.load_admin %}

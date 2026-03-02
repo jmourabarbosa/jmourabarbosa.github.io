@@ -5,7 +5,8 @@ description: "PI (INSERM) @ Neuromodulation Institute & NeuroSpin"
 locale: "en-US"
 
 # Theme
-theme_name: "default"
+theme_name: "dark"
+hide_sidebar: true
 
 # Analytics
 google_analytics: "G-80Z3Q9G2XS"
