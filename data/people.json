@@ -4,11 +4,31 @@
     "subtitle": "I have the privilege (and responsibility!) to supervise a group of brilliant trainees. Here is the team working in my group, exploring the neural mechanisms of cognition."
   },
   "filterTabs": [
-    {"label": "Current Members", "filter": "current", "count": 7},
-    {"label": "PhD Students", "filter": "phd", "count": 2},
-    {"label": "Research Engineers", "filter": "engineer", "count": 3},
-    {"label": "Master Students", "filter": "master", "count": 2},
-    {"label": "Alumni", "filter": "alumni", "count": 3}
+    {
+      "label": "Current Members",
+      "filter": "current",
+      "count": 7
+    },
+    {
+      "label": "PhD Students",
+      "filter": "phd",
+      "count": 2
+    },
+    {
+      "label": "Research Engineers",
+      "filter": "engineer",
+      "count": 3
+    },
+    {
+      "label": "Master Students",
+      "filter": "master",
+      "count": 2
+    },
+    {
+      "label": "Alumni",
+      "filter": "alumni",
+      "count": 3
+    }
   ],
   "members": [
     {
@@ -20,9 +40,18 @@
       "photo": "/images/profile.png",
       "description": "Principal Investigator (INSERM) at the Neuromodulation Institute and NeuroSpin, Paris.",
       "links": [
-        {"label": "About", "url": "/about/"},
-        {"label": "Google Scholar", "url": "https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"},
-        {"label": "GitHub", "url": "https://github.com/jmourabarbosa"}
+        {
+          "label": "About",
+          "url": "/about/"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/jmourabarbosa"
+        }
       ]
     },
     {
@@ -34,7 +63,10 @@
       "photo": "/images/people/melanie-tschiersch.jpg",
       "description": "<strong>Co-supervised with Albert Compte</strong><br /> Melanie is an engineer and she will graduate soon. She has been working on data-analysis and modeling of working memory, in particular how the two prefrontal cortices interact with each other during working memory tasks. Monkey data comes from <a href=\"https://www.cmu.edu/bme/People/Faculty/profile/msmith.html\">Matthew Smith lab</a>.",
       "links": [
-        {"label": "Profile", "url": "https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a"}
+        {
+          "label": "Profile",
+          "url": "https://braincircuitsbehavior.org/people-posts/melanie-tschiersch-hj27a"
+        }
       ]
     },
     {
@@ -46,7 +78,10 @@
       "photo": "/images/people/lubna-abdul.jpg",
       "description": "Lubna, in the first year of her PhD thesis, studied Physics and Science Communication. She is analysing and modelling behavioral and neural data collected from monkeys and humans, including patients, while they perform context-dependent decision making tasks. She collects human data. Monkey data comes from <a href=\"https://ekmillerlab.mit.edu/earl-miller/\">Earl Miller lab</a>.",
       "links": [
-        {"label": "Project", "url": "https://projects.learningplanetinstitute.org/projects/a-cross-species-approach-to-investigate-altern/summary"}
+        {
+          "label": "Project",
+          "url": "https://projects.learningplanetinstitute.org/projects/a-cross-species-approach-to-investigate-altern/summary"
+        }
       ]
     },
     {
@@ -58,7 +93,10 @@
       "photo": "/images/people/kaleab-belay.jpg",
       "description": "<strong>Co-supervised with Nikolas Karalis</strong><br /> Kaleab studied Computer Science and Machine learning. He is working in data-driven RNN models of neuromodulators. Data comes from <a href=\"https://www.neuronaldynamics.eu/team/nikolas\">Nikolas Karalis lab</a>.",
       "links": [
-        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en"}
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=p5XB7SYAAAAJ&hl=en"
+        }
       ]
     },
     {
@@ -70,7 +108,10 @@
       "photo": "/images/people/philipp-werthmann.jpg",
       "description": "Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes from <a href=\"https://ekmillerlab.mit.edu/earl-miller/\">Earl Miller lab</a>.",
       "links": [
-        {"label": "ResearchGate", "url": "https://www.researchgate.net/profile/Philipp-Werthmann"}
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/profile/Philipp-Werthmann"
+        }
       ]
     },
     {
@@ -82,7 +123,10 @@
       "photo": "/images/people/bruna-junqueira-lopes.jpg",
       "description": "Bruna studied Computer Science. She is working on fusion of EEG and fMRI using multi modal deep learning techniques.",
       "links": [
-        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en"}
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=jEdxv3UAAAAJ&hl=en"
+        }
       ]
     },
     {
@@ -104,7 +148,10 @@
       "photo": "/images/people/arghavan-aslani.jpg",
       "description": "Arghavan studied Electrical Engineering and Cognitive Sciences. She is working on distributed mechanisms of working memory using eye tracker and E-phys decoding techniques.",
       "links": [
-        {"label": "Google Scholar", "url": "https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en"}
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=G9CAbhIAAAAJ&hl=en"
+        }
       ]
     },
     {
@@ -116,29 +163,45 @@
       "photo": "",
       "description": "Former Master student. She is now doing a PhD with Guillaume Bellec.",
       "links": [
-        {"label": "LinkedIn", "url": "https://fr.linkedin.com/in/laurine-marty"}
+        {
+          "label": "LinkedIn",
+          "url": "https://fr.linkedin.com/in/laurine-marty"
+        }
       ]
     },
     {
       "id": "person-10",
-      "name": "Ibr\u00eeze Bonneville",
+      "name": "Ibrîze Bonneville",
       "position": "Former Master Student",
       "positionType": "alumni",
       "current": false,
       "photo": "",
       "description": "Former Master student who modeled inter-subject variability differences in cognitive flexibility using data-driven RNNs.",
       "links": [
-        {"label": "LinkedIn", "url": "https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217"}
+        {
+          "label": "LinkedIn",
+          "url": "https://fr.linkedin.com/in/ibr%C3%AEze-bonneville-993a37217"
+        }
       ]
     },
     {
       "id": "person-11",
-      "name": "Romain H\u00fb",
+      "name": "Romain Hû",
       "position": "Former Master Student",
       "positionType": "alumni",
       "current": false,
       "photo": "",
       "description": "Former Master student who used data-driven RNN to model multi-item working memory in human single units.",
+      "links": []
+    },
+    {
+      "id": "person-1772413395783-gvq6k",
+      "name": "a",
+      "position": "a",
+      "positionType": "phd",
+      "current": true,
+      "photo": "",
+      "description": "a",
       "links": []
     }
   ]
