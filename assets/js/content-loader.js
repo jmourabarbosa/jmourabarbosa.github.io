@@ -283,7 +283,6 @@
 
   function renderPersonCard(person, isAlumni) {
     var html = '<div class="person-card expanded' + (isAlumni ? ' alumni-card' : '') + '" data-position="' + person.positionType + '" data-current="' + person.current + '" data-id="' + person.id + '">';
-    html += '<div class="person-card__header">';
 
     if (person.photo) {
       html += '<div class="person-card__avatar person-card__avatar--large">';
@@ -291,10 +290,9 @@
       html += '</div>';
     }
 
-    html += '<div class="person-card__info">';
+    html += '<div class="person-card__body">';
     html += '<h3 class="person-card__name">' + person.name + '</h3>';
     html += '<p class="person-card__position' + (isAlumni ? ' alumni' : '') + '">' + person.position + '</p>';
-    html += '</div>';
 
     if (window.CMS && window.CMS.isAdmin) {
       html += '<div class="cms-item-actions cms-item-actions--card">';
@@ -303,9 +301,6 @@
       html += '</div>';
     }
 
-    html += '</div>'; // header
-
-    // Always show description and links (no expandable toggle)
     if (person.description) {
       html += '<div class="person-card__description">' + person.description + '</div>';
     }
@@ -316,6 +311,7 @@
       });
       html += '</div>';
     }
+    html += '</div>'; // body
 
     html += '</div>';
     return html;

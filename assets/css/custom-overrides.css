@@ -137,12 +137,9 @@ strong, b, h1, h2, h3, h4, h5, h6,
     width: 100%;
 }
 
-.people-list .person-card__header {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 1.5rem;
-    flex-shrink: 0;
+.person-card__body {
+    flex: 1;
+    min-width: 0;
 }
 
 /* Bigger photos */
