@@ -67,9 +67,10 @@
 
   function saveAndReload(dataFile, data, renderFn, containerId) {
     return window.CMS.saveData(dataFile, data).then(function () {
-      window.ContentLoader.clearCache(dataFile);
+      // Put saved data directly into cache so renderer uses it
+      // instead of re-fetching from GitHub Pages (which is stale)
+      window.ContentLoader.setCache(dataFile, data);
       closeModal();
-      // Re-fetch from local cache and re-render
       return renderFn(containerId);
     }).catch(function (err) {
       showEditorError('Save failed: ' + err.message);

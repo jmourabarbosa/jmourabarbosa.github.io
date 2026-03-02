@@ -44,6 +44,11 @@
     delete dataCache[file];
   };
 
+  // Set cache directly (used after saving to avoid stale GitHub Pages fetch)
+  window.ContentLoader.setCache = function (file, data) {
+    dataCache[file] = data;
+  };
+
   // ============================================================
   // NEWS RENDERER
   // ============================================================
