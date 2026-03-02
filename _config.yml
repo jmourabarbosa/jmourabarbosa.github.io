@@ -83,3 +83,4 @@ exclude:
   - compact_index
   - _drafts
   - about.html
+  - assets/css/main.scss
