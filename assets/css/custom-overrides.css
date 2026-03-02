@@ -17,9 +17,20 @@
     overflow: visible !important;
 }
 
-/* Close the gap between sidebar and content */
+/* Pages without sidebar: full width centered content */
 @media (min-width: 57.8125em) {
     .archive {
+        width: 100% !important;
+        float: none !important;
+        padding-left: 0 !important;
+    }
+    /* Pages with sidebar: sidebar wider, content fits next to it */
+    .sidebar {
+        width: 22% !important;
+    }
+    .sidebar ~ .archive {
+        width: 75% !important;
+        float: right !important;
         padding-left: 1% !important;
     }
 }
