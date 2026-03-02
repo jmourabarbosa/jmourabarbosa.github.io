@@ -25,7 +25,7 @@
       window.CMS.isAdmin = true;
       document.body.classList.add('cms-admin');
     }
-    renderAdminButton();
+    renderFooterLogout();
   };
 
   // --- Login ---
@@ -36,9 +36,7 @@
         window.CMS.isAdmin = true;
         localStorage.setItem(STORAGE_KEY, token);
         document.body.classList.add('cms-admin');
-        closeLoginModal();
-        // Reload to show edit buttons
-        window.location.reload();
+        window.location.href = '/';
         return true;
       }
       return false;
@@ -116,108 +114,23 @@
     return window.CMS.writeFile(path, content, message);
   };
 
-  // --- UI: Admin button in footer ---
-  function renderAdminButton() {
+  // --- UI: Logout link in footer (only when logged in) ---
+  function renderFooterLogout() {
+    if (!window.CMS.isAdmin) return;
     var footer = document.querySelector('.page__footer-copyright');
     if (!footer) return;
 
-    if (window.CMS.isAdmin) {
-      // Show logout button
-      var logoutBtn = document.createElement('button');
-      logoutBtn.className = 'cms-admin-btn cms-logout-btn';
-      logoutBtn.innerHTML = '&#x1f513; Logout';
-      logoutBtn.title = 'Logout from CMS';
-      logoutBtn.addEventListener('click', function () {
-        if (confirm('Logout from admin mode?')) {
-          window.CMS.logout();
-        }
-      });
-      footer.appendChild(logoutBtn);
-    } else {
-      // Show login button
-      var loginBtn = document.createElement('button');
-      loginBtn.className = 'cms-admin-btn cms-login-btn';
-      loginBtn.innerHTML = '&#x1f512;';
-      loginBtn.title = 'Admin login';
-      loginBtn.addEventListener('click', function () {
-        showLoginModal();
-      });
-      footer.appendChild(loginBtn);
-    }
-  }
-
-  // --- UI: Login Modal ---
-  function showLoginModal() {
-    var overlay = document.createElement('div');
-    overlay.className = 'cms-modal-overlay';
-    overlay.id = 'cmsLoginOverlay';
-
-    var modal = document.createElement('div');
-    modal.className = 'cms-modal';
-    modal.innerHTML =
-      '<h2 class="cms-modal__title">Admin Login</h2>' +
-      '<p class="cms-modal__desc">Enter your GitHub Personal Access Token to enable editing. The token needs <code>repo</code> scope.</p>' +
-      '<input type="password" id="cmsTokenInput" class="cms-input" placeholder="ghp_xxxxxxxxxxxx" autocomplete="off" />' +
-      '<div id="cmsLoginError" class="cms-error" style="display:none;">Invalid token or insufficient permissions.</div>' +
-      '<div class="cms-modal__actions">' +
-      '  <button id="cmsLoginCancel" class="cms-btn cms-btn--secondary">Cancel</button>' +
-      '  <button id="cmsLoginSubmit" class="cms-btn cms-btn--primary">Login</button>' +
-      '</div>';
-
-    overlay.appendChild(modal);
-    document.body.appendChild(overlay);
-
-    // Focus input
-    setTimeout(function () {
-      document.getElementById('cmsTokenInput').focus();
-    }, 100);
-
-    // Events
-    document.getElementById('cmsLoginCancel').addEventListener('click', closeLoginModal);
-    overlay.addEventListener('click', function (e) {
-      if (e.target === overlay) closeLoginModal();
+    var sep = document.createTextNode(' | ');
+    var link = document.createElement('a');
+    link.href = '#';
+    link.textContent = 'Logout';
+    link.style.cursor = 'pointer';
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      window.CMS.logout();
     });
-
-    document.getElementById('cmsLoginSubmit').addEventListener('click', handleLogin);
-    document.getElementById('cmsTokenInput').addEventListener('keydown', function (e) {
-      if (e.key === 'Enter') handleLogin();
-    });
-  }
-
-  function handleLogin() {
-    var input = document.getElementById('cmsTokenInput');
-    var errorEl = document.getElementById('cmsLoginError');
-    var submitBtn = document.getElementById('cmsLoginSubmit');
-    var token = input.value.trim();
-
-    if (!token) {
-      errorEl.textContent = 'Please enter a token.';
-      errorEl.style.display = 'block';
-      return;
-    }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Verifying...';
-    errorEl.style.display = 'none';
-
-    window.CMS.login(token).then(function (success) {
-      if (!success) {
-        errorEl.textContent = 'Invalid token or insufficient permissions.';
-        errorEl.style.display = 'block';
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Login';
-      }
-    }).catch(function () {
-      errorEl.textContent = 'Connection error. Please try again.';
-      errorEl.style.display = 'block';
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'Login';
-    });
-  }
-
-  function closeLoginModal() {
-    var overlay = document.getElementById('cmsLoginOverlay');
-    if (overlay) overlay.remove();
+    footer.appendChild(sep);
+    footer.appendChild(link);
   }
 
   // --- Utility: Generate unique ID ---
