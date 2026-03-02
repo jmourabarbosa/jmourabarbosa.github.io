@@ -2,7 +2,7 @@
   "header": {
     "title": "Publications",
     "subtitle": "All papers are open - either published open access or directly linked to pdf. All code and all data necessary to replicate the papers' figures are also linked. Don't hesitate contacting me at palerma @ gmail if something is missing.",
-    "legend": "<strong>+</strong> equal contributions &nbsp;&nbsp;&nbsp; <strong>\u2709</strong> corresponding author"
+    "legend": "<strong>+</strong> equal contributions &nbsp;&nbsp;&nbsp; <strong>✉</strong> corresponding author"
   },
   "sections": [
     {
@@ -10,23 +10,62 @@
       "title": "Peer-reviewed",
       "publications": [
         {
+          "id": "pub-1772413691666-2owbz",
+          "title": "z",
+          "url": "z",
+          "authors": "z",
+          "journal": "z",
+          "categories": "peer-reviewed meeg",
+          "tags": [
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            }
+          ],
+          "links": []
+        },
+        {
           "id": "pub-1",
           "title": "Early selection of task-relevant features through population gating",
           "url": "https://www.nature.com/articles/s41467-023-42519-5",
-          "authors": "<strong>Joao Barbosa</strong>\u2709, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec",
+          "authors": "<strong>Joao Barbosa</strong>✉, Remi Proville, Chris C. Rodgers, Michael R. DeWeese, Srdjan Ostojic, Yves Boubenec",
           "journal": "Nature Communications (2023)",
           "categories": "peer-reviewed decision-making normative-models neural-geometry ephys",
           "tags": [
-            {"label": "Decision Making", "key": "decision-making"},
-            {"label": "RNN", "key": "normative-models"},
-            {"label": "Neural Geometry", "key": "neural-geometry"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Decision Making",
+              "key": "decision-making"
+            },
+            {
+              "label": "RNN",
+              "key": "normative-models"
+            },
+            {
+              "label": "Neural Geometry",
+              "key": "neural-geometry"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": [
-            {"label": "data", "url": "https://crcns.org/data-sets/pfc/pfc-1"},
-            {"label": "code", "url": "https://github.com/jmourabarbosa/multi-area-ctx"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1550766362280198144"},
-            {"label": "talk", "url": "https://www.crowdcast.io/e/wwneurise/39"}
+            {
+              "label": "data",
+              "url": "https://crcns.org/data-sets/pfc/pfc-1"
+            },
+            {
+              "label": "code",
+              "url": "https://github.com/jmourabarbosa/multi-area-ctx"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1550766362280198144"
+            },
+            {
+              "label": "talk",
+              "url": "https://www.crowdcast.io/e/wwneurise/39"
+            }
           ]
         },
         {
@@ -37,13 +76,28 @@
           "journal": "Plos Biology (2021)",
           "categories": "peer-reviewed working-memory meeg",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "M/EEG", "key": "meeg"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/reactivations"},
-            {"label": "data", "url": "https://github.com/comptelab/reactivations"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1385623043372900356"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/reactivations"
+            },
+            {
+              "label": "data",
+              "url": "https://github.com/comptelab/reactivations"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1385623043372900356"
+            }
           ]
         },
         {
@@ -54,12 +108,24 @@
           "journal": "Frontiers in Neural Circuits (2021)",
           "categories": "peer-reviewed working-memory spiking-networks",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/binding"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1403339914859757568"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/binding"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1403339914859757568"
+            }
           ]
         },
         {
@@ -70,16 +136,40 @@
           "journal": "Nature Neuroscience (2020)",
           "categories": "peer-reviewed working-memory spiking-networks meeg ephys",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "M/EEG", "key": "meeg"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/interplayPFC"},
-            {"label": "data", "url": "https://github.com/comptelab/interplayPFC"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1275127297901813762"},
-            {"label": "talk", "url": "https://www.youtube.com/watch?v=oKn2GYgQUCk"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/interplayPFC"
+            },
+            {
+              "label": "data",
+              "url": "https://github.com/comptelab/interplayPFC"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1275127297901813762"
+            },
+            {
+              "label": "talk",
+              "url": "https://www.youtube.com/watch?v=oKn2GYgQUCk"
+            }
           ]
         },
         {
@@ -90,14 +180,32 @@
           "journal": "Nature Communications (2020)",
           "categories": "peer-reviewed working-memory spiking-networks schizophrenia",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "Computational Psychiatry", "key": "schizophrenia"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "Computational Psychiatry",
+              "key": "schizophrenia"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/serialNMDA"},
-            {"label": "data", "url": "https://github.com/comptelab/serialNMDA"},
-            {"label": "tweeprint", "url": "https://twitter.com/heikecstein/status/1298238425288642561?lang=en"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/serialNMDA"
+            },
+            {
+              "label": "data",
+              "url": "https://github.com/comptelab/serialNMDA"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/heikecstein/status/1298238425288642561?lang=en"
+            }
           ]
         },
         {
@@ -108,12 +216,24 @@
           "journal": "Scientific Reports (2020)",
           "categories": "peer-reviewed working-memory",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/serial_color"},
-            {"label": "data", "url": "https://github.com/comptelab/serial_color/"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1278703572029452289"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/serial_color"
+            },
+            {
+              "label": "data",
+              "url": "https://github.com/comptelab/serial_color/"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1278703572029452289"
+            }
           ]
         },
         {
@@ -124,8 +244,14 @@
           "journal": "Journal of Neurophysiology (2015)",
           "categories": "peer-reviewed working-memory spiking-networks",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            }
           ],
           "links": []
         }
@@ -143,8 +269,14 @@
           "journal": "CCN (2025)",
           "categories": "conference decision-making ephys",
           "tags": [
-            {"label": "Decision Making", "key": "decision-making"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Decision Making",
+              "key": "decision-making"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": []
         },
@@ -156,10 +288,22 @@
           "journal": "CCN vol. 15, 716965, Frontiers Media SA (2024)",
           "categories": "conference normative-models neural-geometry decision-making ephys",
           "tags": [
-            {"label": "RNN", "key": "normative-models"},
-            {"label": "Neural Geometry", "key": "neural-geometry"},
-            {"label": "Decision Making", "key": "decision-making"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "RNN",
+              "key": "normative-models"
+            },
+            {
+              "label": "Neural Geometry",
+              "key": "neural-geometry"
+            },
+            {
+              "label": "Decision Making",
+              "key": "decision-making"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": []
         }
@@ -177,9 +321,18 @@
           "journal": "bioRxiv (2025)",
           "categories": "preprint working-memory spiking-networks ephys",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": []
         },
@@ -191,8 +344,14 @@
           "journal": "bioRxiv (2025)",
           "categories": "preprint neural-geometry ephys",
           "tags": [
-            {"label": "Neural Geometry", "key": "neural-geometry"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Neural Geometry",
+              "key": "neural-geometry"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": []
         },
@@ -200,14 +359,26 @@
           "id": "pub-12",
           "title": "Neural signatures of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia",
           "url": "https://osf.io/preprints/psyarxiv/kz73s",
-          "authors": "Heike Stein, <strong>Joao Barbosa</strong>, Diego Lozano-Soldevilla, Mireia Rosa-Justicia, Alba Morat\u00f3, Adri\u00e0 Galan-Gadea, Laia Prades, Amaia Mu\u00f1oz-Lopetegui, Helena Ari\u00f1o, Eugenia Martinez-Hernandez, Mar Guasp, Josefina Castro-Fornieles, Josep Dalmau, Joan Santamaria, Albert Compte",
+          "authors": "Heike Stein, <strong>Joao Barbosa</strong>, Diego Lozano-Soldevilla, Mireia Rosa-Justicia, Alba Morató, Adrià Galan-Gadea, Laia Prades, Amaia Muñoz-Lopetegui, Helena Ariño, Eugenia Martinez-Hernandez, Mar Guasp, Josefina Castro-Fornieles, Josep Dalmau, Joan Santamaria, Albert Compte",
           "journal": "PsyArxiv (2024)",
           "categories": "preprint working-memory meeg spiking-networks schizophrenia",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "M/EEG", "key": "meeg"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "Computational Psychiatry", "key": "schizophrenia"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "Computational Psychiatry",
+              "key": "schizophrenia"
+            }
           ],
           "links": []
         },
@@ -219,8 +390,14 @@
           "journal": "bioRxiv (2024)",
           "categories": "preprint working-memory meeg",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "M/EEG", "key": "meeg"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            }
           ],
           "links": []
         },
@@ -228,14 +405,20 @@
           "id": "pub-14",
           "title": "NeuroGym: An open resource for developing and sharing neuroscience tasks",
           "url": "https://psyarxiv.com/aqc9n/",
-          "authors": "Manuel Molano-Maz\u00f3n, <strong>Joao Barbosa</strong>, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang",
+          "authors": "Manuel Molano-Mazón, <strong>Joao Barbosa</strong>, Jordi Pastor-Ciurana, Marta Fradera, Ru-Yuan Zhang, Jeremy Forest, Jorge del Pozo, Li Ji-An, Christopher J Cueva, Jaime de la Rocha, Devika Narain, Guangyu Robert Yang",
           "journal": "PsyArxiv (2022)",
           "categories": "preprint normative-models",
           "tags": [
-            {"label": "RNN", "key": "normative-models"}
+            {
+              "label": "RNN",
+              "key": "normative-models"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/neurogym/neurogym"}
+            {
+              "label": "code",
+              "url": "https://github.com/neurogym/neurogym"
+            }
           ]
         }
       ]
@@ -248,16 +431,28 @@
           "id": "pub-15",
           "title": "A practical guide for studying human behavior in the lab",
           "url": "../files/Barbosa_2022_BRM.pdf",
-          "authors": "<strong>Joao Barbosa</strong>\u2709+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil",
+          "authors": "<strong>Joao Barbosa</strong>✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil",
           "journal": "Behavior Research Methods (2022)",
           "categories": "review decision-making working-memory",
           "tags": [
-            {"label": "Decision Making", "key": "decision-making"},
-            {"label": "Working Memory", "key": "working-memory"}
+            {
+              "label": "Decision Making",
+              "key": "decision-making"
+            },
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/ahyafil/SampleSize"},
-            {"label": "tweeprint", "url": "https://twitter.com/jmourabarbosa/status/1359100591541280768"}
+            {
+              "label": "code",
+              "url": "https://github.com/ahyafil/SampleSize"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/jmourabarbosa/status/1359100591541280768"
+            }
           ]
         },
         {
@@ -268,25 +463,46 @@
           "journal": "Current Opinion in Neurobiology (2021)",
           "categories": "review schizophrenia spiking-networks working-memory",
           "tags": [
-            {"label": "Computational Psychiatry", "key": "schizophrenia"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "Working Memory", "key": "working-memory"}
+            {
+              "label": "Computational Psychiatry",
+              "key": "schizophrenia"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            }
           ],
           "links": [
-            {"label": "code", "url": "https://github.com/comptelab/attractorSZ"},
-            {"label": "tweeprint", "url": "https://twitter.com/heikecstein/status/1377260009390800902"},
-            {"label": "talk", "url": "https://youtu.be/H_ZohMK-Q6M"}
+            {
+              "label": "code",
+              "url": "https://github.com/comptelab/attractorSZ"
+            },
+            {
+              "label": "tweeprint",
+              "url": "https://twitter.com/heikecstein/status/1377260009390800902"
+            },
+            {
+              "label": "talk",
+              "url": "https://youtu.be/H_ZohMK-Q6M"
+            }
           ]
         },
         {
           "id": "pub-17",
           "title": "Working Memories Are Maintained in a Stable Code",
           "url": "../files/Barbosa2017.pdf",
-          "authors": "<strong>Joao Barbosa</strong>\u2709",
+          "authors": "<strong>Joao Barbosa</strong>✉",
           "journal": "Journal of Neuroscience (2017)",
           "categories": "review working-memory",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            }
           ],
           "links": []
         }
@@ -304,10 +520,22 @@
           "journal": "Universitat de Barcelona (2019)",
           "categories": "thesis working-memory meeg spiking-networks ephys",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "M/EEG", "key": "meeg"},
-            {"label": "Spiking Networks", "key": "spiking-networks"},
-            {"label": "E-phys", "key": "ephys"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "M/EEG",
+              "key": "meeg"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
           ],
           "links": []
         }
@@ -325,33 +553,101 @@
           "journal": "Virtual Working Memory Symposium 2020",
           "categories": "thesis working-memory spiking-networks",
           "tags": [
-            {"label": "Working Memory", "key": "working-memory"},
-            {"label": "Spiking Networks", "key": "spiking-networks"}
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            }
           ],
           "links": [
-            {"label": "talk", "url": "https://youtu.be/dkFhOdXSvRo"}
+            {
+              "label": "talk",
+              "url": "https://youtu.be/dkFhOdXSvRo"
+            }
           ]
         }
       ]
     }
   ],
   "filterTabs": [
-    {"label": "All", "filter": "all", "count": 19},
-    {"label": "Peer-reviewed", "filter": "peer-reviewed", "count": 7},
-    {"label": "Pre-prints", "filter": "preprint", "count": 5},
-    {"label": "Conference", "filter": "conference", "count": 2},
-    {"label": "Reviews", "filter": "review", "count": 3},
-    {"label": "Other", "filter": "thesis", "count": 2}
+    {
+      "label": "All",
+      "filter": "all",
+      "count": 19
+    },
+    {
+      "label": "Peer-reviewed",
+      "filter": "peer-reviewed",
+      "count": 7
+    },
+    {
+      "label": "Pre-prints",
+      "filter": "preprint",
+      "count": 5
+    },
+    {
+      "label": "Conference",
+      "filter": "conference",
+      "count": 2
+    },
+    {
+      "label": "Reviews",
+      "filter": "review",
+      "count": 3
+    },
+    {
+      "label": "Other",
+      "filter": "thesis",
+      "count": 2
+    }
   ],
   "keywordTabs": [
-    {"label": "All", "filter": "all-keywords"},
-    {"label": "Working Memory", "filter": "working-memory", "count": 14},
-    {"label": "Spiking Networks", "filter": "spiking-networks", "count": 9},
-    {"label": "M/EEG", "filter": "meeg", "count": 5},
-    {"label": "Decision Making", "filter": "decision-making", "count": 4},
-    {"label": "E-phys", "filter": "ephys", "count": 7},
-    {"label": "RNN", "filter": "normative-models", "count": 3},
-    {"label": "Neural Geometry", "filter": "neural-geometry", "count": 3},
-    {"label": "Computational Psychiatry", "filter": "schizophrenia", "count": 3}
+    {
+      "label": "All",
+      "filter": "all-keywords"
+    },
+    {
+      "label": "Working Memory",
+      "filter": "working-memory",
+      "count": 14
+    },
+    {
+      "label": "Spiking Networks",
+      "filter": "spiking-networks",
+      "count": 9
+    },
+    {
+      "label": "M/EEG",
+      "filter": "meeg",
+      "count": 5
+    },
+    {
+      "label": "Decision Making",
+      "filter": "decision-making",
+      "count": 4
+    },
+    {
+      "label": "E-phys",
+      "filter": "ephys",
+      "count": 7
+    },
+    {
+      "label": "RNN",
+      "filter": "normative-models",
+      "count": 3
+    },
+    {
+      "label": "Neural Geometry",
+      "filter": "neural-geometry",
+      "count": 3
+    },
+    {
+      "label": "Computational Psychiatry",
+      "filter": "schizophrenia",
+      "count": 3
+    }
   ]
 }
