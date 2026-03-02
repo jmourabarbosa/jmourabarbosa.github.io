@@ -17,16 +17,10 @@
     overflow: visible !important;
 }
 
-/* Make sidebar wider */
-.sidebar {
-    width: 300px !important;
-    min-width: 300px !important;
-}
-
-@media (min-width: 1024px) {
+/* Make sidebar a bit wider than default 15% */
+@media (min-width: 57.8125em) {
     .sidebar {
-        width: 300px !important;
-        min-width: 300px !important;
+        width: 20% !important;
     }
 }
 
