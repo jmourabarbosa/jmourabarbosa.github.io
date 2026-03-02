@@ -187,27 +187,27 @@ strong, b, h1, h2, h3, h4, h5, h6,
     }
 }
 
-/* Fix navigation menu background - make it white */
+/* Fix navigation menu background */
 .greedy-nav {
-    background: white !important;
+    background: var(--body-color, white) !important;
 }
 
 .greedy-nav .hidden-links {
-    background: white !important;
-    border: 1px solid #ccc !important;
+    background: var(--body-color, white) !important;
+    border: 1px solid var(--border-color, #ccc) !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
 }
 
 .greedy-nav .hidden-links a {
-    color: #333 !important;
+    color: var(--text-color, #333) !important;
 }
 
 .greedy-nav .hidden-links a:hover {
-    background: #f5f5f5 !important;
+    background: var(--lighter-gray, #f5f5f5) !important;
 }
 
 /* Also fix the mobile menu button */
 .greedy-nav button {
-    background: white !important;
-    color: #333 !important;
+    background: var(--body-color, white) !important;
+    color: var(--text-color, #333) !important;
 }
