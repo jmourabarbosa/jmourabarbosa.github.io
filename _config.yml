@@ -1,1 +1,84 @@
-# Static site - no Jekyll processing needed
+# Site settings
+title: "Joao Barbosa"
+url: "https://jbarbosa.org"
+description: "PI (INSERM) @ Neuromodulation Institute & NeuroSpin"
+locale: "en-US"
+
+# Theme
+theme_name: "default"
+
+# Analytics
+google_analytics: "G-80Z3Q9G2XS"
+
+# Navigation (rendered in nav.html)
+navigation:
+  - title: "Research"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "People"
+    url: /people/
+  - title: "Teaching"
+    url: /teaching/
+  - title: "Community"
+    url: /community/
+  - title: "CV"
+    url: /cv/
+  - title: "Photography"
+    url: /photography/
+
+# Author
+author:
+  name: "Joao Barbosa"
+  avatar: "/images/profile.png"
+  bio: "PI (INSERM) @ Neuromodulation Institute &amp; NeuroSpin.<br>Neuroscientist in the making. Chronic emigrant."
+  links:
+    - title: "Email"
+      url: "mailto:palerma@gmail.com"
+      icon: "https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg"
+      icon_size: "16px"
+    - title: "ResearchGate"
+      url: "https://www.researchgate.net/profile/Joao_Barbosa43"
+      icon: "https://upload.wikimedia.org/wikipedia/commons/5/5e/ResearchGate_icon_SVG.svg"
+      icon_size: "16px"
+    - title: "Bluesky"
+      url: "https://bsky.app/profile/jbarbosa.org"
+      icon: "/images/bluesky-logo.png"
+      icon_class: "bluesky-icon"
+    - title: "GitHub"
+      url: "https://github.com/jmourabarbosa"
+      icon: "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+      icon_size: "18px"
+    - title: "Google Scholar"
+      url: "https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"
+      icon: "https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg"
+      icon_size: "16px"
+    - title: "ORCID"
+      url: "https://orcid.org/0000-0002-1907-3010"
+      icon: "https://orcid.org/assets/vectors/orcid.logo.icon.svg"
+      icon_size: "16px"
+
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.bak3
+  - Gemfile.dev
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - package.json
+  - package-lock.json
+  - CHANGELOG.md
+  - CONTRIBUTING.md
+  - README.md
+  - .sass-cache
+  - .bundle
+  - .claude
+  - markdown_generator
+  - talkmap.ipynb
+  - talkmap.py
+  - prez2.png
+  - test-images.html
+  - compact_index
+  - _drafts
+  - about.html

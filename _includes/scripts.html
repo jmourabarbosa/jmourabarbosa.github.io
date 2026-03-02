@@ -1,0 +1,10 @@
+<script src="/assets/js/main.min.js"></script>
+<script src="/assets/js/custom-accordion.js"></script>
+{% if page.load_content_loader %}
+<script src="/assets/js/templates/{{ site.theme_name }}.js"></script>
+<script src="/assets/js/content-loader.js"></script>
+{% endif %}
+{% if page.load_admin %}
+<script src="/assets/js/admin.js"></script>
+<script src="/assets/js/editor.js"></script>
+{% endif %}

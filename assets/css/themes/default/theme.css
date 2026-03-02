@@ -1,0 +1,210 @@
+/* Default Theme — migrated from custom-overrides.css */
+/* Uses CSS custom properties for easy theme swapping */
+
+:root {
+  --theme-accent: #8A6BB1;
+  --theme-nav-bg: white;
+  --theme-nav-text: #333;
+  --theme-nav-hover-bg: #f5f5f5;
+  --theme-nav-border: #ccc;
+  --theme-font-light: 200;
+  --theme-font-bold: bold;
+  --theme-news-max-height: 400px;
+  --theme-research-max-width: 800px;
+}
+
+/* Dark mode toggle position below navigation */
+.dark-mode-toggle {
+  top: 110px;
+}
+
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+    top: 90px;
+  }
+}
+
+/* News window height */
+.author-news__list {
+  max-height: var(--theme-news-max-height);
+}
+
+/* Page header styling — remove box, center */
+.page-header {
+  text-align: center;
+  margin: 0 0 3rem 0;
+  padding: 2rem 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+/* Photography accent colors */
+.photography-card__title {
+  color: var(--theme-accent);
+}
+
+.photography-card__expand-indicator {
+  color: var(--theme-accent);
+  border-color: var(--theme-accent);
+}
+
+.photography-links__title {
+  color: var(--theme-accent);
+}
+
+/* Photography links — remove box */
+.photography-links {
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  margin-top: 2rem;
+  border: none;
+}
+
+/* Typography — light font weight */
+body, p, div, span, li, td, th, a,
+.author__bio, .author__name, .author__content,
+.archive__item-excerpt, .publication-item__authors,
+.publication-item__journal, .person-card__description,
+.research-card__content, .community-card__content,
+.teaching-card__content, .photography-card__description,
+.page-header__subtitle, .author-news__content,
+input, textarea, select, button {
+  font-weight: var(--theme-font-light);
+}
+
+/* Bold elements */
+strong, b, h1, h2, h3, h4, h5, h6,
+.page-header__title, .publication-item__title,
+.research-card__title, .community-card__title,
+.teaching-card__title, .photography-card__title,
+.author-news__title, .author-news__date,
+.research-card__section-title, .tag, .filter-tab,
+.publication-item__tags .tag, .person-card__position {
+  font-weight: var(--theme-font-bold);
+}
+
+/* Special lighter text */
+.publication-item__journal, .person-card__name,
+.author__name, .teaching-card__venue,
+.community-card__meta, .archive__item-title {
+  font-weight: var(--theme-font-light);
+}
+
+/* Additional light font weight sections */
+.teaching-card__content, .teaching-card__description,
+.community-card__content, .community-card__description,
+.cv-section, .cv-item, .cv-content, .archive__item,
+.archive__item-excerpt, .archive__subtitle {
+  font-weight: var(--theme-font-light);
+}
+
+/* Teaching — remove decorative lines */
+.teaching-column__title::after,
+.teaching-column__title::before,
+.teaching-column::after,
+.teaching-column::before,
+.teaching-columns::after,
+.teaching-columns::before {
+  display: none;
+}
+
+.teaching-column__title {
+  border: none;
+  border-bottom: none;
+  border-top: none;
+  box-shadow: none;
+}
+
+/* Teaching labels bold */
+.teaching-card__type {
+  font-weight: var(--theme-font-bold);
+}
+
+/* People card accordion — prevent height stretching */
+.people-grid {
+  align-items: flex-start;
+}
+
+.person-card.collapsed, .alumni-card.collapsed {
+  align-self: flex-start;
+  height: auto;
+  min-height: auto;
+}
+
+.person-card.expanded, .alumni-card.expanded {
+  align-self: flex-start;
+}
+
+.person-card__expandable {
+  display: none;
+}
+
+.person-card.expanded .person-card__expandable,
+.alumni-card.expanded .person-card__expandable {
+  display: block;
+}
+
+/* Research grid — single column */
+.research-grid {
+  grid-template-columns: 1fr;
+  max-width: var(--theme-research-max-width);
+  margin: 2rem auto;
+}
+
+@media (min-width: 768px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile: social icons always visible */
+@media (max-width: 768px) {
+  .author__urls-wrapper {
+    display: block;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+
+  .author__urls {
+    display: flex;
+    flex-wrap: wrap;
+    position: static;
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .author__urls li {
+    margin: 0.25rem;
+  }
+}
+
+/* Navigation — white background */
+.greedy-nav {
+  background: var(--theme-nav-bg);
+}
+
+.greedy-nav .hidden-links {
+  background: var(--theme-nav-bg);
+  border: 1px solid var(--theme-nav-border);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.greedy-nav .hidden-links a {
+  color: var(--theme-nav-text);
+}
+
+.greedy-nav .hidden-links a:hover {
+  background: var(--theme-nav-hover-bg);
+}
+
+.greedy-nav button {
+  background: var(--theme-nav-bg);
+  color: var(--theme-nav-text);
+}

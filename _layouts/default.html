@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="no-js" data-theme-name="{{ site.theme_name }}">
+<head>
+{% include head.html %}
+{% include head-custom.html %}
+<link rel="stylesheet" href="/assets/css/themes/{{ site.theme_name }}/theme.css">
+{% if page.load_admin %}<link rel="stylesheet" href="/assets/css/admin.css">{% endif %}
+</head>
+<body>
+<!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+{% include nav.html %}
+{% include dark-mode-toggle.html %}
+<div id="main" role="main">
+  {% unless page.hide_sidebar %}{% include sidebar.html %}{% endunless %}
+  <div class="archive">
+    {% if page.page_title %}<h1 class="page__title">{{ page.page_title }}</h1>{% else %}<h1 class="page__title"></h1>{% endif %}
+    {{ content }}
+  </div>
+</div>
+{% include footer.html %}
+{% include scripts.html %}
+{% if page.cms_render %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  {% for render in page.cms_render %}{% assign parts = render | split: ":" %}ContentLoader.{{ parts[0] }}('{{ parts[1] }}');
+  {% endfor %}});
+</script>
+{% endif %}
+</body>
+</html>

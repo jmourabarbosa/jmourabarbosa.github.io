@@ -1,0 +1,28 @@
+<div class="sidebar sticky">
+  <div itemscope itemtype="http://schema.org/Person">
+    <div class="author__avatar">
+      <img src="{{ site.author.avatar }}" class="author__avatar" alt="{{ site.author.name }}">
+    </div>
+    <div class="author__content">
+      <h3 class="author__name">{{ site.author.name }}</h3>
+      <p class="author__bio">{{ site.author.bio }}</p>
+    </div>
+    <div class="author__urls-wrapper">
+      <ul class="author__urls social-icons social-icons-horizontal">
+        {% for link in site.author.links %}
+        <li>
+          <a href="{{ link.url }}" title="{{ link.title }}">
+            <img src="{{ link.icon }}" alt="{{ link.title }}"{% if link.icon_class %} class="{{ link.icon_class }}"{% else %} style="width: {{ link.icon_size | default: '16px' }}; height: {{ link.icon_size | default: '16px' }}; vertical-align: middle;"{% endif %}>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% unless page.hide_news %}
+  <div class="author-news-section">
+    <h3 class="author-news__title">News & Events</h3>
+    <div class="author-news__list" id="cms-news"></div>
+  </div>
+  {% endunless %}
+</div>
