@@ -17,6 +17,10 @@
   window.CMS.isAdmin = false;
   window.CMS.token = null;
 
+  // SHA cache: stores the latest known SHA per file path to avoid stale CDN reads
+  var shaCache = {};
+  window.CMS._clearShaCache = function () { shaCache = {}; };
+
   // --- Init ---
   window.CMS.init = function () {
     var savedToken = localStorage.getItem(STORAGE_KEY);
@@ -88,6 +92,7 @@
   window.CMS.writeFile = function (path, content, message) {
     var encodedContent = btoa(encodeURIComponent(content).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode(parseInt(p1, 16)); }));
     var url = 'https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path;
+    var MAX_RETRIES = 2;
 
     function doPut(sha) {
       var body = {
@@ -110,25 +115,45 @@
             throw new Error(err.message || ('HTTP ' + resp.status));
           });
         }
-        return resp.json();
+        return resp.json().then(function (result) {
+          // Cache the new SHA for subsequent writes
+          if (result && result.content && result.content.sha) {
+            shaCache[path] = result.content.sha;
+          }
+          return result;
+        });
       });
     }
 
-    // Read fresh SHA, write, and retry once on SHA mismatch
-    return window.CMS.readFile(path).then(
-      function (file) {
-        return doPut(file.sha).catch(function (err) {
-          if (err.message && err.message.indexOf('does not match') !== -1) {
-            // SHA went stale — re-read and retry once
-            return window.CMS.readFile(path).then(function (fresh) {
-              return doPut(fresh.sha);
-            });
-          }
-          throw err;
-        });
-      },
-      function () { return doPut(null); }
-    );
+    function getSha() {
+      // Use cached SHA if available (avoids stale CDN reads)
+      if (shaCache[path]) {
+        return Promise.resolve(shaCache[path]);
+      }
+      return window.CMS.readFile(path).then(function (file) {
+        return file.sha;
+      });
+    }
+
+    function attemptWrite(retriesLeft) {
+      return getSha().then(
+        function (sha) {
+          return doPut(sha).catch(function (err) {
+            if (err.message && err.message.indexOf('does not match') !== -1 && retriesLeft > 0) {
+              // Invalidate cache and re-read from API
+              delete shaCache[path];
+              return new Promise(function (resolve) { setTimeout(resolve, 500); }).then(function () {
+                return attemptWrite(retriesLeft - 1);
+              });
+            }
+            throw err;
+          });
+        },
+        function () { return doPut(null); }
+      );
+    }
+
+    return attemptWrite(MAX_RETRIES);
   };
 
   // --- Save JSON data ---

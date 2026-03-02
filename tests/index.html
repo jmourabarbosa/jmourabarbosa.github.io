@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CMS Tests</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; margin: 20px; background: #1a1a2e; color: #e0e0e0; }
+    h1 { border-bottom: 2px solid #444; padding-bottom: 8px; }
+    h2 { color: #aaa; margin: 16px 0 8px; }
+    .test-pass { color: #4caf50; padding: 4px 8px; }
+    .test-fail { color: #f44336; padding: 4px 8px; }
+    .test-fail pre { background: #2a2a3e; padding: 8px; border-radius: 4px; white-space: pre-wrap; font-size: 12px; }
+    .test-suite { margin-bottom: 16px; padding: 8px; background: #16213e; border-radius: 8px; }
+
+    /* Hidden DOM fixtures */
+    #fixtures { display: none; }
+  </style>
+</head>
+<body>
+
+<!-- DOM fixtures required by source files -->
+<div id="fixtures">
+  <nav class="greedy-nav"><ul class="visible-links"></ul></nav>
+  <div class="page__footer"><div class="page__footer-copyright"></div></div>
+  <div id="cms-news"></div>
+  <div id="cms-research"></div>
+  <div id="cms-publications"></div>
+  <div id="cms-people"></div>
+  <div id="cms-teaching"></div>
+  <div id="cms-community"></div>
+</div>
+
+<!-- Test results container -->
+<div id="test-results"></div>
+
+<!-- Source files under test -->
+<script src="../assets/js/content-loader.js"></script>
+<script src="../assets/js/admin.js"></script>
+<script src="../assets/js/editor.js"></script>
+
+<!-- Stub globals that would normally exist -->
+<script>
+  // Prevent actual page reloads during tests
+  window.location.reload = function () {};
+  // Auto-confirm all confirm() dialogs
+  window.confirm = function () { return true; };
+  // Stub interactive behaviors called after render
+  window.initCustomAccordion = function () {};
+  window.initFiltering = function () {};
+</script>
+
+<!-- Test infrastructure -->
+<script src="test-runner.js"></script>
+<script src="mock-fetch.js"></script>
+
+<!-- Test suites -->
+<script src="test-cms-write.js"></script>
+<script src="test-editor-news.js"></script>
+<script src="test-editor-research.js"></script>
+<script src="test-editor-publications.js"></script>
+<script src="test-editor-people.js"></script>
+<script src="test-editor-teaching.js"></script>
+<script src="test-editor-community.js"></script>
+
+<!-- Run tests after all scripts load -->
+<script>
+  window.runTests();
+</script>
+
+</body>
+</html>
