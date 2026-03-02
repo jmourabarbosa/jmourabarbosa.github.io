@@ -25,6 +25,7 @@
       window.CMS.isAdmin = true;
       document.body.classList.add('cms-admin');
     }
+    renderNavAuthLink();
     renderFooterLogout();
   };
 
@@ -113,6 +114,31 @@
     var message = 'Update ' + dataFile + ' via CMS';
     return window.CMS.writeFile(path, content, message);
   };
+
+  // --- UI: Login/Logout link in navigation bar ---
+  function renderNavAuthLink() {
+    var nav = document.querySelector('.greedy-nav .visible-links');
+    if (!nav) return;
+
+    var li = document.createElement('li');
+    li.className = 'masthead__menu-item';
+    var link = document.createElement('a');
+
+    if (window.CMS.isAdmin) {
+      link.href = '#';
+      link.textContent = 'Logout';
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        window.CMS.logout();
+      });
+    } else {
+      link.href = '/login/';
+      link.textContent = 'Login';
+    }
+
+    li.appendChild(link);
+    nav.appendChild(li);
+  }
 
   // --- UI: Logout link in footer (only when logged in) ---
   function renderFooterLogout() {
