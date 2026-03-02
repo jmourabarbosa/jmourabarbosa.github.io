@@ -34,7 +34,7 @@
     {
       "id": "person-1",
       "name": "Joao Barbosa",
-      "position": "PI (INSERM) @ Neuromodulation Institute & NeuroSpin",
+      "position": "Group Leader",
       "positionType": "leader",
       "current": true,
       "photo": "/images/profile.png",
@@ -208,26 +208,6 @@
       "current": false,
       "photo": "",
       "description": "Former Master student who used data-driven RNN to model multi-item working memory in human single units.",
-      "links": []
-    },
-    {
-      "id": "person-1772413564943-5rg0t",
-      "name": "n",
-      "position": "n",
-      "positionType": "phd",
-      "current": true,
-      "photo": "",
-      "description": "n",
-      "links": []
-    },
-    {
-      "id": "person-1772413655526-hmluz",
-      "name": "n",
-      "position": "n",
-      "positionType": "phd",
-      "current": true,
-      "photo": "",
-      "description": "n",
       "links": []
     }
   ]
