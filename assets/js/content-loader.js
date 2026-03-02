@@ -59,6 +59,17 @@
     return fetchData('news.json').then(function (news) {
       var html = '';
 
+      // Sort by date descending (most recent first)
+      var monthOrder = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11};
+      news.sort(function (a, b) {
+        var pa = a.date.trim().split(/\s+/), pb = b.date.trim().split(/\s+/);
+        var ya = parseInt(pa[pa.length - 1]) || 0, yb = parseInt(pb[pb.length - 1]) || 0;
+        if (yb !== ya) return yb - ya;
+        var ma = monthOrder[(pa[0] || '').toLowerCase().replace(/[^a-z]/g, '').slice(0,4)] || 0;
+        var mb = monthOrder[(pb[0] || '').toLowerCase().replace(/[^a-z]/g, '').slice(0,4)] || 0;
+        return mb - ma;
+      });
+
       if (window.CMS && window.CMS.isAdmin) {
         html += '<button class="cms-add-btn" onclick="Editor.addNews()">+ Add News</button>';
       }
