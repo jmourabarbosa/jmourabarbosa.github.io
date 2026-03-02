@@ -92,22 +92,30 @@
       'Accept': 'application/vnd.github.v3+json',
       'Content-Type': 'application/json'
     };
-    var body = {
-      message: message || 'Update ' + path,
-      content: encodedContent,
-      branch: BRANCH
-    };
 
-    // Try to get existing file SHA; if file doesn't exist, create without SHA
-    return window.CMS.readFile(path).then(function (file) {
-      body.sha = file.sha;
-      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) });
-    }).catch(function () {
-      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) });
-    }).then(function (resp) {
-      if (!resp.ok) throw new Error('Failed to write file: ' + path);
-      return resp.json();
-    });
+    function doPut(sha) {
+      var body = {
+        message: message || 'Update ' + path,
+        content: encodedContent,
+        branch: BRANCH
+      };
+      if (sha) body.sha = sha;
+      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) })
+        .then(function (resp) {
+          if (!resp.ok) {
+            return resp.json().then(function (err) {
+              throw new Error(err.message || ('HTTP ' + resp.status));
+            });
+          }
+          return resp.json();
+        });
+    }
+
+    // Try to get existing file SHA; if file doesn't exist, create new
+    return window.CMS.readFile(path).then(
+      function (file) { return doPut(file.sha); },
+      function () { return doPut(null); }
+    );
   };
 
   // --- Save JSON data ---
