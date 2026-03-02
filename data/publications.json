@@ -10,21 +10,6 @@
       "title": "Peer-reviewed",
       "publications": [
         {
-          "id": "pub-1772413691666-2owbz",
-          "title": "z",
-          "url": "z",
-          "authors": "z",
-          "journal": "z",
-          "categories": "peer-reviewed meeg",
-          "tags": [
-            {
-              "label": "M/EEG",
-              "key": "meeg"
-            }
-          ],
-          "links": []
-        },
-        {
           "id": "pub-1",
           "title": "Early selection of task-relevant features through population gating",
           "url": "https://www.nature.com/articles/s41467-023-42519-5",
