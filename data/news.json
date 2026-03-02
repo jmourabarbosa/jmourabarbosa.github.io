@@ -1,12 +1,7 @@
 [
   {
-    "id": "news-1772415984760-8crd7",
-    "date": "2025-12-01",
-    "content": "Joao gave a talk in Crete at Foundation for Research and Technology Hellas."
-  },
-  {
     "id": "news-1772415923938-78c3g",
-    "date": "2026-11-01",
+    "date": "2025-11-01",
     "content": "Joao gave a talk at the Bernstein Center Freiburg."
   },
   {
@@ -18,6 +13,11 @@
     "id": "news-1772490832913-4a0p6",
     "date": "2026-01-01",
     "content": "Melanie graduated from her PhD!"
+  },
+  {
+    "id": "news-1772415984760-8crd7",
+    "date": "2025-12-01",
+    "content": "Joao gave a talk in Crete at Foundation for Research and Technology Hellas."
   },
   {
     "id": "news-1",
