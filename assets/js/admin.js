@@ -97,7 +97,7 @@
         },
         body: JSON.stringify({
           message: message || 'Update ' + path,
-          content: btoa(unescape(encodeURIComponent(content))),
+          content: btoa(encodeURIComponent(content).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode(parseInt(p1, 16)); })),
           sha: file.sha,
           branch: BRANCH
         })

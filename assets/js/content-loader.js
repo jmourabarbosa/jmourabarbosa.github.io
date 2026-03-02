@@ -19,9 +19,6 @@
     if (typeof window.initFiltering === 'function') {
       window.initFiltering();
     }
-    if (typeof window.initExpandableCards === 'function') {
-      window.initExpandableCards();
-    }
   }
 
   // --- Fetch JSON data ---
@@ -364,6 +361,61 @@
       });
 
       html += '</div>'; // teaching-columns
+
+      container.innerHTML = html;
+
+      reinitBehaviors();
+    });
+  };
+
+  // ============================================================
+  // COMMUNITY RENDERER
+  // ============================================================
+  window.ContentLoader.renderCommunity = function (containerId) {
+    var container = document.getElementById(containerId);
+    if (!container) return Promise.resolve();
+
+    return fetchData('community.json').then(function (data) {
+      var html = '';
+
+      if (window.CMS && window.CMS.isAdmin) {
+        html += '<button class="cms-add-btn" onclick="Editor.addCommunity()">+ Add Community Item</button>';
+      }
+
+      data.cards.forEach(function (card) {
+        html += '<div class="community-card collapsed" data-id="' + card.id + '">';
+        html += '<div class="community-card__header">';
+        html += '<h2 class="community-card__title">' + card.title + '</h2>';
+
+        if (window.CMS && window.CMS.isAdmin) {
+          html += '<div class="cms-item-actions cms-item-actions--card">';
+          html += '<button class="cms-edit-btn" onclick="event.stopPropagation(); Editor.editCommunity(\'' + card.id + '\')" title="Edit">&#9998;</button>';
+          html += '<button class="cms-delete-btn" onclick="event.stopPropagation(); Editor.deleteCommunity(\'' + card.id + '\')" title="Delete">&times;</button>';
+          html += '</div>';
+        }
+
+        html += '<div class="community-card__expand-indicator">+</div>';
+        html += '</div>'; // header
+
+        html += '<div class="community-card__expandable">';
+        if (card.image) {
+          html += '<img src="' + card.image + '" alt="' + (card.imageAlt || '') + '" class="community-card__image" />';
+        }
+        html += '<div class="community-card__content">' + card.content + '</div>';
+        if (card.organizers) {
+          html += '<div class="community-card__meta"><strong>Organizers:</strong> ' + card.organizers + '</div>';
+        }
+        if (card.links && card.links.length) {
+          html += '<div class="community-card__links">';
+          card.links.forEach(function (link) {
+            html += '<a href="' + link.url + '" class="community-link">' + link.label + '</a>';
+          });
+          html += '</div>';
+        }
+        html += '</div>'; // expandable
+
+        html += '</div>'; // community-card
+      });
 
       container.innerHTML = html;
 

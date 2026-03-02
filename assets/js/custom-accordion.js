@@ -1,182 +1,155 @@
-// Custom accordion behavior for publications and people sections
-// Make cards close when another is opened (like teaching section)
+// Unified accordion behavior for all expandable card sections
+// Single system replacing both custom-accordion.js and initExpandableCards()
 
-// Expose globally so it can be re-called after dynamic content loading
 window.initCustomAccordion = function() {
-    // Function to handle card expansion
-    function setupAccordionBehavior(containerSelector, cardSelector, expandSelector) {
-        const container = document.querySelector(containerSelector);
+    // All card type configurations
+    var cardTypes = [
+        { container: '.publications-container', card: '.publication-item', indicator: '.publication-item__expand-indicator' },
+        { container: '.research-grid', card: '.research-card', indicator: '.research-card__expand-indicator', scrollIntoView: true },
+        { container: '.teaching-columns', card: '.teaching-card', indicator: '.teaching-card__expand-indicator' },
+        { container: '.community-grid', card: '.community-card', indicator: '.community-card__expand-indicator' },
+        { container: '.photography-container', card: '.photography-card', indicator: '.photography-card__expand-indicator' }
+    ];
+
+    // People is special: multiple grids share one accordion group
+    var peopleGrids = document.querySelectorAll('.people-grid');
+
+    // Collect ALL cards and indicators across all types for cross-container closing
+    var allCards = [];
+    var allIndicatorSelectors = {};
+
+    cardTypes.forEach(function(type) {
+        var container = document.querySelector(type.container);
+        if (!container) return;
+        var cards = container.querySelectorAll(type.card);
+        cards.forEach(function(card) { allCards.push({ el: card, type: type }); });
+    });
+
+    peopleGrids.forEach(function(grid) {
+        var cards = grid.querySelectorAll('.person-card, .alumni-card');
+        cards.forEach(function(card) {
+            allCards.push({ el: card, type: { indicator: '.person-card__expand-indicator' } });
+        });
+    });
+
+    // Close a single card
+    function closeCard(cardEl, indicatorSelector) {
+        cardEl.classList.remove('expanded');
+        cardEl.classList.add('collapsed');
+        var expandable = cardEl.querySelector(indicatorSelector.replace('__expand-indicator', '__expandable'));
+        if (expandable) expandable.classList.remove('expanded');
+        var ind = cardEl.querySelector(indicatorSelector);
+        if (ind) ind.textContent = '+';
+    }
+
+    // Close all cards across ALL containers
+    function closeAllCards(exceptEl) {
+        allCards.forEach(function(entry) {
+            if (entry.el !== exceptEl && entry.el.classList.contains('expanded')) {
+                closeCard(entry.el, entry.type.indicator);
+            }
+        });
+    }
+
+    // Should we suppress the toggle?
+    function shouldSuppress(e) {
+        // Don't toggle if user is selecting text
+        var selection = window.getSelection();
+        if (selection && selection.toString().length > 0) return true;
+        // Don't toggle if clicking a link
+        if (e.target.tagName === 'A' || (e.target.closest && e.target.closest('a'))) return true;
+        // Don't toggle if clicking CMS buttons
+        if (e.target.closest && e.target.closest('.cms-edit-btn, .cms-delete-btn, .cms-add-btn')) return true;
+        return false;
+    }
+
+    // Set up a card type
+    function setupCards(containerSelector, cardSelector, indicatorSelector, scrollIntoView) {
+        var container = document.querySelector(containerSelector);
         if (!container) return;
 
-        const expandIndicators = container.querySelectorAll(expandSelector);
+        var cards = container.querySelectorAll(cardSelector);
 
-        expandIndicators.forEach(indicator => {
-            // Skip if already initialized
-            if (indicator._accordionInit) return;
-            indicator._accordionInit = true;
+        cards.forEach(function(card) {
+            // Use the card header as the click target (the whole header area, not just indicator)
+            var header = card.querySelector(indicatorSelector.replace('__expand-indicator', '__header'));
+            var clickTarget = header || card;
 
-            indicator.addEventListener('click', function(e) {
-                const clickedCard = this.closest(cardSelector);
-                const allCards = container.querySelectorAll(cardSelector);
+            if (clickTarget._accordionInit) return;
+            clickTarget._accordionInit = true;
 
-                // Close all other cards in this container
-                allCards.forEach(card => {
-                    if (card !== clickedCard) {
-                        card.classList.remove('expanded');
-                        card.classList.add('collapsed');
-                        const otherIndicator = card.querySelector(expandSelector);
-                        if (otherIndicator) {
-                            otherIndicator.textContent = '+';
-                        }
-                    }
-                });
+            clickTarget.addEventListener('click', function(e) {
+                if (shouldSuppress(e)) return;
 
-                // Toggle the clicked card
-                const isExpanded = clickedCard.classList.contains('expanded');
+                var isExpanded = card.classList.contains('expanded');
+
+                // Close all other cards across all containers
+                closeAllCards(card);
+
                 if (isExpanded) {
-                    clickedCard.classList.remove('expanded');
-                    clickedCard.classList.add('collapsed');
-                    this.textContent = '+';
+                    closeCard(card, indicatorSelector);
                 } else {
-                    clickedCard.classList.remove('collapsed');
-                    clickedCard.classList.add('expanded');
-                    this.textContent = '−';
+                    card.classList.remove('collapsed');
+                    card.classList.add('expanded');
+                    var expandable = card.querySelector(indicatorSelector.replace('__expand-indicator', '__expandable'));
+                    if (expandable) expandable.classList.add('expanded');
+                    var ind = card.querySelector(indicatorSelector);
+                    if (ind) ind.textContent = '\u2212'; // minus sign
+
+                    if (scrollIntoView) {
+                        setTimeout(function() {
+                            var cardRect = card.getBoundingClientRect();
+                            var currentScrollY = window.pageYOffset;
+                            var cardTopRelativeToPage = cardRect.top + currentScrollY;
+                            var targetScrollY = cardTopRelativeToPage - 200;
+                            window.scrollTo({ top: Math.max(0, targetScrollY), behavior: 'smooth' });
+                        }, 100);
+                    }
                 }
             });
         });
     }
 
-    // Apply accordion behavior to publications
-    setupAccordionBehavior('.publications-container', '.publication-item', '.publication-item__expand-indicator');
+    // Set up each card type
+    cardTypes.forEach(function(type) {
+        setupCards(type.container, type.card, type.indicator, type.scrollIntoView);
+    });
 
-    // Apply accordion behavior to people - handle both current and alumni sections
-    function setupPeopleAccordion() {
-        // Get all people grids (main and alumni)
-        const peopleGrids = document.querySelectorAll('.people-grid');
-        if (peopleGrids.length === 0) return;
-
-        // Combine all expand indicators from all people grids
-        let allExpandIndicators = [];
-        let allCards = [];
-
-        peopleGrids.forEach(grid => {
-            const indicators = grid.querySelectorAll('.person-card__expand-indicator');
-            const cards = grid.querySelectorAll('.person-card, .alumni-card');
-            allExpandIndicators = allExpandIndicators.concat(Array.from(indicators));
-            allCards = allCards.concat(Array.from(cards));
+    // Set up people cards (special: multiple grids share accordion)
+    if (peopleGrids.length > 0) {
+        var allPeopleCards = [];
+        peopleGrids.forEach(function(grid) {
+            var cards = grid.querySelectorAll('.person-card, .alumni-card');
+            cards.forEach(function(card) { allPeopleCards.push(card); });
         });
 
-        allExpandIndicators.forEach(indicator => {
-            if (indicator._accordionInit) return;
-            indicator._accordionInit = true;
+        allPeopleCards.forEach(function(card) {
+            var header = card.querySelector('.person-card__header');
+            var clickTarget = header || card;
 
-            indicator.addEventListener('click', function(e) {
-                const clickedCard = this.closest('.person-card, .alumni-card');
+            if (clickTarget._accordionInit) return;
+            clickTarget._accordionInit = true;
 
-                // Close all other cards across all people grids
-                allCards.forEach(card => {
-                    if (card !== clickedCard) {
-                        card.classList.remove('expanded');
-                        card.classList.add('collapsed');
-                        const otherIndicator = card.querySelector('.person-card__expand-indicator');
-                        if (otherIndicator) {
-                            otherIndicator.textContent = '+';
-                        }
-                    }
-                });
+            clickTarget.addEventListener('click', function(e) {
+                if (shouldSuppress(e)) return;
 
-                // Toggle the clicked card
-                const isExpanded = clickedCard.classList.contains('expanded');
+                var isExpanded = card.classList.contains('expanded');
+
+                closeAllCards(card);
+
                 if (isExpanded) {
-                    clickedCard.classList.remove('expanded');
-                    clickedCard.classList.add('collapsed');
-                    this.textContent = '+';
+                    closeCard(card, '.person-card__expand-indicator');
                 } else {
-                    clickedCard.classList.remove('collapsed');
-                    clickedCard.classList.add('expanded');
-                    this.textContent = '−';
+                    card.classList.remove('collapsed');
+                    card.classList.add('expanded');
+                    var expandable = card.querySelector('.person-card__expandable');
+                    if (expandable) expandable.classList.add('expanded');
+                    var ind = card.querySelector('.person-card__expand-indicator');
+                    if (ind) ind.textContent = '\u2212';
                 }
             });
         });
     }
-
-    setupPeopleAccordion();
-
-    // Apply accordion behavior to research cards - custom function to ensure it works like people section
-    function setupResearchAccordion() {
-        const researchGrid = document.querySelector('.research-grid');
-        if (!researchGrid) return;
-
-        const expandIndicators = researchGrid.querySelectorAll('.research-card__expand-indicator');
-        const allCards = researchGrid.querySelectorAll('.research-card');
-
-        expandIndicators.forEach((indicator, index) => {
-            if (indicator._accordionInit) return;
-            indicator._accordionInit = true;
-
-            indicator.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-
-                const clickedCard = this.closest('.research-card');
-
-                // Close all other cards
-                allCards.forEach((card, cardIndex) => {
-                    if (card !== clickedCard) {
-                        card.classList.remove('expanded');
-                        card.classList.add('collapsed');
-                        const otherIndicator = card.querySelector('.research-card__expand-indicator');
-                        if (otherIndicator) {
-                            otherIndicator.textContent = '+';
-                        }
-                    }
-                });
-
-                // Toggle the clicked card
-                const isExpanded = clickedCard.classList.contains('expanded');
-                if (isExpanded) {
-                    clickedCard.classList.remove('expanded');
-                    clickedCard.classList.add('collapsed');
-                    this.textContent = '+';
-                } else {
-                    clickedCard.classList.remove('collapsed');
-                    clickedCard.classList.add('expanded');
-                    this.textContent = '−';
-
-                    // Scroll to position the card optimally in view
-                    setTimeout(() => {
-                        const cardRect = clickedCard.getBoundingClientRect();
-                        const viewportHeight = window.innerHeight;
-                        const cardHeight = clickedCard.offsetHeight;
-
-                        // Calculate optimal scroll position
-                        // Position card so it starts near the top but leaves some space for context
-                        const optimalOffset = 200; // Leave 200px from top for masthead/context
-                        const currentScrollY = window.pageYOffset;
-                        const cardTopRelativeToPage = cardRect.top + currentScrollY;
-                        const targetScrollY = cardTopRelativeToPage - optimalOffset;
-
-                        // Smooth scroll to the calculated position
-                        window.scrollTo({
-                            top: Math.max(0, targetScrollY),
-                            behavior: 'smooth'
-                        });
-                    }, 100); // Small delay to let expansion animation start
-                }
-            });
-        });
-    }
-
-    setupResearchAccordion();
-
-    // Apply accordion behavior to teaching cards
-    setupAccordionBehavior('.teaching-columns', '.teaching-card', '.teaching-card__expand-indicator');
-
-    // Apply accordion behavior to community cards
-    setupAccordionBehavior('.community-grid', '.community-card', '.community-card__expand-indicator');
-
-    // Apply accordion behavior to photography cards
-    setupAccordionBehavior('.photography-container', '.photography-card', '.photography-card__expand-indicator');
 };
 
 document.addEventListener('DOMContentLoaded', function() {

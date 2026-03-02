@@ -120,6 +120,37 @@
   }
 
   // ============================================================
+  // SHARED CONSTANTS
+  // ============================================================
+  var POSITION_OPTIONS = [
+    { value: 'leader', label: 'Group Leader' },
+    { value: 'phd', label: 'PhD Student' },
+    { value: 'engineer', label: 'Research Engineer' },
+    { value: 'master', label: 'Master Student' },
+    { value: 'alumni', label: 'Alumni' }
+  ];
+
+  var SECTION_OPTIONS = [
+    { value: 'peer-reviewed', label: 'Peer-reviewed' },
+    { value: 'conference', label: 'Conference' },
+    { value: 'preprint', label: 'Pre-print' },
+    { value: 'review', label: 'Review' },
+    { value: 'thesis', label: 'PhD Thesis' },
+    { value: 'in-progress', label: 'In Progress' }
+  ];
+
+  // Render existing links into the links editor area
+  function renderExistingLinks(links) {
+    var html = '';
+    if (links) {
+      links.forEach(function (link, i) {
+        html += renderLinkFields(i, link.label, link.url);
+      });
+    }
+    return html;
+  }
+
+  // ============================================================
   // NEWS EDITOR
   // ============================================================
   window.Editor.addNews = function () {
@@ -271,20 +302,11 @@
   // PUBLICATIONS EDITOR
   // ============================================================
   window.Editor.addPublication = function () {
-    var sectionOptions = [
-      { value: 'peer-reviewed', label: 'Peer-reviewed' },
-      { value: 'conference', label: 'Conference' },
-      { value: 'preprint', label: 'Pre-print' },
-      { value: 'review', label: 'Review' },
-      { value: 'thesis', label: 'PhD Thesis' },
-      { value: 'in-progress', label: 'In Progress' }
-    ];
-
     var form = fieldHtml('Title', 'title', '') +
       fieldHtml('URL', 'url', '') +
       fieldHtml('Authors', 'authors', '', 'richtext') +
       fieldHtml('Journal / Venue', 'journal', '') +
-      selectHtml('Section', 'section', sectionOptions, 'peer-reviewed') +
+      selectHtml('Section', 'section', SECTION_OPTIONS, 'peer-reviewed') +
       fieldHtml('Tags (comma-separated keys: working-memory, spiking-networks, meeg, decision-making, ephys, normative-models, neural-geometry, schizophrenia)', 'tags', '') +
       '<div class="cms-links-editor" id="cmsLinksEditor">' +
       '<h3 class="cms-field-group-title">Links</h3>' +
@@ -335,32 +357,17 @@
       });
       if (!pub) return;
 
-      var sectionOptions = [
-        { value: 'peer-reviewed', label: 'Peer-reviewed' },
-        { value: 'conference', label: 'Conference' },
-        { value: 'preprint', label: 'Pre-print' },
-        { value: 'review', label: 'Review' },
-        { value: 'thesis', label: 'PhD Thesis' },
-        { value: 'in-progress', label: 'In Progress' }
-      ];
-
       var tagsStr = pub.tags ? pub.tags.map(function (t) { return t.key; }).join(', ') : '';
-      var linksHtml = '';
-      if (pub.links) {
-        pub.links.forEach(function (link, i) {
-          linksHtml += renderLinkFields(i, link.label, link.url);
-        });
-      }
 
       var form = fieldHtml('Title', 'title', pub.title) +
         fieldHtml('URL', 'url', pub.url) +
         fieldHtml('Authors', 'authors', pub.authors, 'richtext') +
         fieldHtml('Journal / Venue', 'journal', pub.journal) +
-        selectHtml('Section', 'section', sectionOptions, currentSection.id) +
+        selectHtml('Section', 'section', SECTION_OPTIONS, currentSection.id) +
         fieldHtml('Tags (comma-separated keys)', 'tags', tagsStr) +
         '<div class="cms-links-editor" id="cmsLinksEditor">' +
         '<h3 class="cms-field-group-title">Links</h3>' +
-        linksHtml +
+        renderExistingLinks(pub.links) +
         '</div>' +
         '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addLinkField()">+ Add Link</button>';
 
@@ -458,17 +465,9 @@
   // PEOPLE EDITOR
   // ============================================================
   window.Editor.addPerson = function () {
-    var positionOptions = [
-      { value: 'leader', label: 'Group Leader' },
-      { value: 'phd', label: 'PhD Student' },
-      { value: 'engineer', label: 'Research Engineer' },
-      { value: 'master', label: 'Master Student' },
-      { value: 'alumni', label: 'Alumni' }
-    ];
-
     var form = fieldHtml('Name', 'name', '') +
       fieldHtml('Position Title', 'position', '') +
-      selectHtml('Position Type', 'positionType', positionOptions, 'phd') +
+      selectHtml('Position Type', 'positionType', POSITION_OPTIONS, 'phd') +
       '<div class="cms-field"><label>Current member?</label>' +
       '<select id="cms-field-current" class="cms-input"><option value="true">Yes</option><option value="false">No</option></select></div>' +
       fieldHtml('Photo URL (e.g. /images/people/name.jpg)', 'photo', '') +
@@ -504,31 +503,16 @@
       var person = data.members.find(function (m) { return m.id === id; });
       if (!person) return;
 
-      var positionOptions = [
-        { value: 'leader', label: 'Group Leader' },
-        { value: 'phd', label: 'PhD Student' },
-        { value: 'engineer', label: 'Research Engineer' },
-        { value: 'master', label: 'Master Student' },
-        { value: 'alumni', label: 'Alumni' }
-      ];
-
-      var linksHtml = '';
-      if (person.links) {
-        person.links.forEach(function (link, i) {
-          linksHtml += renderLinkFields(i, link.label, link.url);
-        });
-      }
-
       var form = fieldHtml('Name', 'name', person.name) +
         fieldHtml('Position Title', 'position', person.position) +
-        selectHtml('Position Type', 'positionType', positionOptions, person.positionType) +
+        selectHtml('Position Type', 'positionType', POSITION_OPTIONS, person.positionType) +
         '<div class="cms-field"><label>Current member?</label>' +
         '<select id="cms-field-current" class="cms-input"><option value="true"' + (person.current ? ' selected' : '') + '>Yes</option><option value="false"' + (!person.current ? ' selected' : '') + '>No</option></select></div>' +
         fieldHtml('Photo URL', 'photo', person.photo) +
         fieldHtml('Description', 'description', person.description, 'richtext') +
         '<div class="cms-links-editor" id="cmsLinksEditor">' +
         '<h3 class="cms-field-group-title">Links</h3>' +
-        linksHtml +
+        renderExistingLinks(person.links) +
         '</div>' +
         '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addLinkField()">+ Add Link</button>';
 
@@ -648,6 +632,76 @@
         col.items = col.items.filter(function (t) { return t.id !== id; });
       });
       saveAndReload('teaching.json', data, window.ContentLoader.renderTeaching, 'cms-teaching');
+    });
+  };
+
+  // ============================================================
+  // COMMUNITY EDITOR
+  // ============================================================
+  window.Editor.addCommunity = function () {
+    var form = fieldHtml('Title', 'title', '') +
+      fieldHtml('Image URL (e.g. /images/my-image.png)', 'image', '') +
+      fieldHtml('Image Alt Text', 'imageAlt', '') +
+      fieldHtml('Content', 'content', '', 'richtext') +
+      fieldHtml('Organizers', 'organizers', '') +
+      '<div class="cms-links-editor" id="cmsLinksEditor">' +
+      '<h3 class="cms-field-group-title">Links</h3>' +
+      '</div>' +
+      '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addLinkField()">+ Add Link</button>';
+
+    showModal('Add Community Item', form, function () {
+      var title = getFieldValue('title');
+      if (!title) { showEditorError('Title is required.'); throw new Error('Validation'); }
+
+      window.ContentLoader.fetchData('community.json').then(function (data) {
+        data.cards.push({
+          id: window.CMS.generateId('community'),
+          title: title,
+          image: getFieldValue('image'),
+          imageAlt: getFieldValue('imageAlt'),
+          content: getFieldValue('content'),
+          organizers: getFieldValue('organizers'),
+          links: collectLinks()
+        });
+        return saveAndReload('community.json', data, window.ContentLoader.renderCommunity, 'cms-community');
+      });
+    });
+  };
+
+  window.Editor.editCommunity = function (id) {
+    window.ContentLoader.fetchData('community.json').then(function (data) {
+      var card = data.cards.find(function (c) { return c.id === id; });
+      if (!card) return;
+
+      var form = fieldHtml('Title', 'title', card.title) +
+        fieldHtml('Image URL', 'image', card.image) +
+        fieldHtml('Image Alt Text', 'imageAlt', card.imageAlt) +
+        fieldHtml('Content', 'content', card.content, 'richtext') +
+        fieldHtml('Organizers', 'organizers', card.organizers) +
+        '<div class="cms-links-editor" id="cmsLinksEditor">' +
+        '<h3 class="cms-field-group-title">Links</h3>' +
+        renderExistingLinks(card.links) +
+        '</div>' +
+        '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addLinkField()">+ Add Link</button>';
+
+      showModal('Edit Community Item', form, function () {
+        card.title = getFieldValue('title');
+        if (!card.title) { showEditorError('Title is required.'); throw new Error('Validation'); }
+        card.image = getFieldValue('image');
+        card.imageAlt = getFieldValue('imageAlt');
+        card.content = getFieldValue('content');
+        card.organizers = getFieldValue('organizers');
+        card.links = collectLinks();
+        saveAndReload('community.json', data, window.ContentLoader.renderCommunity, 'cms-community');
+      });
+    });
+  };
+
+  window.Editor.deleteCommunity = function (id) {
+    if (!confirm('Delete this community item?')) return;
+    window.ContentLoader.fetchData('community.json').then(function (data) {
+      data.cards = data.cards.filter(function (c) { return c.id !== id; });
+      saveAndReload('community.json', data, window.ContentLoader.renderCommunity, 'cms-community');
     });
   };
 
