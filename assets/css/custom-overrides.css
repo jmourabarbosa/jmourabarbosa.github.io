@@ -115,6 +115,11 @@ strong, b, h1, h2, h3, h4, h5, h6,
     font-weight: 200 !important; /* Ultra Light */
 }
 
+/* Teaching: single column layout */
+.teaching-columns {
+    grid-template-columns: 1fr !important;
+}
+
 /* Remove decorative lines in teaching section */
 .teaching-column__title::after, 
 .teaching-column__title::before,
