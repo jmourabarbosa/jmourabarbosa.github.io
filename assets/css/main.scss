@@ -42,16 +42,16 @@
 @import "academic-cards"; /* updated styles */
 @import "news-ticker";
 
-/* Test purple override */
+/* Test accent override */
 .filter-tab {
   border-radius: 8px !important;
 }
 .filter-tab.active, .filter-tab:hover {
-  background: #8A6BB1 !important;
-  border-color: #8A6BB1 !important;
+  background: #52adc8 !important;
+  border-color: #52adc8 !important;
 }
 .person-card__position {
-  background: #8A6BB1 !important;
+  background: #52adc8 !important;
   border-radius: 6px !important;
 }
 

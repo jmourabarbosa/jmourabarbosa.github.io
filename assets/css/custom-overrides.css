@@ -26,18 +26,18 @@
     border-radius: 0 !important;
 }
 
-/* Make photography titles purple instead of blue */
+/* Photography titles accent color */
 .photography-card__title { 
-    color: #8A6BB1 !important; 
+    color: #52adc8 !important; 
 }
 
 .photography-card__expand-indicator { 
-    color: #8A6BB1 !important; 
-    border-color: #8A6BB1 !important; 
+    color: #52adc8 !important; 
+    border-color: #52adc8 !important; 
 }
 
 .photography-links__title {
-    color: #8A6BB1 !important;
+    color: #52adc8 !important;
 }
 
 /* Remove box styling from Other Photography Projects section */
@@ -91,7 +91,7 @@ strong, b, h1, h2, h3, h4, h5, h6,
     font-weight: 200 !important; /* Ultra Light */
 }
 
-/* Remove purple lines in teaching section */
+/* Remove decorative lines in teaching section */
 .teaching-column__title::after, 
 .teaching-column__title::before,
 .teaching-column::after,
