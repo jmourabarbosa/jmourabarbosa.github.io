@@ -19,6 +19,9 @@
     if (typeof window.initFiltering === 'function') {
       window.initFiltering();
     }
+    if (typeof window.initExpandableCards === 'function') {
+      window.initExpandableCards();
+    }
   }
 
   // --- Fetch JSON data ---
@@ -131,6 +134,30 @@
         html += '<button class="cms-add-btn" onclick="Editor.addPublication()">+ Add Publication</button>';
       }
 
+      // Render publication type filter tabs
+      if (data.filterTabs && data.filterTabs.length) {
+        html += '<div class="filter-tabs publications-filter">';
+        data.filterTabs.forEach(function (tab, i) {
+          html += '<button class="filter-tab' + (i === 0 ? ' active' : '') + '" data-filter="' + tab.filter + '">';
+          html += tab.label;
+          if (tab.count != null) html += ' <span class="count">' + tab.count + '</span>';
+          html += '</button>';
+        });
+        html += '</div>';
+      }
+
+      // Render keyword filter tabs
+      if (data.keywordTabs && data.keywordTabs.length) {
+        html += '<div class="filter-tabs keywords-filter">';
+        data.keywordTabs.forEach(function (tab, i) {
+          html += '<button class="filter-tab keyword-tab' + (i === 0 ? ' active' : '') + '" data-filter="' + tab.filter + '">';
+          html += tab.label;
+          if (tab.count != null) html += ' <span class="count">' + tab.count + '</span>';
+          html += '</button>';
+        });
+        html += '</div>';
+      }
+
       data.sections.forEach(function (section) {
         html += '<div class="publications-section">';
         html += '<h2 class="publications-section__title">' + section.title + '</h2>';
@@ -179,6 +206,8 @@
       });
 
       container.innerHTML = html;
+
+      reinitBehaviors();
     });
   };
 
@@ -196,6 +225,18 @@
 
       if (window.CMS && window.CMS.isAdmin) {
         html += '<button class="cms-add-btn" onclick="Editor.addPerson()">+ Add Person</button>';
+      }
+
+      // Render people filter tabs
+      if (data.filterTabs && data.filterTabs.length) {
+        html += '<div class="filter-tabs people-filter">';
+        data.filterTabs.forEach(function (tab, i) {
+          html += '<button class="filter-tab' + (i === 0 ? ' active' : '') + '" data-filter="' + tab.filter + '">';
+          html += tab.label;
+          if (tab.count != null) html += ' <span class="count">' + tab.count + '</span>';
+          html += '</button>';
+        });
+        html += '</div>';
       }
 
       // Current members grid
@@ -217,12 +258,7 @@
 
       container.innerHTML = html;
 
-      // Re-init accordion
-      if (typeof initAccordion === 'function') {
-        initAccordion();
-      } else if (typeof window.initCustomAccordion === 'function') {
-        window.initCustomAccordion();
-      }
+      reinitBehaviors();
     });
   };
 
@@ -331,12 +367,7 @@
 
       container.innerHTML = html;
 
-      // Re-init accordion
-      if (typeof initAccordion === 'function') {
-        initAccordion();
-      } else if (typeof window.initCustomAccordion === 'function') {
-        window.initCustomAccordion();
-      }
+      reinitBehaviors();
     });
   };
 

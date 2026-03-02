@@ -121,9 +121,9 @@ $(document).ready(function(){
   // Dark Mode Toggle with Brave Browser Compatibility
   function initDarkMode() {
     try {
-      const darkModeToggle = document.getElementById('darkModeToggle');
-      const toggleIcon = document.getElementById('toggleIcon');
-      const html = document.documentElement;
+      var darkModeToggle = document.getElementById('darkModeToggle');
+      var toggleIcon = document.getElementById('toggleIcon');
+      var html = document.documentElement;
       
       if (!html) {
         console.warn('Document element not found - dark mode disabled');
@@ -131,7 +131,7 @@ $(document).ready(function(){
       }
       
       // Check for saved theme preference or default to 'light'
-      let currentTheme = 'light';
+      var currentTheme = 'light';
       try {
         currentTheme = localStorage.getItem('theme') || 'light';
       } catch (e) {
@@ -144,10 +144,10 @@ $(document).ready(function(){
       
       // Toggle theme on button click with fallback for blocked addEventListener
       if (darkModeToggle) {
-        const toggleTheme = function() {
+        var toggleTheme = function() {
           try {
-            const currentTheme = html.getAttribute('data-theme');
-            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            var currentTheme = html.getAttribute('data-theme');
+            var newTheme = currentTheme === 'dark' ? 'light' : 'dark';
             
             // Apply new theme
             html.setAttribute('data-theme', newTheme);
