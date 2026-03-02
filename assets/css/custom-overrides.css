@@ -17,6 +17,11 @@
     overflow: visible !important;
 }
 
+/* Add breathing room on all pages */
+#main {
+    padding: 0 3% !important;
+}
+
 /* Pages without sidebar: full width centered content */
 @media (min-width: 57.8125em) {
     .archive {
@@ -186,11 +191,17 @@ strong, b, h1, h2, h3, h4, h5, h6,
     }
 }
 
-/* Make research grid single column layout */
+/* Make research grid single column layout, tighter spacing */
 .research-grid {
     grid-template-columns: 1fr !important;
     max-width: 800px !important;
-    margin: 2rem auto !important;
+    margin: 1rem auto !important;
+    gap: 0.5rem !important;
+}
+
+.research-card {
+    margin-bottom: 0 !important;
+    padding: 0.8rem 1.2rem !important;
 }
 
 @media (min-width: 768px) {
