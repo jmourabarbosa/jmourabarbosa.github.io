@@ -70,13 +70,14 @@
     });
   }
 
-  // --- GitHub API: Read file ---
+  // --- GitHub API: Read file (cache-busted) ---
   window.CMS.readFile = function (path) {
-    return fetch('https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path + '?ref=' + BRANCH, {
+    return fetch('https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path + '?ref=' + BRANCH + '&t=' + Date.now(), {
       headers: {
         'Authorization': 'token ' + window.CMS.token,
         'Accept': 'application/vnd.github.v3+json'
-      }
+      },
+      cache: 'no-store'
     }).then(function (resp) {
       if (!resp.ok) throw new Error('Failed to read file: ' + path);
       return resp.json();
@@ -87,11 +88,6 @@
   window.CMS.writeFile = function (path, content, message) {
     var encodedContent = btoa(encodeURIComponent(content).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode(parseInt(p1, 16)); }));
     var url = 'https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path;
-    var headers = {
-      'Authorization': 'token ' + window.CMS.token,
-      'Accept': 'application/vnd.github.v3+json',
-      'Content-Type': 'application/json'
-    };
 
     function doPut(sha) {
       var body = {
@@ -100,20 +96,37 @@
         branch: BRANCH
       };
       if (sha) body.sha = sha;
-      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) })
-        .then(function (resp) {
-          if (!resp.ok) {
-            return resp.json().then(function (err) {
-              throw new Error(err.message || ('HTTP ' + resp.status));
-            });
-          }
-          return resp.json();
-        });
+      return fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'token ' + window.CMS.token,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(body)
+      }).then(function (resp) {
+        if (!resp.ok) {
+          return resp.json().then(function (err) {
+            throw new Error(err.message || ('HTTP ' + resp.status));
+          });
+        }
+        return resp.json();
+      });
     }
 
-    // Try to get existing file SHA; if file doesn't exist, create new
+    // Read fresh SHA, write, and retry once on SHA mismatch
     return window.CMS.readFile(path).then(
-      function (file) { return doPut(file.sha); },
+      function (file) {
+        return doPut(file.sha).catch(function (err) {
+          if (err.message && err.message.indexOf('does not match') !== -1) {
+            // SHA went stale — re-read and retry once
+            return window.CMS.readFile(path).then(function (fresh) {
+              return doPut(fresh.sha);
+            });
+          }
+          throw err;
+        });
+      },
       function () { return doPut(null); }
     );
   };
