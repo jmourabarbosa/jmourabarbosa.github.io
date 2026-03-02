@@ -17,10 +17,10 @@
     overflow: visible !important;
 }
 
-/* Make sidebar a bit wider than default 15% */
+/* Close the gap between sidebar and content */
 @media (min-width: 57.8125em) {
-    .sidebar {
-        width: 20% !important;
+    .archive {
+        padding-left: 1% !important;
     }
 }
 
