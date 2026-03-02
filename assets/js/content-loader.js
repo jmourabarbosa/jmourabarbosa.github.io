@@ -21,10 +21,45 @@
     }
   }
 
+  // --- localStorage bridge for CMS edits ---
+  // GitHub Pages CDN takes 1-2 min to rebuild after a save.
+  // We store edits in localStorage so they survive page refresh.
+  var LS_PREFIX = 'cms_data_';
+  var LS_TTL = 5 * 60 * 1000; // keep for 5 minutes
+
+  function lsGet(file) {
+    try {
+      var raw = localStorage.getItem(LS_PREFIX + file);
+      if (!raw) return null;
+      var entry = JSON.parse(raw);
+      if (Date.now() - entry.ts > LS_TTL) {
+        localStorage.removeItem(LS_PREFIX + file);
+        return null;
+      }
+      return entry.data;
+    } catch (e) { return null; }
+  }
+
+  function lsSet(file, data) {
+    try {
+      localStorage.setItem(LS_PREFIX + file, JSON.stringify({ ts: Date.now(), data: data }));
+    } catch (e) { /* quota exceeded, ignore */ }
+  }
+
+  function lsClear(file) {
+    try { localStorage.removeItem(LS_PREFIX + file); } catch (e) {}
+  }
+
   // --- Fetch JSON data ---
   function fetchData(file) {
     if (dataCache[file]) {
       return Promise.resolve(dataCache[file]);
+    }
+    // Check localStorage bridge first (survives refresh)
+    var lsData = lsGet(file);
+    if (lsData) {
+      dataCache[file] = lsData;
+      return Promise.resolve(lsData);
     }
     return fetch('/data/' + file + '?t=' + Date.now())
       .then(function (resp) {
@@ -42,11 +77,13 @@
   // Clear cache for a specific file (after editing)
   window.ContentLoader.clearCache = function (file) {
     delete dataCache[file];
+    lsClear(file);
   };
 
   // Set cache directly (used after saving to avoid stale GitHub Pages fetch)
   window.ContentLoader.setCache = function (file, data) {
     dataCache[file] = data;
+    lsSet(file, data);
   };
 
   // ============================================================
