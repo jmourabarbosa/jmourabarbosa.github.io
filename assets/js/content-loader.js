@@ -229,20 +229,19 @@
         html += '<button class="cms-add-btn" onclick="Editor.addPerson()">+ Add Person</button>';
       }
 
-      // Render people filter tabs
+      // Render filter tabs (Current / Alumni)
       if (data.filterTabs && data.filterTabs.length) {
         html += '<div class="filter-tabs people-filter">';
         data.filterTabs.forEach(function (tab, i) {
           html += '<button class="filter-tab' + (i === 0 ? ' active' : '') + '" data-filter="' + tab.filter + '">';
           html += tab.label;
-          if (tab.count != null) html += ' <span class="count">' + tab.count + '</span>';
           html += '</button>';
         });
         html += '</div>';
       }
 
-      // Current members grid
-      html += '<div class="people-grid">';
+      // Current members - single column, always open
+      html += '<div class="people-list" data-section="current">';
       currentMembers.forEach(function (person) {
         html += renderPersonCard(person, false);
       });
@@ -250,26 +249,44 @@
 
       // Alumni section
       if (alumni.length > 0) {
-        html += '<div class="alumni-section">';
-        html += '<div class="people-grid">';
+        html += '<div class="people-list alumni-section" data-section="alumni">';
         alumni.forEach(function (person) {
           html += renderPersonCard(person, true);
         });
-        html += '</div></div>';
+        html += '</div>';
       }
 
       container.innerHTML = html;
 
-      reinitBehaviors();
+      // Filter tab logic
+      var tabs = container.querySelectorAll('.filter-tab');
+      var currentSection = container.querySelector('[data-section="current"]');
+      var alumniSection = container.querySelector('[data-section="alumni"]');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          tabs.forEach(function (t) { t.classList.remove('active'); });
+          tab.classList.add('active');
+          var filter = tab.getAttribute('data-filter');
+          if (filter === 'current') {
+            if (currentSection) currentSection.style.display = '';
+            if (alumniSection) alumniSection.style.display = 'none';
+          } else if (filter === 'alumni') {
+            if (currentSection) currentSection.style.display = 'none';
+            if (alumniSection) alumniSection.style.display = '';
+          }
+        });
+      });
+      // Default: show current, hide alumni
+      if (alumniSection) alumniSection.style.display = 'none';
     });
   };
 
   function renderPersonCard(person, isAlumni) {
-    var html = '<div class="person-card collapsed' + (isAlumni ? ' alumni-card' : '') + '" data-position="' + person.positionType + '" data-current="' + person.current + '" data-id="' + person.id + '">';
+    var html = '<div class="person-card expanded' + (isAlumni ? ' alumni-card' : '') + '" data-position="' + person.positionType + '" data-current="' + person.current + '" data-id="' + person.id + '">';
     html += '<div class="person-card__header">';
 
-    if (!isAlumni && person.photo) {
-      html += '<div class="person-card__avatar">';
+    if (person.photo) {
+      html += '<div class="person-card__avatar person-card__avatar--large">';
       html += ' <img src="' + person.photo + '" alt="' + person.name + '" class="person-card__image" />';
       html += '</div>';
     }
@@ -288,7 +305,7 @@
 
     html += '</div>'; // header
 
-    html += '<div class="person-card__expandable">';
+    // Always show description and links (no expandable toggle)
     if (person.description) {
       html += '<div class="person-card__description">' + person.description + '</div>';
     }
@@ -299,9 +316,7 @@
       });
       html += '</div>';
     }
-    html += '</div>';
 
-    html += '<div class="person-card__expand-indicator">+</div>';
     html += '</div>';
     return html;
   }

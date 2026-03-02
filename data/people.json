@@ -6,28 +6,11 @@
   "filterTabs": [
     {
       "label": "Current Members",
-      "filter": "current",
-      "count": 7
-    },
-    {
-      "label": "PhD Students",
-      "filter": "phd",
-      "count": 2
-    },
-    {
-      "label": "Research Engineers",
-      "filter": "engineer",
-      "count": 3
-    },
-    {
-      "label": "Master Students",
-      "filter": "master",
-      "count": 2
+      "filter": "current"
     },
     {
       "label": "Alumni",
-      "filter": "alumni",
-      "count": 3
+      "filter": "alumni"
     }
   ],
   "members": [

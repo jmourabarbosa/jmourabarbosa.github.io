@@ -121,28 +121,61 @@ strong, b, h1, h2, h3, h4, h5, h6,
     font-weight: bold !important;
 }
 
-/* Fix people card accordion behavior - prevent height stretching */
-.people-grid {
-    align-items: flex-start !important;
+/* People list: single column, full width cards */
+.people-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.person-card.collapsed, .alumni-card.collapsed {
-    align-self: flex-start !important;
-    height: auto !important;
-    min-height: auto !important;
+.people-list .person-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    width: 100%;
 }
 
-.person-card.expanded, .alumni-card.expanded {
-    align-self: flex-start !important;
+.people-list .person-card__header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1.5rem;
+    flex-shrink: 0;
 }
 
-.person-card__expandable {
-    display: none;
+/* Bigger photos */
+.person-card__avatar--large {
+    width: 120px !important;
+    height: 120px !important;
+    flex-shrink: 0;
 }
 
-.person-card.expanded .person-card__expandable,
-.alumni-card.expanded .person-card__expandable {
-    display: block;
+.person-card__avatar--large .person-card__image {
+    width: 120px !important;
+    height: 120px !important;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hide expand indicator since cards are always open */
+.people-list .person-card__expand-indicator {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .people-list .person-card {
+        flex-direction: column;
+    }
+    .person-card__avatar--large {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    .person-card__avatar--large .person-card__image {
+        width: 100px !important;
+        height: 100px !important;
+    }
 }
 
 /* Make research grid single column layout */
