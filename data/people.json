@@ -34,23 +34,39 @@
     {
       "id": "person-1",
       "name": "Joao Barbosa",
-      "position": "Group Leader",
+      "position": "PI (INSERM) @ Neuromodulation Institute & NeuroSpin",
       "positionType": "leader",
       "current": true,
       "photo": "/images/profile.png",
-      "description": "Principal Investigator (INSERM) at the Neuromodulation Institute and NeuroSpin, Paris.",
+      "description": "Neuroscientist in the making. Chronic emigrant.",
       "links": [
         {
           "label": "About",
           "url": "/about/"
         },
         {
-          "label": "Google Scholar",
-          "url": "https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"
+          "label": "Email",
+          "url": "mailto:palerma@gmail.com"
+        },
+        {
+          "label": "ResearchGate",
+          "url": "https://www.researchgate.net/profile/Joao_Barbosa43"
+        },
+        {
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/jbarbosa.org"
         },
         {
           "label": "GitHub",
           "url": "https://github.com/jmourabarbosa"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.es/citations?user=Q3-3_awAAAAJ&hl=en"
+        },
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-1907-3010"
         }
       ]
     },
