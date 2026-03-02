@@ -83,24 +83,27 @@
     });
   };
 
-  // --- GitHub API: Write file ---
+  // --- GitHub API: Write file (creates if it doesn't exist) ---
   window.CMS.writeFile = function (path, content, message) {
-    // First get the current file to get its SHA
+    var encodedContent = btoa(encodeURIComponent(content).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode(parseInt(p1, 16)); }));
+    var url = 'https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path;
+    var headers = {
+      'Authorization': 'token ' + window.CMS.token,
+      'Accept': 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json'
+    };
+    var body = {
+      message: message || 'Update ' + path,
+      content: encodedContent,
+      branch: BRANCH
+    };
+
+    // Try to get existing file SHA; if file doesn't exist, create without SHA
     return window.CMS.readFile(path).then(function (file) {
-      return fetch('https://api.github.com/repos/' + REPO_OWNER + '/' + REPO_NAME + '/contents/' + path, {
-        method: 'PUT',
-        headers: {
-          'Authorization': 'token ' + window.CMS.token,
-          'Accept': 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          message: message || 'Update ' + path,
-          content: btoa(encodeURIComponent(content).replace(/%([0-9A-F]{2})/g, function(match, p1) { return String.fromCharCode(parseInt(p1, 16)); })),
-          sha: file.sha,
-          branch: BRANCH
-        })
-      });
+      body.sha = file.sha;
+      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) });
+    }).catch(function () {
+      return fetch(url, { method: 'PUT', headers: headers, body: JSON.stringify(body) });
     }).then(function (resp) {
       if (!resp.ok) throw new Error('Failed to write file: ' + path);
       return resp.json();
