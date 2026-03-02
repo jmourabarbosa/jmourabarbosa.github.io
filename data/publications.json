@@ -410,7 +410,7 @@
     },
     {
       "id": "review",
-      "title": "Peer-reviewed Reviews",
+      "title": "Reviews",
       "publications": [
         {
           "id": "pub-15",
@@ -418,7 +418,7 @@
           "url": "../files/Barbosa_2022_BRM.pdf",
           "authors": "<strong>Joao Barbosa</strong>✉+, Heike Stein+, Samuel Zorowitz, Yael Niv, Christopher Summerfield, Salvador Soto-Faraco, Alexandre Hyafil",
           "journal": "Behavior Research Methods (2022)",
-          "categories": "review decision-making working-memory",
+          "categories": "peer-reviewed review decision-making working-memory",
           "tags": [
             {
               "label": "Decision Making",
@@ -446,7 +446,7 @@
           "url": "../files/Stein_CONEURO.pdf",
           "authors": "Heike Stein+, <strong>Joao Barbosa</strong>+, Albert Compte",
           "journal": "Current Opinion in Neurobiology (2021)",
-          "categories": "review schizophrenia spiking-networks working-memory",
+          "categories": "peer-reviewed review schizophrenia spiking-networks working-memory",
           "tags": [
             {
               "label": "Computational Psychiatry",
@@ -482,7 +482,7 @@
           "url": "../files/Barbosa2017.pdf",
           "authors": "<strong>Joao Barbosa</strong>✉",
           "journal": "Journal of Neuroscience (2017)",
-          "categories": "review working-memory",
+          "categories": "peer-reviewed review working-memory",
           "tags": [
             {
               "label": "Working Memory",

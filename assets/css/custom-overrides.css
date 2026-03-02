@@ -115,9 +115,18 @@ strong, b, h1, h2, h3, h4, h5, h6,
     font-weight: 200 !important; /* Ultra Light */
 }
 
-/* Teaching: single column layout */
+/* Teaching: single column layout, cards always open */
 .teaching-columns {
     grid-template-columns: 1fr !important;
+}
+
+.teaching-card .teaching-card__content,
+.teaching-card .teaching-card__details {
+    display: block !important;
+}
+
+.teaching-card .teaching-card__expand-indicator {
+    display: none !important;
 }
 
 /* Remove decorative lines in teaching section */

@@ -389,7 +389,7 @@
         html += '<div class="teaching-grid">';
 
         column.items.forEach(function (item) {
-          html += '<div class="teaching-card collapsed" data-id="' + item.id + '">';
+          html += '<div class="teaching-card expanded" data-id="' + item.id + '">';
           html += '<div class="teaching-card__header">';
           html += '<h3 class="teaching-card__title">';
           if (item.url && item.url !== '#') {
@@ -407,7 +407,6 @@
             html += '</div>';
           }
 
-          html += '<div class="teaching-card__expand-indicator">+</div>';
           html += '</div>'; // header
 
           html += '<div class="teaching-card__content">';
@@ -416,9 +415,7 @@
           html += ' <span class="teaching-card__venue">' + item.venue + '</span>';
           html += '</div></div>';
 
-          html += '<div class="teaching-card__expandable">';
           html += '<div class="teaching-card__details">' + item.details + '</div>';
-          html += '</div>';
 
           html += '</div>'; // teaching-card
         });
