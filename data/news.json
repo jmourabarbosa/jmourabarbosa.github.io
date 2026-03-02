@@ -1,62 +1,62 @@
 [
   {
-    "id": "news-1772490832913-4a0p6",
-    "date": "January 2026",
-    "content": "Melanie graduated from her PhD!"
-  },
-  {
-    "id": "news-1772416060797-yd9fz",
-    "date": "March 2026",
-    "content": "Attending COSYNE in Lisbon, where Philipp will present a poster and Jeanne will give a talk!"
-  },
-  {
     "id": "news-1772415984760-8crd7",
-    "date": "Dec 2026",
-    "content": "Joao will give a talk in Crete at Foundation for Research and Technology Hellas."
+    "date": "2026-12-01",
+    "content": "Joao gave a talk in Crete at Foundation for Research and Technology Hellas."
   },
   {
     "id": "news-1772415923938-78c3g",
-    "date": "Nov 2026",
-    "content": "Joao will give a talk at the Bernstein Center Freiburg\n"
+    "date": "2026-11-01",
+    "content": "Joao gave a talk at the Bernstein Center Freiburg."
+  },
+  {
+    "id": "news-1772416060797-yd9fz",
+    "date": "2026-03-01",
+    "content": "Attended COSYNE in Lisbon, where Philipp presented a poster and Jeanne gave a talk."
+  },
+  {
+    "id": "news-1772490832913-4a0p6",
+    "date": "2026-01-01",
+    "content": "Melanie graduated from her PhD!"
   },
   {
     "id": "news-1",
-    "date": "Oct 2025",
-    "content": "Joao will give a talk at <a href=\"https://nencki.edu.pl/\">Nencki Institute of Experimental Biology, Poland</a> (Oct 30)"
+    "date": "2025-10-30",
+    "content": "Joao gave a talk at <a href=\"https://nencki.edu.pl/\">Nencki Institute of Experimental Biology, Poland</a>."
   },
   {
     "id": "news-2",
-    "date": "Oct 2025",
-    "content": "Joao will give two talks at Bernstein Workshops 2025: <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/machine-learning/\">Machine learning for constraining interpretable models</a> and <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/top-down/\">Top-down control of neural dynamics</a>"
+    "date": "2025-10-01",
+    "content": "Joao gave two talks at Bernstein Workshops 2025: <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/machine-learning/\">Machine learning for constraining interpretable models</a> and <a href=\"https://bernstein-network.de/bernstein-conference/program/satellite-workshops/top-down/\">Top-down control of neural dynamics</a>."
   },
   {
     "id": "news-3",
-    "date": "Sept 2025",
-    "content": "Joao teaching at <a href=\"https://www.uc.pt/events/computationalbiology/2025/\">Summer School on Computational Biology, Coimbra</a>"
+    "date": "2025-09-01",
+    "content": "Joao taught at <a href=\"https://www.uc.pt/events/computationalbiology/2025/\">Summer School on Computational Biology, Coimbra</a>."
   },
   {
     "id": "news-4",
-    "date": "Aug 2025",
-    "content": "Lubna gave a talk at <a href=\"https://2025.ccneuro.org/\">CCN 2025, Amsterdam</a>"
+    "date": "2025-08-15",
+    "content": "Lubna gave a talk at <a href=\"https://2025.ccneuro.org/\">CCN 2025, Amsterdam</a>."
   },
   {
     "id": "news-5",
-    "date": "Aug 2025",
-    "content": "Joao participated in the <a href=\"https://compneurosci.com/Neuro4Pros/index.html\">Neuroscience Leadership Training in Kingston, Canada</a>"
+    "date": "2025-08-01",
+    "content": "Joao participated in the <a href=\"https://compneurosci.com/Neuro4Pros/index.html\">Neuroscience Leadership Training in Kingston, Canada</a>."
   },
   {
     "id": "news-6",
-    "date": "July 2025",
-    "content": "Joao taught at <a href=\"https://www.csh-asia.org/?content/2621\">Cognitive and Computational Neuroscience Summer School, Suzhou, China</a>"
+    "date": "2025-07-15",
+    "content": "Joao taught at <a href=\"https://www.csh-asia.org/?content/2621\">Cognitive and Computational Neuroscience Summer School, Suzhou, China</a>."
   },
   {
     "id": "news-7",
-    "date": "July 2025",
-    "content": "Joao taught at <a href=\"https://biortc.com/computational-neuroscience-course-2025/\">Simons-BioRTC Computational Neuroscience Summer School, Damaturo, Nigeria</a>"
+    "date": "2025-07-01",
+    "content": "Joao taught at <a href=\"https://biortc.com/computational-neuroscience-course-2025/\">Simons-BioRTC Computational Neuroscience Summer School, Damaturo, Nigeria</a>."
   },
   {
     "id": "news-8",
-    "date": "May 2025",
+    "date": "2025-05-01",
     "content": "Philipp and Joao gave talks at Mathematics of Neuroscience and AI in Split. Kaleab presented a poster."
   }
 ]

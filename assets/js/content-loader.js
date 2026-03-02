@@ -60,15 +60,17 @@
       var html = '';
 
       // Sort by date descending (most recent first)
-      var monthOrder = {jan:0,feb:1,mar:2,apr:3,may:4,jun:5,jul:6,aug:7,sep:8,sept:8,oct:9,nov:10,dec:11};
       news.sort(function (a, b) {
-        var pa = a.date.trim().split(/\s+/), pb = b.date.trim().split(/\s+/);
-        var ya = parseInt(pa[pa.length - 1]) || 0, yb = parseInt(pb[pb.length - 1]) || 0;
-        if (yb !== ya) return yb - ya;
-        var ma = monthOrder[(pa[0] || '').toLowerCase().replace(/[^a-z]/g, '').slice(0,4)] || 0;
-        var mb = monthOrder[(pb[0] || '').toLowerCase().replace(/[^a-z]/g, '').slice(0,4)] || 0;
-        return mb - ma;
+        return (b.date || '').localeCompare(a.date || '');
       });
+
+      // Format ISO date to "Month YYYY"
+      var monthNames = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+      function formatDate(iso) {
+        var parts = iso.split('-');
+        var m = parseInt(parts[1], 10) - 1;
+        return monthNames[m] + ' ' + parts[0];
+      }
 
       if (window.CMS && window.CMS.isAdmin) {
         html += '<button class="cms-add-btn" onclick="Editor.addNews()">+ Add News</button>';
@@ -82,7 +84,7 @@
           html += '<button class="cms-delete-btn" onclick="Editor.deleteNews(\'' + item.id + '\')" title="Delete">&times;</button>';
           html += '</div>';
         }
-        html += ' <span class="author-news__date">' + item.date + '</span>';
+        html += ' <span class="author-news__date">' + formatDate(item.date) + '</span>';
         html += ' <span class="author-news__content">' + item.content + '</span>';
         html += '</div>';
       });
