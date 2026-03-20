@@ -203,31 +203,53 @@
   // ============================================================
   // RESEARCH EDITOR
   // ============================================================
+  function buildOrderOptions(total) {
+    var options = [];
+    for (var order = 1; order <= total; order++) {
+      options.push({ value: String(order), label: String(order) });
+    }
+    return options;
+  }
+
+  function insertResearchCardAt(cards, card, selectedOrder) {
+    var maxOrder = cards.length + 1;
+    var order = parseInt(selectedOrder, 10);
+    if (!order || order < 1) order = 1;
+    if (order > maxOrder) order = maxOrder;
+
+    var reordered = cards.slice();
+    reordered.splice(order - 1, 0, card);
+    return reordered;
+  }
+
   window.Editor.addResearch = function () {
-    var form = fieldHtml('Title', 'title', '') +
-      '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
-      '<h3 class="cms-field-group-title">Sections</h3>' +
-      renderSectionFields(0, '', '', 1, 1) +
-      '</div>' +
-      '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addSectionField()">+ Add Section</button>';
+    window.ContentLoader.fetchData('research.json').then(function (data) {
+      var form = fieldHtml('Title', 'title', '') +
+        selectHtml('Display Order', 'research-order', buildOrderOptions(data.cards.length + 1), String(data.cards.length + 1)) +
+        '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
+        '<h3 class="cms-field-group-title">Sections</h3>' +
+        renderSectionFields(0, '', '', 1, 1) +
+        '</div>' +
+        '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addSectionField()">+ Add Section</button>';
 
-    showModal('Add Research Topic', form, function () {
-      var title = getFieldValue('title');
-      if (!title) { showEditorError('Title is required.'); throw new Error('Validation'); }
+      showModal('Add Research Topic', form, function () {
+        var title = getFieldValue('title');
+        if (!title) { showEditorError('Title is required.'); throw new Error('Validation'); }
 
-      var sections = collectSections();
+        var sections = collectSections();
+        var researchOrder = getFieldValue('research-order');
 
-      window.ContentLoader.fetchData('research.json').then(function (data) {
-        data.cards.push({
+        var newCard = {
           id: window.CMS.generateId('research'),
           title: title,
           sections: sections
-        });
+        };
+        data.cards = insertResearchCardAt(data.cards, newCard, researchOrder);
         return saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
       });
-    });
 
-    refreshSectionOrderControls();
+      refreshSectionOrderControls();
+    });
   };
 
   window.Editor.editResearch = function (id) {
@@ -241,6 +263,7 @@
       });
 
       var form = fieldHtml('Title', 'title', card.title) +
+        selectHtml('Display Order', 'research-order', buildOrderOptions(data.cards.length), String(data.cards.indexOf(card) + 1)) +
         '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
         '<h3 class="cms-field-group-title">Sections</h3>' +
         sectionsHtml +
@@ -248,9 +271,18 @@
         '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addSectionField()">+ Add Section</button>';
 
       showModal('Edit Research Topic', form, function () {
-        card.title = getFieldValue('title');
-        if (!card.title) { showEditorError('Title is required.'); throw new Error('Validation'); }
-        card.sections = collectSections();
+        var updatedTitle = getFieldValue('title');
+        var researchOrder = getFieldValue('research-order');
+        if (!updatedTitle) { showEditorError('Title is required.'); throw new Error('Validation'); }
+
+        var updatedCard = {
+          id: card.id,
+          title: updatedTitle,
+          sections: collectSections()
+        };
+
+        var otherCards = data.cards.filter(function (c) { return c.id !== card.id; });
+        data.cards = insertResearchCardAt(otherCards, updatedCard, researchOrder);
         saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
       });
 
@@ -312,7 +344,7 @@
       '<strong class="cms-section-group__label">Section ' + (i + 1) + '</strong>' +
       '<button type="button" class="cms-btn cms-btn--danger cms-btn--tiny" onclick="Editor._removeSectionField(this)">Remove</button>' +
       '</div>' +
-      '<div class="cms-field"><label>Order</label><select class="cms-input cms-section-order">' + buildSectionOrderOptions(optionCount, orderValue) + '</select></div>' +
+      '<div class="cms-field"><label>Section Order</label><select class="cms-input cms-section-order">' + buildSectionOrderOptions(optionCount, orderValue) + '</select></div>' +
       '<div class="cms-field"><label>Section Title</label><input type="text" class="cms-input cms-section-title" value="' + escapeAttr(title || '') + '" /></div>' +
       '<div class="cms-field"><label>Content <small>(HTML allowed)</small></label><textarea class="cms-input cms-textarea cms-section-content">' + (content || '') + '</textarea></div>' +
       '</div>';
