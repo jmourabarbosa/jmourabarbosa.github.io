@@ -9,6 +9,28 @@
   },
   "cards": [
     {
+      "id": "research-2",
+      "title": "Distributed mechanisms of working memory and decision making",
+      "sections": [
+        {
+          "title": "Motivation",
+          "content": "Working memory and context-dependent decision making are two complementary windows into how the brain supports flexible cognition. Working memory requires information to be maintained and updated over time, whereas context-dependent decisions require relevant information to be selected and transformed according to current goals. Our work studies these functions together to understand how distributed neural circuits coordinate memory, selection, and action across multiple brain regions."
+        },
+        {
+          "title": "Working memory",
+          "content": "We study the neural basis of working memory using biophysical modeling and data analysis of monkey prefrontal cortex, human EEG, and TMS. This work addresses the long-standing debate over whether working memory depends on sustained activity, short-term synaptic plasticity, or both. Our results support a distributed view in which persistent and activity-silent mechanisms coexist and interact, with implications for cognition in health and in disorders such as schizophrenia and anti-NMDAR encephalitis."
+        },
+        {
+          "title": "Decision making",
+          "content": "We study context-dependent decision making using multi-region recurrent neural networks and large-scale neural recordings from rats and monkeys. By fitting flexible models to population activity and reverse engineering the learned dynamics, we test how computations are distributed across segregated brain regions. This approach reveals how different cortical areas selectively represent and route task-relevant information while compressing irrelevant variables depending on context and downstream targets."
+        },
+        {
+          "title": "Related Publications",
+          "content": "<ul class=\"research-papers-list\"><li><a href=\"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436\">Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories</a> (PLoS Biology, 2021)</li><li><a href=\"../files/barbosa_interplay.pdf\">Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory</a> (Nature Neuroscience, 2020)</li><li><a href=\"https://www.nature.com/articles/s41467-020-18033-3\">Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia</a> (Nature Communications, 2020)</li><li><a href=\"https://www.nature.com/articles/s41467-023-42519-5\">Early selection of task-relevant features through population gating</a> (Nature Communications, 2023)</li><li><a href=\"https://2025.ccneuro.org/abstract_pdf/Abdul_2025_Task-Relevant_Information_Distributed_Across_Cortex_Past.pdf\">Task-Relevant Information is Distributed Across the Cortex, but the Past is State-Dependent and Restricted to Frontal Regions</a> (CCN, 2025)</li></ul>"
+        }
+      ]
+    },
+    {
       "id": "research-1774004569887-npmjq",
       "title": "Neuromodulation of network dynamics",
       "sections": [
@@ -41,28 +63,6 @@
         {
           "title": "Related Publications",
           "content": "<ul class=\"research-papers-list\"><li><a href=\"https://2024.ccneuro.org/pdf/159_Paper_authored_CCN_2024-(1).pdf\">Estimating flexible across-area communication with neurally-constrained RNN</a> (CCN, 2024)</li></ul>"
-        }
-      ]
-    },
-    {
-      "id": "research-2",
-      "title": "Distributed mechanisms of working memory and decision making",
-      "sections": [
-        {
-          "title": "Motivation",
-          "content": "Working memory and context-dependent decision making are two complementary windows into how the brain supports flexible cognition. Working memory requires information to be maintained and updated over time, whereas context-dependent decisions require relevant information to be selected and transformed according to current goals. Our work studies these functions together to understand how distributed neural circuits coordinate memory, selection, and action across multiple brain regions."
-        },
-        {
-          "title": "Working memory",
-          "content": "We study the neural basis of working memory using biophysical modeling and data analysis of monkey prefrontal cortex, human EEG, and TMS. This work addresses the long-standing debate over whether working memory depends on sustained activity, short-term synaptic plasticity, or both. Our results support a distributed view in which persistent and activity-silent mechanisms coexist and interact, with implications for cognition in health and in disorders such as schizophrenia and anti-NMDAR encephalitis."
-        },
-        {
-          "title": "Decision making",
-          "content": "We study context-dependent decision making using multi-region recurrent neural networks and large-scale neural recordings from rats and monkeys. By fitting flexible models to population activity and reverse engineering the learned dynamics, we test how computations are distributed across segregated brain regions. This approach reveals how different cortical areas selectively represent and route task-relevant information while compressing irrelevant variables depending on context and downstream targets."
-        },
-        {
-          "title": "Related Publications",
-          "content": "<ul class=\"research-papers-list\"><li><a href=\"https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001436\">Pinging the brain with visual impulses reveals electrically active, not activity-silent working memories</a> (PLoS Biology, 2021)</li><li><a href=\"../files/barbosa_interplay.pdf\">Interplay between persistent activity and activity-silent dynamics in prefrontal cortex underlies serial biases in working memory</a> (Nature Neuroscience, 2020)</li><li><a href=\"https://www.nature.com/articles/s41467-020-18033-3\">Synaptic basis of reduced serial dependence in anti-NMDAR encephalitis and schizophrenia</a> (Nature Communications, 2020)</li><li><a href=\"https://www.nature.com/articles/s41467-023-42519-5\">Early selection of task-relevant features through population gating</a> (Nature Communications, 2023)</li><li><a href=\"https://2025.ccneuro.org/abstract_pdf/Abdul_2025_Task-Relevant_Information_Distributed_Across_Cortex_Past.pdf\">Task-Relevant Information is Distributed Across the Cortex, but the Past is State-Dependent and Restricted to Frontal Regions</a> (CCN, 2025)</li></ul>"
         }
       ]
     },
