@@ -120,7 +120,7 @@
         },
         {
           "title": "KEY QUESTIONS",
-          "content": "<ul style=\"list-style: none; padding-left: 0;\">\n  <li>→ How do different neuromodulators shape the dimensionality and stability of population dynamics across brain regions?</li>\n  <li>→ Are line-attractor dynamics a general signature of neuromodulation, or specific to particular region-modulator pairs?</li>\n  <li>→ How do neuromodulatory systems interact with task demands and behavioral state to reconfigure circuit computations?</li>\n</ul>"
+          "content": "<ul><li>How do different neuromodulators shape the dimensionality and stability of population dynamics across brain regions?</li><li>Are line-attractor dynamics a general signature of neuromodulation, or specific to particular region-modulator pairs?</li><li>How do neuromodulatory systems interact with task demands and behavioral state to reconfigure circuit computations?</li></ul>"
         }
       ]
     }
