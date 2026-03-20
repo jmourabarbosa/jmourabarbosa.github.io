@@ -9,6 +9,24 @@
   },
   "cards": [
     {
+      "id": "research-1774004569887-npmjq",
+      "title": "Neuromodulation of network dynamics",
+      "sections": [
+        {
+          "title": "MOTIVATION",
+          "content": "Neuromodulators — dopamine, norepinephrine, serotonin, and acetylcholine — are released broadly across the brain and are known to regulate arousal, motivation, learning, and cognitive flexibility. Despite their central role in cognition and their implication in psychiatric disorders, how neuromodulatory systems shape the low-dimensional dynamics of cortical and subcortical circuits remains poorly understood. A key challenge is linking the moment-to-moment fluctuations of neuromodulator release to the computations performed by large neural populations."
+        },
+        {
+          "title": "APPROACH & FINDINGS",
+          "content": "Large-scale population activity and neuromodulator release across multiple brain regions are recorded simultaneously using electrophysiology and fiber photometry, through a collaboration with <a href=\"https://www.neuronaldynamics.eu/\">Nikolas Karalis</a>. We then fit neuromodulated low-rank RNN models that implement distinct synaptic mechanisms — presynaptic, postsynaptic, and additive — and compare them using fixed-point and bifurcation analyses. Applied to the norepinephrine-PFC system, this approach reveals that at median NE release, PFC operates near a line-attractor regime enabling persistent memory-like dynamics, a result that does not generalize to other recorded regions such as BLA and thalamus. Mean-field analysis identifies the circuit mechanism as NE-driven regulation of gain in a specific subpopulation of excitatory neurons."
+        },
+        {
+          "title": "KEY QUESTIONS",
+          "content": "<ul><li>How do different neuromodulators shape the dimensionality and stability of population dynamics across brain regions?</li><li>Are line-attractor dynamics a general signature of neuromodulation, or specific to particular region-modulator pairs?</li><li>How do neuromodulatory systems interact with task demands and behavioral state to reconfigure circuit computations?</li></ul>"
+        }
+      ]
+    },
+    {
       "id": "research-1",
       "title": "Extracting Dynamical Systems from Large-Scale Recordings",
       "sections": [
@@ -85,24 +103,6 @@
         {
           "title": "Related Publications",
           "content": "<ul class=\"research-papers-list\"><li><a href=\"https://www.nature.com/articles/s41467-023-42519-5\">Early selection of task-relevant features through population gating</a> (Nature Communications, 2023)</li><li><a href=\"https://psyarxiv.com/aqc9n/\">NeuroGym: An open resource for developing and sharing neuroscience tasks</a> (PsyArxiv, 2022)</li></ul>"
-        }
-      ]
-    },
-    {
-      "id": "research-1774004569887-npmjq",
-      "title": "Neuromodulation of network dynamics",
-      "sections": [
-        {
-          "title": "MOTIVATION",
-          "content": "Neuromodulators — dopamine, norepinephrine, serotonin, and acetylcholine — are released broadly across the brain and are known to regulate arousal, motivation, learning, and cognitive flexibility. Despite their central role in cognition and their implication in psychiatric disorders, how neuromodulatory systems shape the low-dimensional dynamics of cortical and subcortical circuits remains poorly understood. A key challenge is linking the moment-to-moment fluctuations of neuromodulator release to the computations performed by large neural populations."
-        },
-        {
-          "title": "APPROACH & FINDINGS",
-          "content": "Large-scale population activity and neuromodulator release across multiple brain regions are recorded simultaneously using electrophysiology and fiber photometry, through a collaboration with <a href=\"https://www.neuronaldynamics.eu/\">Nikolas Karalis</a>. We then fit neuromodulated low-rank RNN models that implement distinct synaptic mechanisms — presynaptic, postsynaptic, and additive — and compare them using fixed-point and bifurcation analyses. Applied to the norepinephrine-PFC system, this approach reveals that at median NE release, PFC operates near a line-attractor regime enabling persistent memory-like dynamics, a result that does not generalize to other recorded regions such as BLA and thalamus. Mean-field analysis identifies the circuit mechanism as NE-driven regulation of gain in a specific subpopulation of excitatory neurons."
-        },
-        {
-          "title": "KEY QUESTIONS",
-          "content": "<ul><li>How do different neuromodulators shape the dimensionality and stability of population dynamics across brain regions?</li><li>Are line-attractor dynamics a general signature of neuromodulation, or specific to particular region-modulator pairs?</li><li>How do neuromodulatory systems interact with task demands and behavioral state to reconfigure circuit computations?</li></ul>"
         }
       ]
     }
