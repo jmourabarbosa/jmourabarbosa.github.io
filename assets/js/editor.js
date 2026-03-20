@@ -207,7 +207,7 @@
     var form = fieldHtml('Title', 'title', '') +
       '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
       '<h3 class="cms-field-group-title">Sections</h3>' +
-      renderSectionFields(0, '', '') +
+      renderSectionFields(0, '', '', 1, 1) +
       '</div>' +
       '<button type="button" class="cms-btn cms-btn--secondary cms-btn--small" onclick="Editor._addSectionField()">+ Add Section</button>';
 
@@ -226,6 +226,8 @@
         return saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
       });
     });
+
+    refreshSectionOrderControls();
   };
 
   window.Editor.editResearch = function (id) {
@@ -235,7 +237,7 @@
 
       var sectionsHtml = '';
       card.sections.forEach(function (sec, i) {
-        sectionsHtml += renderSectionFields(i, sec.title, sec.content);
+        sectionsHtml += renderSectionFields(i, sec.title, sec.content, i + 1, card.sections.length);
       });
 
       var form = fieldHtml('Title', 'title', card.title) +
@@ -251,6 +253,8 @@
         card.sections = collectSections();
         saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
       });
+
+      refreshSectionOrderControls();
     });
   };
 
@@ -265,13 +269,50 @@
   // Research section helpers
   var sectionCounter = 0;
 
-  function renderSectionFields(index, title, content) {
-    var i = index || sectionCounter++;
+  function buildSectionOrderOptions(total, selectedOrder) {
+    var html = '';
+    for (var order = 1; order <= total; order++) {
+      html += '<option value="' + order + '"' + (order === selectedOrder ? ' selected' : '') + '>' + order + '</option>';
+    }
+    return html;
+  }
+
+  function refreshSectionOrderControls() {
+    var container = document.getElementById('cmsSectionsEditor');
+    if (!container) return;
+
+    var groups = container.querySelectorAll('.cms-section-group');
+    var total = groups.length || 1;
+
+    groups.forEach(function (group, idx) {
+      var label = group.querySelector('.cms-section-group__label');
+      if (label) {
+        label.textContent = 'Section ' + (idx + 1);
+      }
+
+      var select = group.querySelector('.cms-section-order');
+      if (!select) return;
+
+      var selectedOrder = parseInt(select.value, 10);
+      if (!selectedOrder || selectedOrder > total) {
+        selectedOrder = idx + 1;
+      }
+
+      select.innerHTML = buildSectionOrderOptions(total, selectedOrder);
+      select.value = String(selectedOrder);
+    });
+  }
+
+  function renderSectionFields(index, title, content, selectedOrder, totalSections) {
+    var i = typeof index === 'number' ? index : sectionCounter++;
+    var orderValue = typeof selectedOrder === 'number' ? selectedOrder : (i + 1);
+    var optionCount = totalSections || Math.max(orderValue, 1);
     return '<div class="cms-section-group" data-section-index="' + i + '">' +
       '<div class="cms-section-group__header">' +
-      '<strong>Section ' + (i + 1) + '</strong>' +
-      '<button type="button" class="cms-btn cms-btn--danger cms-btn--tiny" onclick="this.closest(\'.cms-section-group\').remove()">Remove</button>' +
+      '<strong class="cms-section-group__label">Section ' + (i + 1) + '</strong>' +
+      '<button type="button" class="cms-btn cms-btn--danger cms-btn--tiny" onclick="Editor._removeSectionField(this)">Remove</button>' +
       '</div>' +
+      '<div class="cms-field"><label>Order</label><select class="cms-input cms-section-order">' + buildSectionOrderOptions(optionCount, orderValue) + '</select></div>' +
       '<div class="cms-field"><label>Section Title</label><input type="text" class="cms-input cms-section-title" value="' + escapeAttr(title || '') + '" /></div>' +
       '<div class="cms-field"><label>Content <small>(HTML allowed)</small></label><textarea class="cms-input cms-textarea cms-section-content">' + (content || '') + '</textarea></div>' +
       '</div>';
@@ -282,21 +323,46 @@
     if (!container) return;
     var count = container.querySelectorAll('.cms-section-group').length;
     var div = document.createElement('div');
-    div.innerHTML = renderSectionFields(count, '', '');
+    div.innerHTML = renderSectionFields(count, '', '', count + 1, count + 1);
     container.appendChild(div.firstChild);
+    refreshSectionOrderControls();
+  };
+
+  window.Editor._removeSectionField = function (button) {
+    var group = button && button.closest('.cms-section-group');
+    if (!group) return;
+    group.remove();
+    refreshSectionOrderControls();
   };
 
   function collectSections() {
     var groups = document.querySelectorAll('#cmsSectionsEditor .cms-section-group');
     var sections = [];
-    groups.forEach(function (group) {
+    groups.forEach(function (group, index) {
       var title = group.querySelector('.cms-section-title').value;
       var content = group.querySelector('.cms-section-content').value;
+      var order = parseInt(group.querySelector('.cms-section-order').value, 10) || (index + 1);
       if (title || content) {
-        sections.push({ title: title, content: content });
+        sections.push({
+          title: title,
+          content: content,
+          order: order,
+          originalIndex: index
+        });
       }
     });
-    return sections;
+
+    sections.sort(function (a, b) {
+      if (a.order !== b.order) return a.order - b.order;
+      return a.originalIndex - b.originalIndex;
+    });
+
+    return sections.map(function (section) {
+      return {
+        title: section.title,
+        content: section.content
+      };
+    });
   }
 
   // ============================================================
