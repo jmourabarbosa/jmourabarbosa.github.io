@@ -150,8 +150,11 @@
       function renderResearchCard(card) {
         var cardHtml = '';
         var isVisible = card.visible !== false;
+        var alwaysVisibleSection = card.sections && card.sections.length ? card.sections[0] : null;
+        var expandableSections = card.sections && card.sections.length > 1 ? card.sections.slice(1) : [];
+        var startsExpanded = expandableSections.length === 0;
 
-        cardHtml += '<div class="research-card expanded' + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
+        cardHtml += '<div class="research-card ' + (startsExpanded ? 'expanded' : 'collapsed') + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
         cardHtml += '<div class="research-card__header">';
         cardHtml += '<h2 class="research-card__title">' + card.title;
         if (!isVisible && isAdmin) {
@@ -164,9 +167,24 @@
           cardHtml += '<button class="cms-delete-btn cms-delete-btn--header" onclick="event.stopPropagation(); Editor.deleteResearch(\'' + card.id + '\')" title="Delete">&times;</button>';
         }
         cardHtml += '</div>';
-        cardHtml += '<div class="research-card__expandable expanded">';
 
-        card.sections.forEach(function (section) {
+        if (alwaysVisibleSection) {
+          cardHtml += '<div class="research-card__section">';
+          cardHtml += '<h3 class="research-card__section-title">' + alwaysVisibleSection.title + '</h3>';
+          cardHtml += '<div class="research-card__content">' + alwaysVisibleSection.content + '</div>';
+          cardHtml += '</div>';
+        }
+
+        if (expandableSections.length) {
+          cardHtml += '<div class="research-card__toggle">';
+          cardHtml += '<button type="button" class="research-card__expand-indicator" aria-label="Expand for more details">+</button>';
+          cardHtml += '<span class="research-card__toggle-text">Expand for more details</span>';
+          cardHtml += '</div>';
+        }
+
+        cardHtml += '<div class="research-card__expandable' + (startsExpanded ? ' expanded' : '') + '">';
+
+        expandableSections.forEach(function (section) {
           cardHtml += '<div class="research-card__section">';
           cardHtml += '<h3 class="research-card__section-title">' + section.title + '</h3>';
           cardHtml += '<div class="research-card__content">' + section.content + '</div>';

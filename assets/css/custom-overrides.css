@@ -253,6 +253,19 @@ strong, b, h1, h2, h3, h4, h5, h6,
     margin-bottom: 1rem;
 }
 
+.research-card__toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+.research-card__toggle-text {
+    font-size: 0.9rem;
+    color: #4b5563;
+}
+
 @media (min-width: 768px) {
     .research-grid {
         grid-template-columns: 1fr !important;

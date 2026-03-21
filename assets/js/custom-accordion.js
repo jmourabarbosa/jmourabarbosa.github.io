@@ -5,6 +5,7 @@ window.initCustomAccordion = function() {
     // All card type configurations
     var cardTypes = [
         { container: '.publications-container', card: '.publication-item', indicator: '.publication-item__expand-indicator' },
+        { container: '.research-grid', card: '.research-card', indicator: '.research-card__expand-indicator', toggleSelector: '.research-card__toggle', scrollIntoView: true },
         { container: '.teaching-columns', card: '.teaching-card', indicator: '.teaching-card__expand-indicator' },
         { container: '.photography-container', card: '.photography-card', indicator: '.photography-card__expand-indicator' }
     ];
@@ -62,7 +63,7 @@ window.initCustomAccordion = function() {
     }
 
     // Set up a card type
-    function setupCards(containerSelector, cardSelector, indicatorSelector, scrollIntoView) {
+    function setupCards(containerSelector, cardSelector, indicatorSelector, scrollIntoView, toggleSelector) {
         var container = document.querySelector(containerSelector);
         if (!container) return;
 
@@ -71,7 +72,9 @@ window.initCustomAccordion = function() {
         cards.forEach(function(card) {
             // Use the card header as the click target (the whole header area, not just indicator)
             var header = card.querySelector(indicatorSelector.replace('__expand-indicator', '__header'));
-            var clickTarget = header || card;
+            var clickTarget = (toggleSelector && card.querySelector(toggleSelector)) || header || card;
+
+            if (!card.querySelector(indicatorSelector)) return;
 
             if (clickTarget._accordionInit) return;
             clickTarget._accordionInit = true;
@@ -110,7 +113,7 @@ window.initCustomAccordion = function() {
 
     // Set up each card type
     cardTypes.forEach(function(type) {
-        setupCards(type.container, type.card, type.indicator, type.scrollIntoView);
+        setupCards(type.container, type.card, type.indicator, type.scrollIntoView, type.toggleSelector);
     });
 
     // Set up people cards (special: multiple grids share accordion)
