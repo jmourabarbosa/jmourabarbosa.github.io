@@ -9,10 +9,13 @@
       "title": "Paris Ile-de-France Neuroscience, Theory, and Systems",
       "image": "/images/pints_header_10.png",
       "imageAlt": "PINTS",
-      "content": "A one-day conference for the Paris area, with an international keynote speaker, contributed talks, and posters. After a pilot event in 2022 and a successful revamped edition in 2024, we hope to make this a staple local conference that can highlight the excellent research performed across \u00cele-de-France.",
+      "content": "A one-day conference for the Paris area, with an international keynote speaker, contributed talks, and posters. After a pilot event in 2022 and a successful revamped edition in 2024, we hope to make this a staple local conference that can highlight the excellent research performed across Île-de-France.",
       "organizers": "Joao Barbosa, Sophie Bagur, Yves Boubenec, N Alex Cayco Gajic",
       "links": [
-        { "label": "PINTS homepage", "url": "https://pints.fr" }
+        {
+          "label": "PINTS homepage",
+          "url": "https://pints.fr"
+        }
       ]
     },
     {
@@ -20,10 +23,13 @@
       "title": "Neural Networking Night",
       "image": "/images/logo-NNN_small2.png",
       "imageAlt": "NNN",
-      "content": "A monthly seminar series designed to bring together the Parisian neuroscience community. One Friday a month, we host a scientific talk and an ap\u00e9ro in an iconic student bar in the 5th arrondissement of Paris. Doors at 17.00, talk at 17.15, happy hour at 18.00. Like Pint of Science, but for researchers.",
+      "content": "A monthly seminar series designed to bring together the Parisian neuroscience community. One Friday a month, we host a scientific talk and an apéro in an iconic student bar in the 5th arrondissement of Paris. Doors at 17.00, talk at 17.15, happy hour at 18.00. Like Pint of Science, but for researchers.",
       "organizers": "Michael Graupner, Joao Barbosa, Srdjan Ostojic, N Alex Cayco Gajic",
       "links": [
-        { "label": "NNN homepage", "url": "https://neuralnetworkingnight.github.io/" }
+        {
+          "label": "NNN homepage",
+          "url": "https://neuralnetworkingnight.github.io/"
+        }
       ]
     },
     {
@@ -34,8 +40,20 @@
       "content": "The goal of the Neurochats seminar aims to bring together young researchers from Barcelona and to encourage interaction among the various research centers in the city and its surroundings. The event counts with the pleasure of free pizza and the excitement of scientific discovery, creating a relaxed and engaging atmosphere for knowledge exchange. The format includes informal talks lasting 45 minutes followed by a 15-minute discussion, allowing masters, PhD students, and postdoctoral fellows to familiarize themselves with their colleagues' research.",
       "organizers": "Caterina Barezzi, Tomas Berjaga I Buisan, Alexandre Garcia-Duran Castilla",
       "links": [
-        { "label": "Neurochats homepage", "url": "https://www.crm.cat/neurochats-seminar/" }
+        {
+          "label": "Neurochats homepage",
+          "url": "https://www.crm.cat/neurochats-seminar/"
+        }
       ]
+    },
+    {
+      "id": "community-1774111767734-fokye",
+      "title": "Paris Neuroscience directory",
+      "image": "",
+      "imageAlt": "",
+      "content": "Neuroscience in Paris is a community-built directory of neuroscience labs and researchers across the Paris area. Paris has an incredibly rich neuroscience community, but it is scattered across the city and often across institutions, which makes it harder to know who is working on what.\n\nI created this website to make the community easier to navigate, help people discover labs and researchers, and make connections across the Paris neuroscience ecosystem.",
+      "organizers": "",
+      "links": []
     }
   ]
 }
