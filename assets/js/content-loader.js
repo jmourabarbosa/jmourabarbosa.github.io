@@ -140,40 +140,59 @@
     return fetchData('research.json').then(function (data) {
       var html = '';
       var isAdmin = window.CMS && window.CMS.isAdmin;
-      var cards = isAdmin ? data.cards : data.cards.filter(function (card) {
+      var visibleCards = data.cards.filter(function (card) {
         return card.visible !== false;
       });
+      var hiddenCards = isAdmin ? data.cards.filter(function (card) {
+        return card.visible === false;
+      }) : [];
+
+      function renderResearchCard(card) {
+        var cardHtml = '';
+        var isVisible = card.visible !== false;
+
+        cardHtml += '<div class="research-card expanded' + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
+        cardHtml += '<div class="research-card__header">';
+        cardHtml += '<h2 class="research-card__title">' + card.title;
+        if (!isVisible && isAdmin) {
+          cardHtml += ' <span class="research-card__status">(Hidden)</span>';
+        }
+        cardHtml += '</h2>';
+        if (isAdmin) {
+          cardHtml += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.toggleResearchVisibility(\'' + card.id + '\')" title="' + (isVisible ? 'Hide from public page' : 'Show on public page') + '">' + (isVisible ? 'Hide' : 'Show') + '</button>';
+          cardHtml += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.editResearch(\'' + card.id + '\')" title="Edit">&#9998;</button>';
+          cardHtml += '<button class="cms-delete-btn cms-delete-btn--header" onclick="event.stopPropagation(); Editor.deleteResearch(\'' + card.id + '\')" title="Delete">&times;</button>';
+        }
+        cardHtml += '</div>';
+        cardHtml += '<div class="research-card__expandable expanded">';
+
+        card.sections.forEach(function (section) {
+          cardHtml += '<div class="research-card__section">';
+          cardHtml += '<h3 class="research-card__section-title">' + section.title + '</h3>';
+          cardHtml += '<div class="research-card__content">' + section.content + '</div>';
+          cardHtml += '</div>';
+        });
+
+        cardHtml += '</div></div>';
+        return cardHtml;
+      }
 
       if (isAdmin) {
         html += '<button class="cms-add-btn" onclick="Editor.addResearch()">+ Add Research Topic</button>';
       }
 
-      cards.forEach(function (card) {
-        var isVisible = card.visible !== false;
-        html += '<div class="research-card expanded' + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
-        html += '<div class="research-card__header">';
-        html += '<h2 class="research-card__title">' + card.title;
-        if (!isVisible && isAdmin) {
-          html += ' <span class="research-card__status">(Hidden)</span>';
-        }
-        html += '</h2>';
-        if (isAdmin) {
-          html += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.toggleResearchVisibility(\'' + card.id + '\')" title="' + (isVisible ? 'Hide from public page' : 'Show on public page') + '">' + (isVisible ? 'Hide' : 'Show') + '</button>';
-          html += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.editResearch(\'' + card.id + '\')" title="Edit">&#9998;</button>';
-          html += '<button class="cms-delete-btn cms-delete-btn--header" onclick="event.stopPropagation(); Editor.deleteResearch(\'' + card.id + '\')" title="Delete">&times;</button>';
-        }
-        html += '</div>';
-        html += '<div class="research-card__expandable expanded">';
-
-        card.sections.forEach(function (section) {
-          html += '<div class="research-card__section">';
-          html += '<h3 class="research-card__section-title">' + section.title + '</h3>';
-          html += '<div class="research-card__content">' + section.content + '</div>';
-          html += '</div>';
-        });
-
-        html += '</div></div>';
+      visibleCards.forEach(function (card) {
+        html += renderResearchCard(card);
       });
+
+      if (isAdmin && hiddenCards.length) {
+        html += '<div class="research-hidden-admin">';
+        html += '<h3 class="research-hidden-admin__title">Hidden research topics</h3>';
+        hiddenCards.forEach(function (card) {
+          html += renderResearchCard(card);
+        });
+        html += '</div>';
+      }
 
       container.innerHTML = html;
 

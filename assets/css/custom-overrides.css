@@ -243,6 +243,16 @@ strong, b, h1, h2, h3, h4, h5, h6,
     margin-left: 0.35rem;
 }
 
+.research-hidden-admin {
+    margin-top: 2.5rem;
+}
+
+.research-hidden-admin__title {
+    font-size: 1rem;
+    color: #92400e;
+    margin-bottom: 1rem;
+}
+
 @media (min-width: 768px) {
     .research-grid {
         grid-template-columns: 1fr !important;
