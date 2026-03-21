@@ -83,7 +83,7 @@
           "content": "<ul class=\"research-papers-list\"><li><a href=\"https://2024.ccneuro.org/pdf/159_Paper_authored_CCN_2024-(1).pdf\">Estimating flexible across-area communication with neurally-constrained RNN</a> (CCN, 2024)</li></ul>"
         }
       ],
-      "visible": false
+      "visible": true
     },
     {
       "id": "research-5",
