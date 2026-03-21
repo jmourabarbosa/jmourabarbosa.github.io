@@ -256,7 +256,6 @@ strong, b, h1, h2, h3, h4, h5, h6,
 .research-card__toggle {
     display: inline-flex;
     align-items: center;
-    gap: 0.6rem;
     margin-top: 0.5rem;
     cursor: pointer;
 }
@@ -264,6 +263,10 @@ strong, b, h1, h2, h3, h4, h5, h6,
 .research-card__toggle-text {
     font-size: 0.9rem;
     color: #4b5563;
+}
+
+.research-card.collapsed {
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {

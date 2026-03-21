@@ -74,27 +74,38 @@
 
   window.ContentLoader.fetchData = fetchData;
 
-  window.ContentLoader.toggleResearchCard = function (button) {
-    var card = button && button.closest('.research-card');
+  window.ContentLoader.toggleResearchCard = function (element, event) {
+    var card = element && element.closest('.research-card');
     if (!card) return;
 
     var expandable = card.querySelector('.research-card__expandable');
     if (!expandable) return;
 
+    if (event) {
+      var target = event.target;
+      if (target && target.closest && target.closest('a, button, .cms-edit-btn, .cms-delete-btn, .cms-add-btn')) return;
+
+      var selection = window.getSelection && window.getSelection();
+      if (selection && selection.toString().length > 0) return;
+
+      if (card.classList.contains('expanded') && target && target.closest && target.closest('.research-card__expandable')) return;
+    }
+
     var isExpanded = card.classList.contains('expanded');
+    var toggleText = card.querySelector('.research-card__toggle-text');
 
     if (isExpanded) {
       card.classList.remove('expanded');
       card.classList.add('collapsed');
       expandable.classList.remove('expanded');
-      button.textContent = '+';
+      if (toggleText) toggleText.textContent = 'Expand for more details';
       return;
     }
 
     card.classList.remove('collapsed');
     card.classList.add('expanded');
     expandable.classList.add('expanded');
-    button.textContent = '\u2212';
+    if (toggleText) toggleText.textContent = 'Hide details';
   };
 
   // Clear cache for a specific file (after editing)
@@ -177,7 +188,7 @@
         var expandableSections = card.sections && card.sections.length > 1 ? card.sections.slice(1) : [];
         var startsExpanded = expandableSections.length === 0;
 
-        cardHtml += '<div class="research-card ' + (startsExpanded ? 'expanded' : 'collapsed') + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
+        cardHtml += '<div class="research-card ' + (startsExpanded ? 'expanded' : 'collapsed') + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '"' + (expandableSections.length ? ' onclick="ContentLoader.toggleResearchCard(this, event)"' : '') + '>';
         cardHtml += '<div class="research-card__header">';
         cardHtml += '<h2 class="research-card__title">' + card.title;
         if (!isVisible && isAdmin) {
@@ -200,7 +211,6 @@
 
         if (expandableSections.length) {
           cardHtml += '<div class="research-card__toggle">';
-          cardHtml += '<button type="button" class="research-card__expand-indicator" aria-label="Expand for more details" onclick="event.stopPropagation(); ContentLoader.toggleResearchCard(this)">+</button>';
           cardHtml += '<span class="research-card__toggle-text">Expand for more details</span>';
           cardHtml += '</div>';
         }
