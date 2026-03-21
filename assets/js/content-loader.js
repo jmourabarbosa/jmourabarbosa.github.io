@@ -181,6 +181,11 @@
         return card.visible === false;
       }) : [];
 
+      function shouldRenderResearchSectionTitle(title) {
+        if (!title) return false;
+        return title.trim().toLowerCase() !== 'motivation';
+      }
+
       function renderResearchCard(card) {
         var cardHtml = '';
         var isVisible = card.visible !== false;
@@ -204,7 +209,9 @@
 
         if (alwaysVisibleSection) {
           cardHtml += '<div class="research-card__section">';
-          cardHtml += '<h3 class="research-card__section-title">' + alwaysVisibleSection.title + '</h3>';
+          if (shouldRenderResearchSectionTitle(alwaysVisibleSection.title)) {
+            cardHtml += '<h3 class="research-card__section-title">' + alwaysVisibleSection.title + '</h3>';
+          }
           cardHtml += '<div class="research-card__content">' + alwaysVisibleSection.content + '</div>';
           cardHtml += '</div>';
         }
@@ -219,7 +226,9 @@
 
         expandableSections.forEach(function (section) {
           cardHtml += '<div class="research-card__section">';
-          cardHtml += '<h3 class="research-card__section-title">' + section.title + '</h3>';
+          if (shouldRenderResearchSectionTitle(section.title)) {
+            cardHtml += '<h3 class="research-card__section-title">' + section.title + '</h3>';
+          }
           cardHtml += '<div class="research-card__content">' + section.content + '</div>';
           cardHtml += '</div>';
         });
