@@ -433,6 +433,7 @@
     } else {
       html += person.name;
     }
+    html += ' <span class="person-card__label' + (isAlumni ? ' alumni' : '') + '">' + person.position + '</span>';
     html += '</h3>';
     html += '<p class="person-card__position' + (isAlumni ? ' alumni' : '') + '">' + person.position + '</p>';
 

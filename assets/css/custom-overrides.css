@@ -269,6 +269,28 @@ strong, b, h1, h2, h3, h4, h5, h6,
     cursor: pointer;
 }
 
+.person-card__label {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.12rem 0.5rem;
+    border-radius: 999px;
+    background: #e5eef7;
+    color: #35526b;
+    font-size: 0.78rem;
+    font-weight: 600 !important;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.person-card__label.alumni {
+    background: #f3f4f6;
+    color: #4b5563;
+}
+
+.person-card__position {
+    display: none !important;
+}
+
 @media (min-width: 768px) {
     .research-grid {
         grid-template-columns: 1fr !important;
