@@ -74,6 +74,29 @@
 
   window.ContentLoader.fetchData = fetchData;
 
+  window.ContentLoader.toggleResearchCard = function (button) {
+    var card = button && button.closest('.research-card');
+    if (!card) return;
+
+    var expandable = card.querySelector('.research-card__expandable');
+    if (!expandable) return;
+
+    var isExpanded = card.classList.contains('expanded');
+
+    if (isExpanded) {
+      card.classList.remove('expanded');
+      card.classList.add('collapsed');
+      expandable.classList.remove('expanded');
+      button.textContent = '+';
+      return;
+    }
+
+    card.classList.remove('collapsed');
+    card.classList.add('expanded');
+    expandable.classList.add('expanded');
+    button.textContent = '\u2212';
+  };
+
   // Clear cache for a specific file (after editing)
   window.ContentLoader.clearCache = function (file) {
     delete dataCache[file];
@@ -177,7 +200,7 @@
 
         if (expandableSections.length) {
           cardHtml += '<div class="research-card__toggle">';
-          cardHtml += '<button type="button" class="research-card__expand-indicator" aria-label="Expand for more details">+</button>';
+          cardHtml += '<button type="button" class="research-card__expand-indicator" aria-label="Expand for more details" onclick="event.stopPropagation(); ContentLoader.toggleResearchCard(this)">+</button>';
           cardHtml += '<span class="research-card__toggle-text">Expand for more details</span>';
           cardHtml += '</div>';
         }
