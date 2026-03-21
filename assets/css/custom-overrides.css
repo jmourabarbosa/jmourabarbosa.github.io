@@ -218,6 +218,31 @@ strong, b, h1, h2, h3, h4, h5, h6,
     padding: 0.8rem 1.2rem !important;
 }
 
+/* Homepage multi-section layout */
+#research,
+.homepage-section {
+    scroll-margin-top: 7rem;
+}
+
+.homepage-section {
+    margin-top: 4rem;
+}
+
+.homepage-section .page-header {
+    margin-bottom: 2rem;
+}
+
+/* Admin hint for hidden research topics */
+.research-card--hidden {
+    opacity: 0.65;
+}
+
+.research-card__status {
+    font-size: 0.8rem;
+    color: #b45309;
+    margin-left: 0.35rem;
+}
+
 @media (min-width: 768px) {
     .research-grid {
         grid-template-columns: 1fr !important;

@@ -203,6 +203,11 @@
   // ============================================================
   // RESEARCH EDITOR
   // ============================================================
+  var RESEARCH_VISIBILITY_OPTIONS = [
+    { value: 'visible', label: 'Visible' },
+    { value: 'hidden', label: 'Hidden' }
+  ];
+
   function buildOrderOptions(total) {
     var options = [];
     for (var order = 1; order <= total; order++) {
@@ -226,6 +231,7 @@
     window.ContentLoader.fetchData('research.json').then(function (data) {
       var form = fieldHtml('Title', 'title', '') +
         selectHtml('Display Order', 'research-order', buildOrderOptions(data.cards.length + 1), String(data.cards.length + 1)) +
+        selectHtml('Visibility', 'research-visibility', RESEARCH_VISIBILITY_OPTIONS, 'visible') +
         '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
         '<h3 class="cms-field-group-title">Sections</h3>' +
         renderSectionFields(0, '', '') +
@@ -238,11 +244,13 @@
 
         var sections = collectSections();
         var researchOrder = getFieldValue('research-order');
+        var researchVisibility = getFieldValue('research-visibility');
 
         var newCard = {
           id: window.CMS.generateId('research'),
           title: title,
-          sections: sections
+          sections: sections,
+          visible: researchVisibility !== 'hidden'
         };
         data.cards = insertResearchCardAt(data.cards, newCard, researchOrder);
         return saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
@@ -262,6 +270,7 @@
 
       var form = fieldHtml('Title', 'title', card.title) +
         selectHtml('Display Order', 'research-order', buildOrderOptions(data.cards.length), String(data.cards.indexOf(card) + 1)) +
+        selectHtml('Visibility', 'research-visibility', RESEARCH_VISIBILITY_OPTIONS, card.visible === false ? 'hidden' : 'visible') +
         '<div class="cms-sections-editor" id="cmsSectionsEditor">' +
         '<h3 class="cms-field-group-title">Sections</h3>' +
         sectionsHtml +
@@ -271,18 +280,30 @@
       showModal('Edit Research Topic', form, function () {
         var updatedTitle = getFieldValue('title');
         var researchOrder = getFieldValue('research-order');
+        var researchVisibility = getFieldValue('research-visibility');
         if (!updatedTitle) { showEditorError('Title is required.'); throw new Error('Validation'); }
 
         var updatedCard = {
           id: card.id,
           title: updatedTitle,
-          sections: collectSections()
+          sections: collectSections(),
+          visible: researchVisibility !== 'hidden'
         };
 
         var otherCards = data.cards.filter(function (c) { return c.id !== card.id; });
         data.cards = insertResearchCardAt(otherCards, updatedCard, researchOrder);
         saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
       });
+    });
+  };
+
+  window.Editor.toggleResearchVisibility = function (id) {
+    window.ContentLoader.fetchData('research.json').then(function (data) {
+      var card = data.cards.find(function (c) { return c.id === id; });
+      if (!card) return;
+
+      card.visible = card.visible === false;
+      saveAndReload('research.json', data, window.ContentLoader.renderResearch, 'cms-research');
     });
   };
 

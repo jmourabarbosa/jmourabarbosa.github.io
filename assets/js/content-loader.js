@@ -139,22 +139,31 @@
 
     return fetchData('research.json').then(function (data) {
       var html = '';
+      var isAdmin = window.CMS && window.CMS.isAdmin;
+      var cards = isAdmin ? data.cards : data.cards.filter(function (card) {
+        return card.visible !== false;
+      });
 
-      if (window.CMS && window.CMS.isAdmin) {
+      if (isAdmin) {
         html += '<button class="cms-add-btn" onclick="Editor.addResearch()">+ Add Research Topic</button>';
       }
 
-      data.cards.forEach(function (card) {
-        html += '<div class="research-card collapsed" data-id="' + card.id + '">';
+      cards.forEach(function (card) {
+        var isVisible = card.visible !== false;
+        html += '<div class="research-card expanded' + (!isVisible && isAdmin ? ' research-card--hidden' : '') + '" data-id="' + card.id + '">';
         html += '<div class="research-card__header">';
-        html += '<h2 class="research-card__title">' + card.title + '</h2>';
-        if (window.CMS && window.CMS.isAdmin) {
+        html += '<h2 class="research-card__title">' + card.title;
+        if (!isVisible && isAdmin) {
+          html += ' <span class="research-card__status">(Hidden)</span>';
+        }
+        html += '</h2>';
+        if (isAdmin) {
+          html += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.toggleResearchVisibility(\'' + card.id + '\')" title="' + (isVisible ? 'Hide from public page' : 'Show on public page') + '">' + (isVisible ? 'Hide' : 'Show') + '</button>';
           html += '<button class="cms-edit-btn cms-edit-btn--header" onclick="event.stopPropagation(); Editor.editResearch(\'' + card.id + '\')" title="Edit">&#9998;</button>';
           html += '<button class="cms-delete-btn cms-delete-btn--header" onclick="event.stopPropagation(); Editor.deleteResearch(\'' + card.id + '\')" title="Delete">&times;</button>';
         }
-        html += '<div class="research-card__expand-indicator">+</div>';
         html += '</div>';
-        html += '<div class="research-card__expandable">';
+        html += '<div class="research-card__expandable expanded">';
 
         card.sections.forEach(function (section) {
           html += '<div class="research-card__section">';
@@ -333,6 +342,13 @@
 
   function renderPersonCard(person, isAlumni) {
     var html = '<div class="person-card expanded' + (isAlumni ? ' alumni-card' : '') + '" data-position="' + person.positionType + '" data-current="' + person.current + '" data-id="' + person.id + '">';
+    var aboutLink = null;
+
+    if (person.links && person.links.length) {
+      aboutLink = person.links.find(function (link) {
+        return link.label === 'About' && link.url === '/about/';
+      });
+    }
 
     if (person.photo) {
       html += '<div class="person-card__avatar person-card__avatar--large">';
@@ -341,7 +357,13 @@
     }
 
     html += '<div class="person-card__body">';
-    html += '<h3 class="person-card__name">' + person.name + '</h3>';
+    html += '<h3 class="person-card__name">';
+    if (aboutLink) {
+      html += '<a href="' + aboutLink.url + '">' + person.name + '</a>';
+    } else {
+      html += person.name;
+    }
+    html += '</h3>';
     html += '<p class="person-card__position' + (isAlumni ? ' alumni' : '') + '">' + person.position + '</p>';
 
     if (window.CMS && window.CMS.isAdmin) {
@@ -446,7 +468,7 @@
       }
 
       data.cards.forEach(function (card) {
-        html += '<div class="community-card collapsed" data-id="' + card.id + '">';
+        html += '<div class="community-card expanded" data-id="' + card.id + '">';
         html += '<div class="community-card__header">';
         html += '<h2 class="community-card__title">' + card.title + '</h2>';
 
@@ -457,10 +479,9 @@
           html += '</div>';
         }
 
-        html += '<div class="community-card__expand-indicator">+</div>';
         html += '</div>'; // header
 
-        html += '<div class="community-card__expandable">';
+        html += '<div class="community-card__expandable expanded">';
         if (card.image) {
           html += '<img src="' + card.image + '" alt="' + (card.imageAlt || '') + '" class="community-card__image" />';
         }

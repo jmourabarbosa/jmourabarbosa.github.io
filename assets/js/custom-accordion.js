@@ -5,9 +5,7 @@ window.initCustomAccordion = function() {
     // All card type configurations
     var cardTypes = [
         { container: '.publications-container', card: '.publication-item', indicator: '.publication-item__expand-indicator' },
-        { container: '.research-grid', card: '.research-card', indicator: '.research-card__expand-indicator', scrollIntoView: true },
         { container: '.teaching-columns', card: '.teaching-card', indicator: '.teaching-card__expand-indicator' },
-        { container: '.community-grid', card: '.community-card', indicator: '.community-card__expand-indicator' },
         { container: '.photography-container', card: '.photography-card', indicator: '.photography-card__expand-indicator' }
     ];
 
