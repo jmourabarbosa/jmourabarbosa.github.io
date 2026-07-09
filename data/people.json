@@ -58,7 +58,7 @@
       "name": "Melanie Tschiersch",
       "position": "PhD Student",
       "positionType": "phd",
-      "current": true,
+      "current": false,
       "photo": "/images/people/melanie-tschiersch.jpg",
       "description": "<strong>Co-supervised with Albert Compte</strong><br /> Melanie is an engineer and she will graduate soon. She has been working on data-analysis and modeling of working memory, in particular how the two prefrontal cortices interact with each other during working memory tasks. Monkey data comes from <a href=\"https://www.cmu.edu/bme/People/Faculty/profile/msmith.html\">Matthew Smith lab</a>.",
       "links": [
