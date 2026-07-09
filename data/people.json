@@ -143,7 +143,7 @@
       "name": "Arghavan Aslani",
       "position": "Master Student",
       "positionType": "master",
-      "current": true,
+      "current": false,
       "photo": "/images/people/arghavan-aslani.jpg",
       "description": "Arghavan studied Electrical Engineering and Cognitive Sciences. She is working on distributed mechanisms of working memory using eye tracker and E-phys decoding techniques.",
       "links": [
