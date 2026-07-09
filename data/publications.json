@@ -239,6 +239,29 @@
             }
           ],
           "links": []
+        },
+        {
+          "id": "pub-10",
+          "title": "Redundant, weakly connected prefrontal hemispheres balance precision and capacity in spatial working memory",
+          "url": "https://www.biorxiv.org/content/10.1101/2025.01.15.633176v1",
+          "authors": "Melanie Tschiersch, Akash Umakantha, Ryan C. Williamson, Matthew A Smith, <strong>Joao Barbosa</strong>+, Albert Compte+",
+          "journal": "Nature Communications (2026)",
+          "categories": "peer-reviewed working-memory spiking-networks ephys",
+          "tags": [
+            {
+              "label": "Working Memory",
+              "key": "working-memory"
+            },
+            {
+              "label": "Spiking Networks",
+              "key": "spiking-networks"
+            },
+            {
+              "label": "E-phys",
+              "key": "ephys"
+            }
+          ],
+          "links": []
         }
       ]
     },
@@ -298,29 +321,6 @@
       "id": "preprint",
       "title": "Pre-prints",
       "publications": [
-        {
-          "id": "pub-10",
-          "title": "Redundant, weakly connected prefrontal hemispheres balance precision and capacity in spatial working memory",
-          "url": "https://www.biorxiv.org/content/10.1101/2025.01.15.633176v1",
-          "authors": "Melanie Tschiersch, Akash Umakantha, Ryan C. Williamson, Matthew A Smith, <strong>Joao Barbosa</strong>+, Albert Compte+",
-          "journal": "bioRxiv (2025)",
-          "categories": "preprint working-memory spiking-networks ephys",
-          "tags": [
-            {
-              "label": "Working Memory",
-              "key": "working-memory"
-            },
-            {
-              "label": "Spiking Networks",
-              "key": "spiking-networks"
-            },
-            {
-              "label": "E-phys",
-              "key": "ephys"
-            }
-          ],
-          "links": []
-        },
         {
           "id": "pub-11",
           "title": "Quantifying Differences in Neural Population Activity With Shape Metrics",
