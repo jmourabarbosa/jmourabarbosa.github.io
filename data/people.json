@@ -133,7 +133,7 @@
       "name": "Clara Hornung",
       "position": "Master Student",
       "positionType": "master",
-      "current": true,
+      "current": false,
       "photo": "/images/people/clara-hornung.jpg",
       "description": "Clara studied Cognitive Sciences. She is working on the geometry of working memory using E-phys decoding techniques.",
       "links": []
