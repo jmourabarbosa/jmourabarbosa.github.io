@@ -116,8 +116,8 @@
     {
       "id": "person-6",
       "name": "Bruna Junqueira Lopes",
-      "position": "Research Engineer",
-      "positionType": "engineer",
+      "position": "PhD Student",
+      "positionType": "phd",
       "current": true,
       "photo": "/images/people/bruna-junqueira-lopes.jpg",
       "description": "Bruna studied Computer Science. She is working on fusion of EEG and fMRI using multi modal deep learning techniques.",
