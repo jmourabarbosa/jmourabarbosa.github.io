@@ -102,7 +102,7 @@
       "id": "person-5",
       "name": "Philipp Werthmann",
       "position": "Research Engineer",
-      "positionType": "engineer",
+      "positionType": "phd",
       "current": true,
       "photo": "/images/people/philipp-werthmann.jpg",
       "description": "Philipp studied Physics and Neuroscience. He is working in data-driven RNN models of multi-regional recordings. Data comes from <a href=\"https://ekmillerlab.mit.edu/earl-miller/\">Earl Miller lab</a>.",
