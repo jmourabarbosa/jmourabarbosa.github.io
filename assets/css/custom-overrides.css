@@ -73,6 +73,39 @@
     border: none !important;
 }
 
+.tumblr-widget__intro {
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.tumblr-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+}
+
+.tumblr-preview-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.tumblr-preview-card__image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+.tumblr-preview-card__caption {
+    display: block;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
 /* Keep box styling for hiring alert on research page - reverted */
 
 /* Keep filter tabs styling - reverted */
