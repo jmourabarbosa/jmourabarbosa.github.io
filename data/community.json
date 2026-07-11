@@ -53,7 +53,12 @@
       "imageAlt": "",
       "content": "Neuroscience in Paris is a community-built directory of neuroscience labs and researchers across the Paris area. Paris has an incredibly rich neuroscience community, but it is scattered across the city and often across institutions, which makes it harder to know who is working on what.\n\nI created this website to make the community easier to navigate, help people discover labs and researchers, and make connections across the Paris neuroscience ecosystem.",
       "organizers": "",
-      "links": []
+      "links": [
+        {
+          "label": "Paris Neuro",
+          "url": "parisneuro.fr"
+        }
+      ]
     }
   ]
 }
