@@ -15,8 +15,13 @@
           "url": "https://openreview.net/forum?id=peVU8rdBVq",
           "authors": "Laurine Marty, Michael Pereira, Guillaume Bellec, <strong>Joao Barbosa</strong>",
           "journal": "ICLR (2026)",
-          "categories": "peer-reviewed",
-          "tags": [],
+          "categories": "peer-reviewed M/EEG",
+          "tags": [
+            {
+              "label": "M/EEG",
+              "key": "M/EEG"
+            }
+          ],
           "links": []
         },
         {
