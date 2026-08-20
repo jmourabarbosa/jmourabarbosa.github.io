@@ -10,6 +10,16 @@
       "title": "Peer-reviewed",
       "publications": [
         {
+          "id": "pub-1787230988176-20bcf",
+          "title": "Self-supervised EEG pretraining amplifies individual differences in neural representations",
+          "url": "https://openreview.net/forum?id=peVU8rdBVq",
+          "authors": "Laurine Marty, Michael Pereira, Guillaume Bellec, Joao Barbosa\n",
+          "journal": "ICLR ",
+          "categories": "peer-reviewed",
+          "tags": [],
+          "links": []
+        },
+        {
           "id": "pub-1",
           "title": "Early selection of task-relevant features through population gating",
           "url": "https://www.nature.com/articles/s41467-023-42519-5",
