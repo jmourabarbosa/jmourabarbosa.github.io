@@ -5,7 +5,9 @@
   },
   "hiringAlert": {
     "title": "Open Positions",
-    "content": "If you are interested in computational neuroscience, machine learning, and working at the intersection of theory and experiments, please contact me with your CV and research interests. Check our publications to understand the type of research we do."
+    "content": "If you are interested in computational neuroscience, machine learning, and working at the intersection of theory and experiments, please contact me with your CV and research interests. Check our publications to understand the type of research we do.",
+    "linkText": "Want to be my PI colleague? Read this.",
+    "linkUrl": "https://docs.google.com/document/d/1UGy9qA8tx5lPcK42y_qpwjm2DO1vs3Aynqq8WZcZBZc/edit?usp=sharing"
   },
   "cards": [
     {
