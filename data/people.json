@@ -192,6 +192,16 @@
       "photo": "",
       "description": "Former Master student who used data-driven RNN to model multi-item working memory in human single units.",
       "links": []
+    },
+    {
+      "id": "person-1789844088014-5h33r",
+      "name": "Nico Policzer",
+      "position": "",
+      "positionType": "engineer",
+      "current": true,
+      "photo": "https://tangxinlab.org/img/People/Nico-Policzer.jpg",
+      "description": "Nico is working on neuromodulated multi-region RNN",
+      "links": []
     }
   ]
 }
