@@ -201,7 +201,12 @@
       "current": true,
       "photo": "https://tangxinlab.org/img/People/Nico-Policzer.jpg",
       "description": "Nico studied Computer Science and is working on neuromodulated multi-region RNN.",
-      "links": []
+      "links": [
+        {
+          "label": "google scholar",
+          "url": "https://scholar.google.com/citations?user=5084Rj8AAAAJ&hl=en"
+        }
+      ]
     }
   ]
 }
